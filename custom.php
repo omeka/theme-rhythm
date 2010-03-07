@@ -75,3 +75,22 @@ function rhythm_display_random_featured_item_squarethumb($withImage=true)
 
     return $html;
 }
+
+/**
+ * This function returns the style sheet for the theme. It will use the argument
+ * passed to the function first, then the theme_option for Style Sheet, then
+ * a default style sheet.
+ *
+ * @param $styleSheet The name of the style sheet to use. (null by default)
+ *
+ **/
+function rhythm_get_stylesheet($styleSheet = null)
+{    
+    if (!$styleSheet) {
+        
+        $styleSheet = get_theme_option('Style Sheet') ? get_theme_option('Style Sheet') : 'fall';
+    }
+    
+    return $styleSheet; 
+    
+}

@@ -11,10 +11,8 @@
 <?php echo auto_discovery_link_tag(); ?>
 
 <!-- Stylesheets -->
-<?php 
-$stylesheet = (get_theme_option('Style Sheet') ? get_theme_option('Style Sheet') : 'fall'); 
-?>
-<link rel="stylesheet" media="screen" href="<?php echo html_escape(css($stylesheet)); ?>" /><link rel="stylesheet" media="print" href="<?php echo css('print'); ?>" />
+<link rel="stylesheet" media="screen" href="<?php echo html_escape(css(seasons_get_stylesheet())); ?>" />
+<link rel="stylesheet" media="print" href="<?php echo css('print'); ?>" />
 
 <!-- JavaScripts -->
 <?php echo js('default'); ?>
@@ -30,17 +28,14 @@ $stylesheet = (get_theme_option('Style Sheet') ? get_theme_option('Style Sheet')
 	
 	<div id="site-title">    
 		<p class="sitetitle"><?php echo link_to_home_page(); ?></p>
-	    <p class="tagline">Brief tagline about this exhibit.</p><!-- <span class="more"><a href="about.php">learn more...</a></span> --></p>   
-		
-		<!--<div id="about">
-	    </div>end #about-->
+	    <p class="tagline">Brief tagline about this exhibit.</p>  
 	</div> <!-- end #site-title -->
 	
     <div id="searchwrap">
      	<?php echo simple_search(); ?>
 		<?php echo link_to_advanced_search(); ?>
 	</div> <!-- end #searchwrap -->
-
+	
   </div>  <!-- end #header -->
   
  <div id="primary-nav">
@@ -48,7 +43,6 @@ $stylesheet = (get_theme_option('Style Sheet') ? get_theme_option('Style Sheet')
 		<?php echo public_nav_main(array('Browse Items' => uri('items'), 'Browse Collections'=>uri('collections'))); ?>
      	
     </ul>
-  <!-- end #primary-nav -->
-  </div>
+  </div>  <!-- end #primary-nav -->
 
 <div id="content">
