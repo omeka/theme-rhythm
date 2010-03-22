@@ -11,7 +11,7 @@
 <?php echo auto_discovery_link_tag(); ?>
 
 <!-- Stylesheets -->
-<link rel="stylesheet" media="screen" href="<?php echo html_escape(css(seasons_get_stylesheet())); ?>" />
+<link rel="stylesheet" media="screen" href="<?php echo html_escape(css(rhythm_get_stylesheet())); ?>" />
 <link rel="stylesheet" media="print" href="<?php echo css('print'); ?>" />
 
 <!-- JavaScripts -->
