@@ -94,3 +94,10 @@ function rhythm_get_stylesheet($styleSheet = null)
     return $styleSheet; 
     
 }
+
+function rhythm_display_tagline()
+{
+    if ($tagline = get_theme_option('site_tagline')) {
+        return '<p class="tagline">'.$tagline.'</p>';  
+    }
+}

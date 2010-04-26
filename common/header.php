@@ -28,7 +28,7 @@
 	
 	<div id="site-title">    
 		<p class="sitetitle"><?php echo link_to_home_page(); ?></p>
-	    <p class="tagline">Brief tagline about this exhibit.</p>  
+		<?php echo rhythm_display_tagline(); ?>
 	</div> <!-- end #site-title -->
 	
     <div id="searchwrap">
