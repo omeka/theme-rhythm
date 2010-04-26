@@ -23,11 +23,11 @@ function rhythm_display_random_featured_collection()
     set_current_collection($featuredCollection);
     $html = '<h2>Featured <span class="type-featured">Collection</span></h2>';
     if ( $featuredCollection ) {
-
+        $html .= '<p><span class="title">' . link_to_collection() . '</span>';
         if ($featuredCollection->description) {
-            $html .= '<p><span class="title">' . link_to_collection() . '</span>&nbsp;' . collection('Description', array('snippet'=>150)) . '</p>';
+            $html .= '&nbsp;' . collection('Description', array('snippet'=>150));
         }
-        
+        $html .= '</p>';
     } else {
         $html .= '<p>There are no featured collections right now.</p>';
     }
