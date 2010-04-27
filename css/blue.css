@@ -99,7 +99,7 @@ http://www.kollermedia.at/pattern4u/lined/ == */
 		#footer .navigation li {background:transparent url(../images/blue/bullet-omeka.png) no-repeat scroll 0 50%;list-style-type:none;margin-left:5px;padding:0.5em 0.5em 0.5em 5px;}
 		#footer .navigation a {color:#323231;font-size:0.75em;}
 		#footer .navigation .current a {color:#BBBB88;}
-		#footer p {float:left;width: 590px;padding: 10px;background:#fff;font-size: 9px;line-height:1em;color:#000;}	
+		#footer #footer-text {float:left;width: 590px;padding: 10px;background:#fff;font-size: 9px;line-height:1em;color:#000;}	
 /* ==== END LAYOUT ==== */
 
 

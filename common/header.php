@@ -27,7 +27,7 @@
   <div id="header">
 	
 	<div id="site-title">    
-		<p class="sitetitle"><?php echo link_to_home_page(); ?></p>
+		<p class="sitetitle"><?php echo link_to_home_page(rhythm_display_logo()); ?></p>
 		<?php echo rhythm_display_tagline(); ?>
 	</div> <!-- end #site-title -->
 	
@@ -40,7 +40,7 @@
   
  <div id="primary-nav">
      <ul class="navigation">
-		<?php echo public_nav_main(array('Browse Items' => uri('items'), 'Browse Collections'=>uri('collections'))); ?>
+		<?php echo rhythm_public_nav_header(); ?>
      	
     </ul>
   </div>  <!-- end #primary-nav -->

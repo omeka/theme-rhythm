@@ -4,15 +4,22 @@
    <div id="primary">
         <h1><?php echo item('Dublin Core', 'Title'); ?></h1>
 
-		<h2>All titles for this item:</h2>
-		
-		<ul class="title-list">
-	        <?php foreach (item('Dublin Core', 'Title', 'all') as $title): ?>
-	           <li class="item-title">
-	           <?php echo $title; ?>
-	           </li>
-	        <?php endforeach ?>
-		</ul>
+        <?php
+        $titles = item('Dublin Core', 'Title', 'all');
+
+        if (count($titles) > 1):
+
+        ?>
+
+        <h2>All Titles</h2>	
+    	<ul class="title-list">
+            <?php foreach ($titles as $title): ?>
+               <li class="item-title">
+               <?php echo $title; ?>
+               </li>
+            <?php endforeach; ?>
+    	</ul>
+        <?php endif; ?>
 		
         <div class="item hentry">
              <div class="item-meta">

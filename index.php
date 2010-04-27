@@ -1,13 +1,17 @@
 <?php head(); ?>
 
     <div id="primary">
-          <div id="featured-item" class="featured-box">
-		    <?php echo rhythm_display_random_featured_item(); ?>
-          </div><!-- end #featured-item -->
+        
+        <p><?php echo strip_formatting(get_theme_option('Homepage Text')); ?></p>
+        
+        <div id="featured-item" class="featured-box">
+        <?php echo rhythm_display_random_featured_item(); ?>
+        </div><!-- end #featured-item -->
 
-          <div id="featured-collection" class="featured-box">
-	    	<?php echo rhythm_display_random_featured_collection(); ?>
-       	  </div> <!-- end #featured-collection -->            
+        <div id="featured-collection" class="featured-box">
+        <?php echo rhythm_display_random_featured_collection(); ?>
+        </div> <!-- end #featured-collection -->  
+       	  
     </div> <!-- end #primary -->
 <!--testing hiding if no features via css-->
 
@@ -17,8 +21,9 @@
     <div id="secondary">
 		<div id="recent-items"><!-- will need to alter css to target #recent-items dl, dt, dd rather than just #secondary -->
 	      <h2>Recently Added</h2>
-				<?php set_items_for_loop(recent_items(4)); ?>
-				
+  		<?php 
+  		$homepageRecentItems = (int)get_theme_option('Homepage Recent Items') ? get_theme_option('Homepage Recent Items') : '4';
+  		set_items_for_loop(recent_items($homepageRecentItems)); ?>				
 				<?php if (has_items_for_loop()): ?>
 					
 					
