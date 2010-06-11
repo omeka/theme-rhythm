@@ -157,7 +157,7 @@ function rhythm_public_nav_header()
                 if (count($pairArray) == 2) {
                     $link = trim($pairArray[0]);
                     $url = trim($pairArray[1]); 
-                    if (!string_begins_with($url, 'http://') && !string_begins_with($url, 'https://')){
+                    if (!strncmp($url, 'http://', strlen($url)) && !strncmp($url, 'https://', strlen($url))){
                         $url = uri($url);
                     }
                 }
@@ -169,10 +169,4 @@ function rhythm_public_nav_header()
         $navArray = array('Browse Items' => uri('items'), 'Browse Collections'=>uri('collections'));
         return public_nav_main($navArray);
     }
-}
-
-// General helpers
-function string_begins_with($string, $search)
-{
-    return (strncmp($string, $search, strlen($search)) == 0);
 }
