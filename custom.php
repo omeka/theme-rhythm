@@ -177,6 +177,19 @@ function rhythm_display_date_added($format = 'F j, Y', $item = null) {
     }
     
     $dateAdded = item('Date Added', null, null, $item);
-    return date($format, strtotime($dateAdded));
+    return date($format, strtotime($dateAdded));   
+}
+
+function rhythm_nav_items($navArray = array())
+{
+    if (!$navArray) {
+        $navArray = array('Browse All' => uri('items'), 'Browse by Tag' => uri('items/tags'));
+    }
     
+    // Check to see if the function public_nav_items, introduced in Omeka 1.3, exists.
+    if (function_exists('public_nav_items')) {
+		return public_nav_items($navArray);
+	} else {
+	    return nav($navArray);
+	}
 }

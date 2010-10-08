@@ -8,7 +8,7 @@
 		</h1>	
 		
 		<ul class="items-nav navigation" id="secondary-nav">
-    		<?php echo public_nav_items(array('Browse All' => uri('items/browse'), 'Browse by Tag' => uri('items/tags'))); ?>
+    		<?php echo rhythm_nav_items(); ?>
     	</ul>	
 		<div id="pagination-top" class="pagination"><?php echo pagination_links(); ?></div>
 		
