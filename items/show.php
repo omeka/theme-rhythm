@@ -35,35 +35,7 @@
 				
 				<?php endwhile; ?>
 
-                   <div class="desc">
-                       <h3>DESCRIPTION:</h3>
-					   <?php if ($text = item('Item Type Metadata', 'Text')): ?>
-	    				<div class="item-description">
-	    				<p><?php echo $text; ?></p>
-	    				</div><!-- end item-description -->
-					<?php elseif ($description = item('Dublin Core', 'Description')): ?>
-	    				<div class="item-description">
-	    				<p><?php echo $description; ?></p>
-	    				</div><!-- end item-description -->
-					<?php endif; ?>
-					
-						<?php if(item_has_tags()): ?>
-					<div class="tags">
-	                     <p> <strong> Tags: </strong><?php echo item_tags_as_string(); ?></p>
-	                </div>
-						<?php endif;?>
-						
-                    <div class="meta-main"> 
-                      <p><span class="runinHead">CONTRIBUTOR:&nbsp;</span><?php echo item('Dublin Core', 'Contributor'); ?></p>
-                      <p><span class="runinHead">DATE ADDED:&nbsp;</span><?php echo item('Date Added'); ?></p>
-                        <?php if ( item_belongs_to_collection() ): ?>
-					  <p><span class="runinHead">COLLECTION:&nbsp;</span><?php echo link_to_collection_for_item(); ?></p>
-  <?php endif; ?>
-                      <p><span class="runinHead">ITEM TYPE:&nbsp;</span><?php echo item('Item Type Name'); ?></p>
-                      <p><span class="runinHead">CITATION:&nbsp;</span><?php echo item_citation(); ?></p>
-                    </div><!-- end meta-main -->
-
-             	   </div><!-- end desc -->
+                <?php echo show_item_metadata(); ?>
 
 
 					
@@ -84,18 +56,27 @@
    <div id="secondary">
         <div id="show-sidebar">
 	         <h2>About the Original Item</h2>
-	
 	         <dl>
-	         <dt id="publisher">Publisher</dt>
-	         <dd><?php echo item('Dublin Core', 'Publisher'); ?></dd>
-	         <dt id="creator">Creator</dt>
-	         <dd><?php echo item('Dublin Core', 'Creator'); ?></dd>
-	         <dt id="source">Source</dt>
-	         <dd><?php echo item('Dublin Core', 'Source'); ?></dd>            
-	         <dt id="subject">Subject</dt>
-	         <dd><?php echo item('Dublin Core', 'Subject'); ?></dd>
-	         <dt id="format">Format</dt>
-	         <dd><?php echo item('Dublin Core', 'Format'); ?></dd>
+	         <dt id="publisher">Date Added</dt>
+	         <dd><?php echo rhythm_display_date_added(); ?></dd>
+	        
+	         <?php if (item_belongs_to_collection()): ?>
+	         <dt id="creator">Collection</dt>
+	         <dd><?php echo link_to_collection_for_item(); ?></dd>
+	         <?php endif; ?>
+	         
+	         <?php if (item_has_type()): ?>
+	         <dt id="source">Item Type</dt>
+	         <dd><?php echo item('Item Type Name'); ?></dd>
+	         <?php endif; ?>
+	         
+	         <?php if(item_has_tags()): ?>
+			<dt>Tags</dt>
+			<dd><?php echo item_tags_as_string(); ?></dd>
+			<?php endif;?>   
+			      
+	         <dt id="subject">Citation</dt>
+	         <dd><?php echo item_citation(); ?></dd>
 	         <dt id="files">Associated Files</dt>
 	         <!-- The following returns all of the files associated with an item. -->
 			 <dd>	
