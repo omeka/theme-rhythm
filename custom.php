@@ -170,3 +170,13 @@ function rhythm_public_nav_header()
         return public_nav_main($navArray);
     }
 }
+
+function rhythm_display_date_added($format = 'F j, Y', $item = null) {
+    if (!$item) {
+        $item = get_current_item();
+    }
+    
+    $dateAdded = item('Date Added', null, null, $item);
+    return date($format, strtotime($dateAdded));
+    
+}
