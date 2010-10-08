@@ -1,15 +1,15 @@
 <?php head(array('title'=>'Browse Items','bodyid'=>'items','bodyclass' => 'browse')); ?>
 
 	<div id="primary">
-		
-	
-		<ul class="items-nav navigation" id="browse">
-			<?php echo nav(array('Browse All' => uri('items'), 'Browse by Tag' => uri('items/tags'))); ?>
-		</ul>
+
 		<h1>Browsing Items (<?php echo total_results(); ?> total)
-		
+        	
 		 <?php if(!empty($_REQUEST['tags'])) echo 'Tagged&nbsp; &lsquo;', html_escape($_REQUEST['tags']), '&rsquo;'; ?>
-		</h1>		
+		</h1>	
+		
+		<ul class="items-nav navigation" id="secondary-nav">
+    		<?php echo public_nav_items(array('Browse All' => uri('items/browse'), 'Browse by Tag' => uri('items/tags'))); ?>
+    	</ul>	
 		<div id="pagination-top" class="pagination"><?php echo pagination_links(); ?></div>
 		
 		<?php while (loop_items()): ?>

@@ -265,31 +265,39 @@ http://www.kollermedia.at/pattern4u/lined/ == */
 
 
 		/* == Browsing secondary nav css sprites == */
-		ul#browse, ul#secondary-nav  {width:230px;height:20px;background: transparent url(../images/spring/btns_browse-all-tag.gif) no-repeat;list-style-type:none; line-height:1;}
-
-			ul#browse li, ul#secondary-nav li {display:inline;background-image:none;padding:0;} /* keeps the ul horizontal by floating li left */
-
-			ul#browse li a, ul#secondary-nav li a{ background: transparent url(../images/spring/btns_browse-all-tag.gif) no-repeat;
-				height:20px; float:left; overflow:hidden;text-indent:-9999px; outline:none;width:105px; padding:0;margin:0;}  
-				/*moves the text links out of view but still accessible to screen readers */ 
-				/* display block turns links into block-level elements*/
-
-				ul#browse li.nav-browse-all a, ul#secondary-nav li.nav-browse-all a {background-position: 0px 0px;width:105px;}
-				
-				ul#browse li.nav-browse-all a:hover, ul#browse li.nav-browse-all a:focus, 
-				ul#secondary-nav li.nav-browse-all a:hover, ul#secondary-nav li.nav-browse-all a:focus 
-				{background-position:0px -21px;}
-
-			    ul#browse li.nav-browse-all.current a, ul#secondary-nav li.nav-browse-all.current a {background-position: 0px -42px;}
-				
-
-				ul#browse li.nav-browse-by-tag a, ul#secondary-nav li.nav-browse-by-tag a {background-position: -105px 0px;width:125px;}
-				
-				ul#browse li.nav-browse-by-tag a:hover, ul#browse li.nav-browse-by-tag a:focus, 
-				ul#secondary-nav li.nav-browse-by-tag a:focus, ul#secondary-nav li.nav-browse-by-tag a:hover 
-				{ background-position: -105px -21px; } 
-
-			    ul#browse li.nav-browse-by-tag.current a, ul#secondary-nav li.nav-browse-by-tag.current a{ background-position: -105px -42px; }	
+	    ul#secondary-nav {
+		    font-size:86%;
+		}
+		ul#secondary-nav li {
+		    display:inline;
+		    margin:0;
+		    padding:0;
+		}
+		
+		ul#secondary-nav a {
+		    border-radius: 8px;
+		    -moz-border-radius: 8px;
+		    -webkit-border-radius: 8px;
+		    color: #fff;
+		    text-transform:uppercase;
+		    padding: 6px 10px;
+		    margin:0;
+		    letter-spacing:1px;
+		}
+		
+		ul#secondary-nav a:link,
+		ul#secondary-nav a:visited {
+		    background-color: #688;
+		}
+		
+		ul#secondary-nav a:hover,
+		ul#secondary-nav a:active  {
+		    background-color: #cd4;
+		}
+		
+		ul#secondary-nav li.current a {
+		    background: #634;
+		}
 												 			
 
 		/* == Pagination Navigation ==*/
