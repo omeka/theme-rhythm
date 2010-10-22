@@ -99,7 +99,7 @@ http://www.kollermedia.at/pattern4u/lined/ == */
 		#footer .navigation li {background:transparent url(../images/spring/bullet-omeka.png) no-repeat scroll 0 50%;list-style-type:none;margin-left:5px;padding:0.5em 0.5em 0.5em 5px;}
 		#footer .navigation a {color:#1a030c;font-size:0.75em;}
 		#footer .navigation .current a {color:#BB7070668;}
-		#footer #footer-text {float:left;width: 590px;padding: 10px;background:#fff;font-size: 9px;line-height:1em;color:#000;}	
+		#footer #footer-text {float:left;width: 590px;padding: 10px;font-size: 9px;line-height:1em;color:#000;}	
 /* ==== END LAYOUT ==== */
 
 
@@ -189,7 +189,6 @@ http://www.kollermedia.at/pattern4u/lined/ == */
 	
 	/* Forms */
 	form {margin-bottom:3em;} .advanced-search form {background-color:#ccdd44;padding:20px 5px 20px 20px;width:540px;} form#simple-search{margin:0; padding:0; width:200px;}
-	textarea {width:378px; height:312px;float:right;}
 	legend {display:none;}
 	fieldset {display:block; clear:both;}
 	label, .label {font-size:1.5em;color:#000;} .label{width:114px;}
