@@ -72,6 +72,8 @@ http://www.kollermedia.at/pattern4u/lined/ == */
  
 	/* == primary == */	
 	#primary {float:left; width:610px; }
+	#primary ul li {font-weight: normal;list-style-type: square;}
+    #primary ul {margin-left: 1.2em;}
 	#primary img.full {
 	    max-width:100%;
 	}
