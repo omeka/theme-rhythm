@@ -143,9 +143,6 @@ http://www.kollermedia.at/pattern4u/lined/ == */
 	
 	.tags a:link{color:#c93;} 
 	.tags a:hover{color:#700;}
-	
-	.exhibit-section-nav a {color:#770000;text-decoration: none;} 
-		.exhibit-section-nav a:hover{text-decoration:underline; color: #c93;}
 
 	h1 a, h2 a, h3 a {text-decoration:none;} 
 	
@@ -216,7 +213,7 @@ http://www.kollermedia.at/pattern4u/lined/ == */
 	#items_search {float:right;}
 
 	/* Misc classes */
-	.item-pagination {overflow:hidden;width:600px; margin-bottom:1.5em;padding-top:2em;}
+	.item-pagination {overflow:hidden;width:560px; margin-bottom:1.5em;padding-top:2em;}
 	.item-pagination li.previous {display:block;float:left; width:20%;}
 	.item-pagination li.next {float:right; display:block;width: 48%; text-align:right}
 	.hide {text-indent: -1000em; width: 0; height: 0; overflow: hidden;}
@@ -240,6 +237,14 @@ http://www.kollermedia.at/pattern4u/lined/ == */
 		ul.title-list li{list-style-type:square;list-style-position:inside;font-style:italic;line-height:1.5em;color:#543;font-family:"Century Gothic", Arial, Helvetica, sans-serif;}
 
 	ul.exhibit-section-nav{margin-top:2em;margin-bottom:.5em;}
+	
+	#secondary .exhibit-section-nav a {color:#770000;text-decoration: none;} 
+		#secondary .exhibit-section-nav a:hover{text-decoration:underline; color: #c93;}
+		#secondary .exhibit-section-nav .current a {color:#c93;}
+		
+	#secondary .exhibit-page-nav a {color:#770000;text-decoration: none;} 
+		#secondary .exhibit-page-nav a:hover{text-decoration:underline; color: #c93;}
+		#secondary .exhibit-page-nav .current a {color:#c93;}
 	
 	/* Microformats */
 	.hTagcloud {margin-top:2em;}

@@ -41,6 +41,8 @@
 					
              </div>  <!-- end item-meta -->    
         </div><!-- end item hentry --> 
+
+		<?php echo plugin_append_to_items_show(); ?>
               
 		<ul class="item-pagination navigation">
 		<li id="previous-item" class="previous">
