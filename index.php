@@ -2,7 +2,7 @@
 
     <div id="primary">
         
-        <p><?php echo strip_formatting(get_theme_option('Homepage Text')); ?></p>
+        <p><?php echo get_theme_option('Homepage Text'); ?></p>
         
         <div id="featured-item" class="featured-box">
         <?php echo rhythm_display_random_featured_item(); ?>
