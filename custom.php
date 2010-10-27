@@ -98,7 +98,7 @@ function rhythm_get_stylesheet($styleSheet = null)
 function rhythm_display_tagline()
 {
     if ($tagline = get_theme_option('site_tagline')) {
-        return '<p class="tagline">'.$tagline.'</p>';  
+        return '<p class="tagline">'.html_escape($tagline).'</p>';
     }
 }
 
