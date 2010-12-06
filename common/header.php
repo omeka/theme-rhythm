@@ -1,6 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html class="<?php echo get_theme_option('Style Sheet'); ?>" xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <title><?php echo settings('site_title'); echo $title ? ' | ' . $title : ''; ?></title>
 
@@ -11,8 +11,7 @@
 <?php echo auto_discovery_link_tag(); ?>
 
 <!-- Stylesheets -->
-<link rel="stylesheet" media="screen" href="<?php echo html_escape(css(rhythm_get_stylesheet())); ?>" />
-<link rel="stylesheet" media="print" href="<?php echo css('print'); ?>" />
+<link rel="stylesheet" media="screen" href="<?php echo css('style'); ?>" />
 
 <!-- JavaScripts -->
 <?php echo js('default'); ?>
@@ -27,7 +26,7 @@
   <div id="header">
 	
 	<div id="site-title">    
-		<p class="sitetitle"><?php echo link_to_home_page(rhythm_display_logo()); ?></p>
+		<p class="sitetitle"><?php echo link_to_home_page(custom_display_logo()); ?></p>
 		<?php echo rhythm_display_tagline(); ?>
 	</div> <!-- end #site-title -->
 	
@@ -40,7 +39,7 @@
   
  <div id="primary-nav">
      <ul class="navigation">
-		<?php echo rhythm_public_nav_header(); ?>
+		<?php echo custom_public_nav_header(); ?>
      	
     </ul>
   </div>  <!-- end #primary-nav -->

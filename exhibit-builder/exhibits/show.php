@@ -2,8 +2,6 @@
 <div id="primary">
 	<h1><?php echo link_to_exhibit(); ?></h1>
 
-
-
 	<h2><?php echo exhibit_page('title'); ?></h2>
 	
 	<?php exhibit_builder_render_exhibit_page(); ?>

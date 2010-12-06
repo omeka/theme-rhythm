@@ -5,11 +5,11 @@
         <p><?php echo get_theme_option('Homepage Text'); ?></p>
         
         <div id="featured-item" class="featured-box">
-        <?php echo rhythm_display_random_featured_item(); ?>
+        <?php echo display_random_featured_item(); ?>
         </div><!-- end #featured-item -->
 
         <div id="featured-collection" class="featured-box">
-        <?php echo rhythm_display_random_featured_collection(); ?>
+        <?php echo display_random_featured_collection(); ?>
         </div> <!-- end #featured-collection -->  
        	  
     </div> <!-- end #primary -->
