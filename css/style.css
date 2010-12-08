@@ -312,7 +312,8 @@ http://www.kollermedia.at/pattern4u/lined/ == */
 	.exhibit .description,
 	.exhibit-item,
 	.exhibit-text,
-	.item-description {
+	.item-description,
+	.element-text {
 		font-family: "Century Gothic", "Apple Gothic", "Lucida Sans Unicode", "Franklin Gothic", sans-serif;
 	}
 	.exhibit-item {
@@ -406,7 +407,8 @@ http://www.kollermedia.at/pattern4u/lined/ == */
 	ol,
 	dl,
 	.item-description,
-	.exhibit .description {
+	.exhibit .description,
+	.element-text {
 		font-size:1.3em;
 		line-height:1.5em;
 		margin-bottom:1.5em;
@@ -533,12 +535,14 @@ http://www.kollermedia.at/pattern4u/lined/ == */
 		display:block;
 		float:left;
 		width:20%;
+		padding-left:15px;
 	}
 	.item-pagination li.next {
 		float:right;
 		display:block;
 		width: 48%;
-		text-align:right
+		text-align:left;
+		padding-left:15px;
 	}
 	.hide {text-indent: -1000em;
 		width: 0;

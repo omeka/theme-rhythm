@@ -35,9 +35,7 @@
 				
 				<?php endwhile; ?>
 
-                <?php echo show_item_metadata(); ?>
-
-
+                <?php echo custom_show_item_metadata(); ?>
 					
              </div>  <!-- end item-meta -->    
         </div><!-- end item hentry --> 
