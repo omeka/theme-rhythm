@@ -5,9 +5,9 @@
 // possible. Ideally, you should namespace these with your theme name.
 
 
-function rhythm_display_random_featured_item_squarethumb($withImage=true)
+function rhythm_display_random_featured_item_squarethumb()
 {
-    $featuredItem = random_featured_item($withImage);
+    $featuredItem = random_featured_item();
 
 	$html = '<h2>Featured <span class="type-featured">Item</span></h2>';
 	if ($featuredItem) {
