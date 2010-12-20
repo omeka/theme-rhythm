@@ -4,10 +4,6 @@
 // designed for portability across themes should be grouped into a plugin whenever
 // possible. Ideally, you should namespace these with your theme name.
 
-/**
- * Add the style.css file to the CSS queue
- **/
-queue_css('style');
 
 function rhythm_display_random_featured_item_squarethumb()
 {

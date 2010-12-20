@@ -14,7 +14,10 @@
 <?php plugin_header(); ?>
 
 <!-- Stylesheets -->
-<?php display_css(); ?>
+<?php 
+queue_css('style');
+display_css(); 
+?>
 
 <!-- JavaScripts -->
 <?php display_js(); ?>
