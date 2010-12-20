@@ -10,14 +10,14 @@
 
 <?php echo auto_discovery_link_tag(); ?>
 
+<!-- Plugin Stuff -->
+<?php plugin_header(); ?>
+
 <!-- Stylesheets -->
-<link rel="stylesheet" media="screen" href="<?php echo css('style'); ?>" />
+<?php display_css(); ?>
 
 <!-- JavaScripts -->
-<?php echo js('default'); ?>
-
-<!-- Plugin Stuff -->
-<?php echo plugin_header(); ?>
+<?php display_js(); ?>
 
 </head>
 <body<?php echo $bodyid ? ' id="'.$bodyid.'"' : ''; ?><?php echo $bodyclass ? ' class="'.$bodyclass.'"' : ''; ?>>
