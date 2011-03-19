@@ -1409,6 +1409,12 @@ http://www.kollermedia.at/pattern4u/lined/ == */
 .spring #featured-item {
     background-color: #668888;
 }
+
+.spring #featured-item a,
+.spring #featured-item a:visited {
+    color:#fff;
+}
+
 .spring #featured-collection {background-color: #ccdd44;}
 .spring #sidebar-featured-item {background: #544;}
 .spring .featured img {
