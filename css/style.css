@@ -1039,189 +1039,189 @@ http://www.kollermedia.at/pattern4u/lined/ == */
 .blue #featured-item a:hover {color: #9ce;}
 
 /*Fall Styles*/
-.fall #wrap {background: #fffff7 url(../images/fall/bg-top.png) top left no-repeat;}
-.fall #header {
+#wrap {background: #fffff7 url(../images/fall/bg-top.png) top left no-repeat;}
+#header {
     border-bottom: 5px solid #cc9933;
     border-top: 5px solid #cc9933;
 	background: #3d3d3d url(../images/fall/bg-header.png) repeat top;
 }
-.fall #header #about p {color:#fffff7;}
-.fall #header #about .more a {color:#b3ad9c;}
-.fall #header #about .more a:hover {color: #cc9933;}
-.fall #searchwrap {background-color:#cc9933;}
-.fall #searchwrap a{color:#fffff7;}
-.fall #searchwrap a:visited{color:#221111;} 
-.fall #searchwrap a:hover {color:#fffff7;}
-.fall #header #search {border: 5px solid #cc9933; background: #fffff7;}
-.fall #submit_search {color:#fffff7;}
-.fall #advanced-search-link a {color:#345;}
-.fall #primary-nav{
+#header #about p {color:#fffff7;}
+#header #about .more a {color:#b3ad9c;}
+#header #about .more a:hover {color: #cc9933;}
+#searchwrap {background-color:#cc9933;}
+#searchwrap a{color:#fffff7;}
+#searchwrap a:visited{color:#221111;} 
+#searchwrap a:hover {color:#fffff7;}
+#header #search {border: 5px solid #cc9933; background: #fffff7;}
+#submit_search {color:#fffff7;}
+#advanced-search-link a {color:#345;}
+#primary-nav{
     position:relative;
     background-color:#fffff7;
 }
-.fall #primary-nav ul li{background:url(../images/fall/bullet-omeka.png) no-repeat 0 50%;}
-.fall #primary-nav li,
-.fall .navigation li{
+#primary-nav ul li{background:url(../images/fall/bullet-omeka.png) no-repeat 0 50%;}
+#primary-nav li,
+.navigation li{
     color: #221111;
 }
-.fall #primary-nav a,
-.fall .navigation a {
+#primary-nav a,
+.navigation a {
     color: #221111;
 }
-.fall #primary-nav a:hover,
-.fall .navigation a:hover{
+#primary-nav a:hover,
+.navigation a:hover{
     color:#cc9933;
 }
-.fall #primary-nav .current a, 
-.fall .exhibits #primary-nav li.nav-exhibits a, 
-.fall .collections #primary-nav li.nav-collections a, 
-.fall .about #primary-nav li.nav-about a, 
-.fall .items #primary-nav li.nav-items a {
+#primary-nav .current a, 
+.exhibits #primary-nav li.nav-exhibits a, 
+.collections #primary-nav li.nav-collections a, 
+.about #primary-nav li.nav-about a, 
+.items #primary-nav li.nav-items a {
     color:#cc9933;
     background-color:#fffff7;
 }
-.fall #secondary {border-left: 1px solid #cc9933;}
-.fall #footer {background:#fffff7 url(../images/fall/bg-footer.png) no-repeat left top;}
-.fall #footer .navigation {background:#fffff7;}
-.fall #footer .navigation li {background:transparent url(../images/fall/bullet-omeka.png) no-repeat scroll 0 50%;}
-.fall #footer .navigation a {color:#221111;}
-.fall #footer .navigation .current a {color:#b3ad9c;}
-.fall #footer #footer-text {color:#000;}
-.fall body {
+#secondary {border-left: 1px solid #cc9933;}
+#footer {background:#fffff7 url(../images/fall/bg-footer.png) no-repeat left top;}
+#footer .navigation {background:#fffff7;}
+#footer .navigation li {background:transparent url(../images/fall/bullet-omeka.png) no-repeat scroll 0 50%;}
+#footer .navigation a {color:#221111;}
+#footer .navigation .current a {color:#b3ad9c;}
+#footer #footer-text {color:#000;}
+body {
     color:#332211;
     background-color: #b3ad9c;
 }
-.fall #primary h1 {color:#543;}
-.fall h2 {color:#cc9933;}
-.fall h3,
-.fall h4 {
+#primary h1 {color:#543;}
+h2 {color:#cc9933;}
+h3,
+h4 {
     color:#b3ad9c;
 }
-.fall p,
-.fall .exhibit .description,
-.fall .exhibit-item,
-.fall .exhibit-text {
+p,
+.exhibit .description,
+.exhibit-item,
+.exhibit-text {
     color:#221111;
  }
-.fall p.sitetitle {color:#fff;}
-.fall p.sitetitle a {color:#fff;}
-.fall p.tagline {color:#fff;}
-.fall .exhibit .tags {color:#221111}
-.fall .exhibit .tags a{color:#cc9933;}
-.fall a:link {color:#770000;}
-.fall a:visited {color:#3d3d3d;}
-.fall a:hover {color:#cc9933;}
-.fall a:active { color:#cc9933; }
-.fall .archive a:link {color:#770000;}
-.fall .archive a:visited {color:#3d3d3d;}
-.fall .archive a:hover {color: #cc9933;}
-.fall .archive a:active {color: #cc9933;}
-.fall .tags a:link{color:#c93;} 
-.fall .tags a:hover{color:#700;}
-.fall #header h1 a {color:#fff;} 
-.fall #secondary h2 {color: #770000;} 
-.fall #secondary #featured-item h2{color:#221111;}
-.fall #secondary dl,
-.fall #secondary dt a {
+p.sitetitle {color:#fff;}
+p.sitetitle a {color:#fff;}
+p.tagline {color:#fff;}
+.exhibit .tags {color:#221111}
+.exhibit .tags a{color:#cc9933;}
+a:link {color:#770000;}
+a:visited {color:#3d3d3d;}
+a:hover {color:#cc9933;}
+a:active { color:#cc9933; }
+.archive a:link {color:#770000;}
+.archive a:visited {color:#3d3d3d;}
+.archive a:hover {color: #cc9933;}
+.archive a:active {color: #cc9933;}
+.tags a:link{color:#c93;} 
+.tags a:hover{color:#700;}
+#header h1 a {color:#fff;} 
+#secondary h2 {color: #770000;} 
+#secondary #featured-item h2{color:#221111;}
+#secondary dl,
+#secondary dt a {
     color:#221111;
 }
-.fall .fall #secondary dt {border-top: 1px dashed #b3ad9c;}
-.fall #secondary #show-sidebar {
+#secondary dt {border-top: 1px dashed #b3ad9c;}
+#secondary #show-sidebar {
     background-color:#eed;
     border-top: 1px dashed #b3ad9c;
     border-bottom: 1px dashed #b3ad9c;
 }
-.fall .show #secondary dl {color:#544;}
-.fall .show #secondary a {color: #000;}
-.fall .show #secondary a:hover {color:#fff;}
-.fall .advanced-search form {background-color:#cc9933;}
-.fall label,
-.fall .label {color:#000;}
-.fall .field {border-bottom:1px dashed #fff;}
-.fall .field .textinput,
-.fall .field select {
+.show #secondary dl {color:#544;}
+.show #secondary a {color: #000;}
+.show #secondary a:hover {color:#fff;}
+.advanced-search form {background-color:#cc9933;}
+label,
+.label {color:#000;}
+.field {border-bottom:1px dashed #fff;}
+.field .textinput,
+.field select {
     background-color:#fff;
 }
-.fall textarea#rights {color:#444;}
-.fall ul.navigation li {background:url(../images/fall/bullet-omeka.png) no-repeat 0 50%;}
-.fall ul.title-list li{color:#543;}
-.fall #secondary .exhibit-section-nav a {color:#770000;}
-.fall #secondary .exhibit-section-nav a:hover{color: #c93;}
-.fall #secondary .exhibit-section-nav .current a {color:#c93;}
-.fall #secondary .exhibit-page-nav a {color:#770000;} 
-.fall #secondary .exhibit-page-nav a:hover{color: #c93;}
-.fall #secondary .exhibit-page-nav .current a {color:#c93;}
-.fall .popular a{color: #cc9933;text-decoration:none;} .fall .popular a:visited {color: #777;}
-.fall .v-popular a{color: #cc9933;text-decoration:none;} .fall .v-popular a:visited {color: #777;}
-.fall .vv-popular a{color: #cc9933;text-decoration:none;} .fall .vv-popular a:visited {color: #777;}
-.fall .vvv-popular a{color: #cc9933;text-decoration:none;} .fall .vvv-popular a:visited {color: #777;}
-.fall .vvvv-popular a{color: #cc9933;text-decoration:none;} .fall .vvvv-popular a:visited {color: #777;}
-.fall .vvvvv-popular a{color: #cc9933;text-decoration:none;} .fall .vvvvv-popular a:visited {color: #777;}
-.fall .vvvvvv-popular a{color: #cc9933;text-decoration:none;} .fall .vvvvvv-popular a:visited {color: #777;}
-.fall .vvvvvvv-popular a{color: #cc9933;text-decoration:none;} .fall .vvvvvvv-popular a:visited {color: #777;}
-.fall .vvvvvvvv-popular a{color: #cc9933;text-decoration:none;} .fall .vvvvvvvv-popular a:visited {color: #777;}
-.fall ul#secondary-nav a {color: #fff;}
-.fall ul#secondary-nav a:link,
-.fall ul#secondary-nav a:visited {background-color: #900;}
-.fall ul#secondary-nav a:hover,
-.fall ul#secondary-nav a:active {
+textarea#rights {color:#444;}
+ul.navigation li {background:url(../images/fall/bullet-omeka.png) no-repeat 0 50%;}
+ul.title-list li{color:#543;}
+#secondary .exhibit-section-nav a {color:#770000;}
+#secondary .exhibit-section-nav a:hover{color: #c93;}
+#secondary .exhibit-section-nav .current a {color:#c93;}
+#secondary .exhibit-page-nav a {color:#770000;} 
+#secondary .exhibit-page-nav a:hover{color: #c93;}
+#secondary .exhibit-page-nav .current a {color:#c93;}
+.popular a{color: #cc9933;text-decoration:none;} .popular a:visited {color: #777;}
+.v-popular a{color: #cc9933;text-decoration:none;} .v-popular a:visited {color: #777;}
+.vv-popular a{color: #cc9933;text-decoration:none;} .vv-popular a:visited {color: #777;}
+.vvv-popular a{color: #cc9933;text-decoration:none;} .vvv-popular a:visited {color: #777;}
+.vvvv-popular a{color: #cc9933;text-decoration:none;} .vvvv-popular a:visited {color: #777;}
+.vvvvv-popular a{color: #cc9933;text-decoration:none;} .vvvvv-popular a:visited {color: #777;}
+.vvvvvv-popular a{color: #cc9933;text-decoration:none;} .vvvvvv-popular a:visited {color: #777;}
+.vvvvvvv-popular a{color: #cc9933;text-decoration:none;} .vvvvvvv-popular a:visited {color: #777;}
+.vvvvvvvv-popular a{color: #cc9933;text-decoration:none;} .vvvvvvvv-popular a:visited {color: #777;}
+ul#secondary-nav a {color: #fff;}
+ul#secondary-nav a:link,
+ul#secondary-nav a:visited {background-color: #900;}
+ul#secondary-nav a:hover,
+ul#secondary-nav a:active {
     background-color: #c93;
 }
-.fall ul#secondary-nav li.current a {background: #211;}
-.fall .pagination_current{color:#cc9933;}
-.fall .pagination li a {color: #221111;} 
-.fall .pagination li a:hover {color: #cc9933;}
-.fall .pagination ul li.pagination_next a,
-.fall .pagination ul li.pagination_last a,
-.fall .pagination ul li.pagination_previous a,
-.fall .pagination ul li.pagination_first a {
+ul#secondary-nav li.current a {background: #211;}
+.pagination_current{color:#cc9933;}
+.pagination li a {color: #221111;} 
+.pagination li a:hover {color: #cc9933;}
+.pagination ul li.pagination_next a,
+.pagination ul li.pagination_last a,
+.pagination ul li.pagination_previous a,
+.pagination ul li.pagination_first a {
     color:#cc9933;
 }
-.fall .pagination ul li.pagination_next a:hover, 
-.fall .pagination ul li.pagination_last a:hover, 
-.fall .pagination ul li.pagination_previous a:hover, 
-.fall .pagination ul li.pagination_first a:hover {
+.pagination ul li.pagination_next a:hover, 
+.pagination ul li.pagination_last a:hover, 
+.pagination ul li.pagination_previous a:hover, 
+.pagination ul li.pagination_first a:hover {
     color:#770000;
 }
-.fall .item-img img {border: 1px solid #b3ad9c;}
-.fall .item-type {color: #554433;}
-.fall .item-meta {border-top: 1px dashed #fffff7;}
-.fall p.view-items-link {color:#554;}
-.fall p.view-items-link a {color:#554;}
-.fall .meta-main {border-top: 1px dashed #fffff7;}
-.fall .meta-main .runinHead {color:#543;}
-.fall #secondary .featured-box p .title, 
-.fall #secondary .featured-box p .title a, 
-.fall #primary .featured-box p .title, 
-.fall #primary .featured-box p .title a:visited, 
-.fall #secondary .featured-box p .title a:visited {
+.item-img img {border: 1px solid #b3ad9c;}
+.item-type {color: #554433;}
+.item-meta {border-top: 1px dashed #fffff7;}
+p.view-items-link {color:#554;}
+p.view-items-link a {color:#554;}
+.meta-main {border-top: 1px dashed #fffff7;}
+.meta-main .runinHead {color:#543;}
+#secondary .featured-box p .title, 
+#secondary .featured-box p .title a, 
+#primary .featured-box p .title, 
+#primary .featured-box p .title a:visited, 
+#secondary .featured-box p .title a:visited {
     color:#fff;
 }
-.fall #secondary .featured-box p .title a, 
-.fall #primary .featured-box p .title a{
+#secondary .featured-box p .title a, 
+#primary .featured-box p .title a{
     color:#fff;
 }
-.fall .featured-box h2 {
+.featured-box h2 {
     color: #221111;
     border-bottom:1px dashed white;
 }
-.fall .featured-box.title,
-.fall .featured-box.title a {
+.featured-box.title,
+.featured-box.title a {
     color:#fff;
 }
-.fall .featured-box.title a:visited{color:#fff;}
-.fall .featured-box img {border: 10px solid #fff;}
-.fall #featured-exhibit,
-.fall #featured-item {
+.featured-box.title a:visited{color:#fff;}
+.featured-box img {border: 10px solid #fff;}
+#featured-exhibit,
+#featured-item {
     background-color: #b3ad9c;
 }
-.fall #featured-collection {background-color: #cc9933;}
-.fall #sidebar-featured-item {background: #544;}
-.fall .featured img {border: 1px solid #fffff7;background:#fff;}
-.fall #sidebar-featured-item .description p {color: #fff;}
-.fall #sidebar-featured-item h2 {color: #fff;}
-.fall #sidebar-featured-item a {color:#fff;}
-.fall #featured-item a:hover {color: #cc9933;}
+#featured-collection {background-color: #cc9933;}
+#sidebar-featured-item {background: #544;}
+.featured img {border: 1px solid #fffff7;background:#fff;}
+#sidebar-featured-item .description p {color: #fff;}
+#sidebar-featured-item h2 {color: #fff;}
+#sidebar-featured-item a {color:#fff;}
+#featured-item a:hover {color: #cc9933;}
 
 /*Spring Styles*/
 .spring #wrap {background: #fff url(../images/spring/bg-top.png) top left no-repeat;}
