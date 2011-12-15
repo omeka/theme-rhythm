@@ -1,8 +1,10 @@
-<?php head(array('title'=>'Browse Items','bodyid'=>'items','bodyclass' => 'browse')); ?>
+<?php
+$title = __('Browse Items');
+head(array('title'=>$title,'bodyid'=>'items','bodyclass' => 'browse')); ?>
 
 	<div id="primary">
 
-		<h1>Browsing Items (<?php echo total_results(); ?> total)
+        <h1><?php echo $title; ?> <?php echo __('(%s total)', total_results()); ?>
         	
 		 <?php if(!empty($_REQUEST['tags'])) echo 'Tagged&nbsp; &lsquo;', html_escape($_REQUEST['tags']), '&rsquo;'; ?>
 		</h1>	
@@ -39,7 +41,7 @@
 				<?php endif; ?>
 
 				<?php if (item_has_tags()): ?>
-    				<div class="tags"><p><strong>Tags: </strong>
+                    <div class="tags"><p><strong><?php echo __('Tags'); ?>:</strong>
     				<?php echo item_tags_as_string(); ?></p>
     				</div>
 				<?php endif; ?>
