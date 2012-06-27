@@ -786,6 +786,9 @@ http://www.kollermedia.at/pattern4u/lined/ == */
 					text-decoration:none;
 					}
 		/*NOTE: The featured item img in secondary is the square thumbnail, which is constrained to*/
+		#primary .featured-box .item-description { 
+			margin-top: 20px; /* aligns the featured item description better with the image */
+		}
 		#secondary .featured-box img {
 			margin-left: 20px;
 			/* adding this to try fixing the overflow problem with large (i.e. 400x400) thumbnails on the Featured Item section */
