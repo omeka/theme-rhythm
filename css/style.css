@@ -1028,6 +1028,8 @@ http://www.kollermedia.at/pattern4u/lined/ == */
     background-color: #bb8;
 }
 .blue #featured-collection {background-color: #9ce;}
+.blue #featured-collection .featured-box a:link {color:#554422;}
+.blue #featured-collection .featured-box a:visited {color:#554422;}
 .blue #sidebar-featured-item {background: #544;}
 .blue .featured img {
 	border: 1px solid #ddb;
