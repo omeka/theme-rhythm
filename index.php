@@ -19,11 +19,11 @@
 	        <h2><?php echo __('Recently Added Items'); ?></h2>
       		<?php 
       	    $homepageRecentItems = (int)get_theme_option('Homepage Recent Items') ? get_theme_option('Homepage Recent Items') : '4';
-      	    set_items_for_loop(recent_items($homepageRecentItems));
+      	    set_loop_records('items', recent_items($homepageRecentItems));
             ?>				
-            <?php if (has_items_for_loop()): ?>
+            <?php if (has_loop_records('items')): ?>
 
-            <?php while (loop_items()): ?>
+            <?php foreach (loop('items') as $item): ?>
             <dl>
                 <dt><?php echo link_to_item(); /*this echoes the DC title and the link */ ?></dt>
                 <dd>
@@ -37,7 +37,7 @@
                     <?php endif; ?>
                 </dd>
             </dl>
-            <?php endwhile; ?>	
+            <?php endforeach; ?>	
 
             <?php else: ?>
             <p><?php echo __('No recent items available.'); ?></p>

@@ -11,7 +11,7 @@ function rhythm_display_random_featured_item_squarethumb()
 
 	$html = '<h2>Featured <span class="type-featured">Item</span></h2>';
 	if ($featuredItem) {
-        set_current_item($featuredItem); // Needed for transparent access of item metadata.
+        set_current_record('item', $featuredItem); // Needed for transparent access of item metadata.
 
 	   if (item_has_thumbnail()) {
 	       $html .= link_to_item(item_square_thumbnail(), array('class'=>'image'));
@@ -36,7 +36,7 @@ function rhythm_display_tagline()
 
 function rhythm_display_date_added($format = 'F j, Y', $item = null) {
     if (!$item) {
-        $item = get_current_item();
+        $item = get_current_record('item');
     }
     
     $dateAdded = item('Date Added', null, null, $item);

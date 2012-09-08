@@ -14,7 +14,7 @@ head(array('title'=>$title,'bodyid'=>'items','bodyclass' => 'browse')); ?>
     	</ul>	
 		<div id="pagination-top" class="pagination"><?php echo pagination_links(); ?></div>
 		
-		<?php while (loop_items()): ?>
+		<?php foreach (loop('items')): ?>
 			<div class="item hentry">
 				<div class="item-meta">
 					<?php if ($text = item('Dublin Core', 'Type')): ?>
@@ -50,7 +50,7 @@ head(array('title'=>$title,'bodyid'=>'items','bodyclass' => 'browse')); ?>
 
 				</div><!-- end class="item-meta" -->
 			</div><!-- end class="item hentry" -->			
-		<?php endwhile; ?>
+		<?php endforeach; ?>
 	
 		<div id="pagination-bottom" class="pagination"><?php echo pagination_links(); ?></div>
 		
