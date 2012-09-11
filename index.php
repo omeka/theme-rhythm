@@ -44,7 +44,7 @@
 
             <?php endif; /* end if(has_items_for_loop) */ ?>
 
-        <p class="view-items-link"><a href="<?php echo uri('items'); ?>"><?php echo __('View All Items'); ?></a></p>
+        <p class="view-items-link"><a href="<?php echo url('items'); ?>"><?php echo __('View All Items'); ?></a></p>
 
         </div><!-- end #recent-items -->
       
