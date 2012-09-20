@@ -9,7 +9,7 @@
         </div><!-- end #featured-item -->
 
         <div id="featured-collection" class="featured-box">
-        <?php echo display_random_featured_collection(); ?>
+        <?php echo random_featured_collection(); ?>
         </div> <!-- end #featured-collection -->  
        	  
     </div> <!-- end #primary -->
