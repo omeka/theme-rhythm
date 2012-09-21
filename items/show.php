@@ -11,7 +11,7 @@
                    <div class="item-img">	<?php 
 				        $file = get_current_record('file');
 				        if ($file->hasThumbnail()):
-			            echo display_file($file,array('imageSize'=>'fullsize'));
+			            echo file_markup($file,array('imageSize'=>'fullsize'));
 			            endif;
 			        ?>					
 				   </div>
@@ -69,7 +69,7 @@
 	     		    <?php 
 	     		        $file = get_current_record('file');
 	     		        if (!$file->hasThumbnail()):
-	     		          echo display_file($file);
+	     		          echo file_markup($file);
 	     		          $hasShownFile = true;
 	     		        endif;
 	     		    ?>
