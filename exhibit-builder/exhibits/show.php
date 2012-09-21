@@ -1,4 +1,4 @@
-<?php head(array('title' => html_escape(exhibit('title') . ' : '. exhibit_page('title')), 'bodyid'=>'exhibit','bodyclass'=>'show')); ?>
+<?php echo head(array('title' => html_escape(exhibit('title') . ' : '. exhibit_page('title')), 'bodyid'=>'exhibit','bodyclass'=>'show')); ?>
 <div id="primary">
 	<h1><?php echo link_to_exhibit(); ?></h1>
 
@@ -18,4 +18,4 @@
 	<?php echo exhibit_builder_page_nav();?>
 </div>
 </div>
-<?php foot(); ?>
+<?php echo foot(); ?>

@@ -1,4 +1,4 @@
-<?php head(array('title' => html_escape('Summary of ' . exhibit('title')),'bodyid'=>'exhibit','bodyclass'=>'summary')); ?>
+<?php echo head(array('title' => html_escape('Summary of ' . exhibit('title')),'bodyid'=>'exhibit','bodyclass'=>'summary')); ?>
 <div id="secondary">
 	<?php echo exhibit_builder_section_nav(); ?>
 	
@@ -25,4 +25,4 @@
 	<?php endwhile; ?>
 </div>
 </div>
-<?php foot(); ?>
+<?php echo foot(); ?>

@@ -1,4 +1,4 @@
-<?php head(array('title' => item('Dublin Core', 'Title'),'bodyid'=>'items','bodyclass' => 'show')); ?>
+<?php echo head(array('title' => item('Dublin Core', 'Title'),'bodyid'=>'items','bodyclass' => 'show')); ?>
 
 
    <div id="primary">
@@ -84,4 +84,4 @@
 	         </dl>
         </div> <!-- end show-sidebar -->
    </div> <!-- end #secondary -->
-<?php foot(); ?>
+<?php echo foot(); ?>

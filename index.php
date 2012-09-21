@@ -1,4 +1,4 @@
-<?php head(); ?>
+<?php echo head(); ?>
 
     <div id="primary">
         
@@ -50,4 +50,4 @@
       
     </div><!-- end #secondary -->
 
-<?php foot(); ?>
+<?php echo foot(); ?>

@@ -1,6 +1,6 @@
 <?php
 $title = __('Browse Items');
-head(array('title'=>$title,'bodyid'=>'items','bodyclass' => 'browse')); ?>
+echo head(array('title'=>$title,'bodyid'=>'items','bodyclass' => 'browse')); ?>
 
 	<div id="primary">
 
@@ -64,4 +64,4 @@ head(array('title'=>$title,'bodyid'=>'items','bodyclass' => 'browse')); ?>
 
     </div><!-- end secondary -->
 	
-<?php foot(); ?>
+<?php echo foot(); ?>
