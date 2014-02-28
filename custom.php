@@ -7,21 +7,22 @@
 
 function rhythm_display_random_featured_item_squarethumb()
 {
-    $featuredItem = random_featured_item();
+    $featuredItems = get_random_featured_items(1);
+    $featuredItem = $featuredItems[0];
 
-	$html = '<h2>Featured <span class="type-featured">Item</span></h2>';
-	if ($featuredItem) {
+    $html = '<h2>Featured <span class="type-featured">Item</span></h2>';
+    if ($featuredItem) {
         set_current_record('item', $featuredItem); // Needed for transparent access of item metadata.
 
-	   if (item_has_thumbnail()) {
-	       $html .= link_to_item(item_square_thumbnail(), array('class'=>'image'));
-	   }
-	   // Grab the 1st Dublin Core description field (first 150 characters)
-	   $itemDescription = item('Dublin Core', 'Description', array('snippet'=>150));
-	   $html .= '<p><span class="title">' . link_to_item() . '</span>&nbsp;&nbsp;&nbsp;' . $itemDescription . '</p>';
-	} else {
-	   $html .= '<p>No featured items are available.</p>';
-	}
+       if (metadata('item', 'has thumbnail')) {
+           $html .= link_to_item(item_square_thumbnail(), array('class'=>'image'));
+       }
+       // Grab the 1st Dublin Core description field (first 150 characters)
+       $itemDescription = metadata('item', array('Dublin Core', 'Description'), array('snippet'=>150));
+       $html .= '<p><span class="title">' . link_to_item() . '</span>&nbsp;&nbsp;&nbsp;' . $itemDescription . '</p>';
+    } else {
+       $html .= '<p>No featured items are available.</p>';
+    }
 
     return $html;
 }
@@ -39,6 +40,6 @@ function rhythm_display_date_added($format = 'F j, Y', $item = null) {
         $item = get_current_record('item');
     }
     
-    $dateAdded = item('Date Added', null, null, $item);
+    $dateAdded = metadata($item, 'added');
     return date($format, strtotime($dateAdded));   
 }

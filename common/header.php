@@ -11,7 +11,7 @@
     <?php echo auto_discovery_link_tags(); ?>
 
     <!-- Plugin Stuff -->
-    <?php plugin_header(); ?>
+    <?php fire_plugin_hook('public_head'); ?>
 
     <!-- Stylesheets -->
     <?php
@@ -23,28 +23,27 @@
     <?php echo head_js(); ?>
 </head>
 <?php echo body_tag(array('id' => @$bodyid, 'class' => @$bodyclass)); ?>
-    <?php plugin_body(); ?>
+    <?php fire_plugin_hook('public_body'); ?>
 
 <div id="wrap">
     <div id="header">
-	    <?php plugin_page_header(); ?>
+	    <?php fire_plugin_hook('public_header'); ?>
         <div id="site-title">    
-            <p class="sitetitle"><?php echo link_to_home_page(custom_display_logo()); ?></p>
+            <p class="sitetitle"><?php echo link_to_home_page(theme_logo()); ?></p>
             <?php echo rhythm_display_tagline(); ?>
         </div> <!-- end #site-title -->
 	
         <div id="searchwrap">
-            <?php echo simple_search_form(); ?>
-            <?php echo link_to_advanced_search(); ?>
+            <?php echo search_form(); ?>
     	</div> <!-- end #searchwrap -->
 	
     </div>  <!-- end #header -->
   
     <div id="primary-nav">
         <ul class="navigation">
-            <?php echo custom_public_nav_header(); ?>
+            <?php echo theme_logo(); ?>
         </ul>
     </div>  <!-- end #primary-nav -->
     
     <div id="content">
-        <?php plugin_page_content(); ?>
+        <?php fire_plugin_hook('public_content_top'); ?>
