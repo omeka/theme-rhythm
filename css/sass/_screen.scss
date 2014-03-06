@@ -1,0 +1,1205 @@
+@import "base";
+@import "compass/css3";
+@import "susy";
+
+/* @group ----- Generic HTML Elements ----- */
+
+* {
+    @include box-sizing(border-box);
+}
+
+body {
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+h1,
+h2 {
+    font-family: "PT Serif", serif;
+}
+
+h1 {
+    font-size: 2 * $base-font-size;
+    @include trailer(1, 2 * $base-font-size);
+    line-height: 2 * $base-line-height;
+    letter-spacing: -1px;
+    font-weight:normal;
+}
+
+h2 {
+    font-size: 1.5 * $base-font-size;
+    line-height: 2 * $base-line-height;
+    @include trailer(1, 2.75 * $base-font-size);
+}
+
+h3 {
+    font-size: 1.25 * $base-font-size;
+    line-height: $base-line-height;
+    font-weight:bold;
+}
+
+h4 {
+    font-weight:bold;
+}
+
+h1 a,
+h2 a,
+h3 a {
+    text-decoration:none;
+}
+
+p {
+    margin: 0 0 rhythm();
+}
+
+/* @end */
+
+/* @group ----- Header ----- */
+
+header {
+    position: relative;
+}
+
+#title-tagline,
+#searchwrap {
+    padding: 0 gutter(12);
+}
+
+#site-title a {
+    text-decoration: none;
+    font-size: 1.5 * $base-font-size;
+    line-height: 2 * $base-line-height;
+    margin: rhythm(.5, 1.5 * $base-font-size) 0;
+    display: inline-block;
+}
+        
+header #about {
+    position:relative;
+    top:-30px;
+    left:400px;
+    width: 320px;
+}
+
+.browse header #about,
+.show header #about,
+.item header #about {
+    display:none;
+} /*hides the About copy on inside pages*/
+
+header #about p {
+    font-family: "PT Serif", serif;
+    font-size: 18px;
+    line-height: 1.2em;
+    font-weight:normal;
+}
+header #about .more a {
+    font-size: .8em;
+    font-weight:normal;
+    text-decoration:none;
+    letter-spacing:1px;
+}
+
+#searchwrap {
+    padding: rhythm(.5) gutter(12);
+
+    a{
+        text-decoration:none;
+        padding:10px 5px 20px 0;
+        line-height:20px;
+    }
+}
+
+#submit_search {
+    border: none; 
+    background-color: transparent;
+    padding:5px 5px 0px 0px;
+}
+#advanced-search-link a {
+    text-decoration:none;
+    border:none;
+    clear:both;
+    text-align:right;
+    font-size:1em;
+    padding:4px 0;
+    font-weight:bold;
+}
+
+/* @end */
+
+/* @group ----- Footer ----- */
+
+footer {
+    clear:both;
+    overflow:hidden;
+    position:relative;
+    @include padding-leader(2);
+}
+
+#footer-text {
+    padding: 0 gutter(12);
+}    
+
+/* @end */
+
+/* @group ----- Navigation ----- */
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+#primary-nav {
+    padding: 0 gutter(12);
+    
+    li {
+        display: block;
+        padding: rhythm(.5) 0 rhythm(.5) rhythm(1);
+        border-color: $green;
+        @include trailing-border(1px, .5, $base-font-size, solid);
+        
+        &:last-of-type {
+            border-color: transparent;
+        }
+    }
+}
+
+nav a,
+.navigation a {
+    text-decoration: none;
+}
+
+.navigation li {
+    font-weight: normal;
+    list-style-type:none;
+    padding-left: 20px;
+}
+
+.secondary-nav li {
+    display:inline;
+    margin:0;
+    padding:0;
+}
+
+.secondary-nav a {
+    @include border-radius(3px);
+    text-transform:uppercase;
+    padding: 6px 10px;
+    margin:0;
+    letter-spacing:1px;
+}
+
+#bottom-nav {
+    display: none;
+}
+/* @end */
+
+/* @group ----- Home ----- */
+
+#featured-item,
+#featured-collection,
+#featured-exhibit {
+    padding: rhythm(.5) gutter(12);
+    
+    h2 {
+        font-size: $base-font-size;
+        line-height: $base-line-height;
+        text-transform: uppercase;
+        font-family: "Source Sans Pro", sans-serif;
+        @include trailer(0);
+    }
+    
+    h3 {
+        font-family: "PT Serif", serif;
+    }
+    
+    p:last-of-type {
+        @include trailer(0);
+    }
+}
+
+#recent-items {
+    margin: rhythm(.5) gutter(12);
+}
+
+#recent-items .item-img {
+    width: 50px;
+    height:50px;
+}
+
+#recent-items .item-img img {
+    max-width:100%;
+}
+
+.item-description .show {
+    display: none;
+}
+
+#home .view-items-link {
+    background-color: #ccc;
+    @include border-radius(2px);
+    padding: rhythm(.25) 10px;
+    clear: both;
+    font-weight: 700;
+}
+
+/* @end */
+
+/* @group ----- Items/Browse ----- */
+
+.browse #content {
+    padding: 0 gutter(12);
+}
+
+/* @end */
+
+#wrap {
+    @include span-columns(12);
+    @include padding-leader(2);
+} 
+    /* == header == */
+
+    /* remember that padding is the space inside the div box and margin is the space outside the div box */
+ 
+    /* == primary == */    
+    #primary ul li {
+        font-weight: normal;
+        list-style-type: square;
+    }
+    #primary ul {
+        margin-left: 1.2em;
+    }
+    #primary img.full {
+        max-width:100%;
+    }
+    .advanced-search #primary{
+        width:920px;
+        border:none;
+        padding-top:30px;
+    }
+
+    /* == secondary == */    
+    #secondary {
+        float: right;
+        width: 310px;
+        margin-right: 0px;
+        overflow: hidden;
+        padding-left:10px;}        
+
+/* ==== END LAYOUT ==== */
+
+
+/* ===== TYPOGRAPHY, GENERIC STYLES and MISC CLASSES ======== */
+
+    
+    #secondary h2 {
+        text-align:center;
+    }
+        
+
+    #secondary dl a{text-decoration:none;}
+    #secondary dl {overflow:hidden;}
+    #secondary dd{
+        margin-left: 0px;
+        font-weight:normal;
+        margin-bottom: 1.5em;
+        margin-top:0;
+        padding-top:5px;
+        font-size:.8em;
+        line-height:1.5em;
+    }
+    #secondary dt {
+        margin-left: 0;
+        padding-top: 5px;
+        margin-top:10px;}
+        #secondary dt,
+        #secondary dt a {
+            font-weight:bold;
+        }
+    #secondary dd .item-img{
+        float:left;
+        width:50px;
+        height:50px;
+        margin: 5px 25px 20px 0;
+    }
+            /*= this is the containing div to force images to 100% width using jquery.imagefit.js; = 
+              = this function is applied in custom.js in your theme put margins on the container, not the image =
+            */
+
+    /* more specific styles for show page sidebar def list*/
+    #secondary #show-sidebar {
+        padding: 20px 5px 20px 10px;
+    }
+        .show #secondary dd{
+            margin-left: 10px;
+            font-weight:normal;
+            margin-bottom: .5em;
+        }
+        .show #secondary dt {
+            margin-left: 0;
+            font-weight:bold;
+            border:none;
+            padding-top: 0px;
+        }
+        .show #secondary a {
+            text-decoration:none;
+            font-weight:normal;
+        }
+            .show .desc {clear:left;}
+
+    #items_search {float:right;}
+
+    /* Misc classes */
+    .item-pagination {
+        overflow:hidden;
+        width:560px;
+        margin-bottom:1.5em;
+        padding-top:2em;
+    }
+    .item-pagination li.previous {
+        display:block;
+        float:left;
+        width:20%;
+        padding-left:15px;
+    }
+    .item-pagination li.next {
+        float:right;
+        display:block;
+        width: 48%;
+        text-align:left;
+        padding-left:15px;
+    }
+    .hide {text-indent: -1000em;
+        width: 0;
+        height: 0;
+        overflow: hidden;
+    }
+    div.error {
+        font-size:1.5em;
+        line-height:1.33333em;
+        margin:1.33333em 0;
+    }
+
+    .fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+        float: right;
+        margin-left: 8px;
+    }
+    .fltlft { /* this class can be used to float an element left in your page */
+        float: left;
+        margin:0;
+        padding:5px 10px 0 0;
+    }
+    .clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+        clear:both;
+        height:0;
+        font-size: 1px;
+        line-height: 0px;
+    }
+    
+    ul.item-pagination li {
+        background-image:none;
+        font-weight:normal;
+        list-style-type:none;
+        padding-left:0;
+    }
+    ul.item-pagination a {margin-left:0;}
+    ul.title-list {padding-left:0px;} 
+        ul.title-list li{
+            list-style-type:square;
+            list-style-position:inside;
+            font-style:italic;
+            line-height:1.5em;
+        }
+
+    ul.exhibit-section-nav{
+        margin-top:2em;
+        margin-bottom:.5em;
+    }
+    
+    #exhibit-page-navigation {
+        clear:both;
+        margin-bottom:1em;
+        float:right;
+    }
+    #exhibit-page-navigation .next-page {
+        margin-left:2em;
+    }
+
+    #secondary .exhibit-section-nav a {text-decoration: none;} 
+        #secondary .exhibit-section-nav a:hover{text-decoration:underline;}
+
+    #secondary .exhibit-page-nav a {text-decoration: none;} 
+        #secondary .exhibit-page-nav a:hover {text-decoration:underline;}
+
+    /* Microformats */
+    .hTagcloud {margin-top:2em;}
+    .hTagcloud ul {
+        list-style:none;
+        margin-left:0;
+        padding-left:0;
+        line-height:2.2em;
+    }
+        .hTagcloud li {
+            display:inline;
+            margin-right:8px;
+            background-image:none;
+            margin-left:0;
+            padding-left:0
+        }
+
+        .popular {font-size:100%;}
+        .v-popular {font-size:140%;}
+        .vv-popular {font-size:180%;}
+        .vvv-popular {font-size:220%;}
+        .vvvv-popular {font-size:260%;}
+        .vvvvv-popular {font-size:300%;}
+        .vvvvvv-popular {font-size:340%;}
+        .vvvvvvv-popular {font-size:380%;}
+        .vvvvvvvv-popular {font-size:420%;}
+        
+        /* == Pagination Navigation ==*/
+        .pagination ul {
+            text-align:right;
+            list-style:none;
+            padding:0 0.5em;
+            margin-bottom: 30px;
+        }
+        .pagination ul li,
+        .pagination li,
+        .pagination li a {
+            font-size: 11px;
+        }
+            .pagination ul li {background:none;}
+            .pagination li {
+                display:inline-block;
+                margin-bottom:0;
+                padding:.5em;
+            }
+            .pagination li a {
+                text-decoration:none;
+            }            
+        /* items meta data and browsing pages styles */
+        .item {
+            float:left;
+            clear:both;
+            margin-bottom:30px;
+        }
+        .item-img img {
+            float:left;
+            padding: 5px;
+            margin: 0 10px 20px 0;
+        }
+        .show img {
+            border:none;
+            margin-bottom: 20px;
+            margin-left:0;
+            padding-left:0
+        }
+        .item .desc h4,
+        .item .desc p {
+            font-weight:normal;
+            padding-right: 10px;
+            font-size: 1.3em;
+            line-height: 150%;
+        } 
+        .item-type {
+            font-weight:bold;
+            font-size: 100%;
+            font-family:Arial, Helvetica, sans-serif;
+        } 
+            p.item-type {
+                margin-bottom:.5em;
+                text-transform:uppercase;
+                font-size:.7em;
+            }
+        .item-meta h3 {font-size:1.33em;}
+        
+        .tags strong {font-size:.9em;}
+        
+        p.view-items-link a {text-decoration:none;}
+
+        p.tags {margin-bottom:2em;}
+        
+        /* .meta-main is the div that positions the item meta data in the primary content area and puts a dashed border above it */
+        .meta-main {
+            padding: 10px 0 0 100px;
+            margin-bottom: 20px;
+        }
+            .meta-main p {
+                text-align:right;
+                padding-right: 10px;
+            }
+            .meta-main .runinHead {
+                font-weight:bold;
+                font-size:.8em;
+            }
+        
+    /*featured box styles  --may need to modify properties for these boxes on inside pages 
+    and add .home in front of these     selectors--*/
+    .featured-box {
+        float:left;
+        width:560px;
+        position:relative;
+        margin-bottom: 20px;
+        padding:20px;
+    }
+        #secondary .featured-box{width:280px;padding:20px 10px;} 
+        #secondary .featured-box p{clear:both;} 
+                #secondary .featured-box p{clear:both;} 
+                #secondary .featured-box p .title, 
+                #secondary .featured-box p .title a, 
+                #primary .featured-box p .title, 
+                #primary .featured-box p .title a:visited, 
+                #secondary .featured-box p .title a:visited {
+                    text-transform:uppercase;
+                    font-weight:bold;} 
+                
+                #secondary .featured-box p .title a, 
+                #primary .featured-box p .title a{
+                    text-decoration:none;
+                    }
+        #secondary .featured-box img {margin-left:65px;}/*NOTE: The featured item img in secondary is the square thumbnail, which is constrained to*/
+    .featured-box h2 {
+        font-family: "PT Serif", serif;
+        font-size:2em;
+        margin-bottom: .75em;
+        font-weight:bold;
+        text-align:center;
+        padding:10px 0
+    }
+    .featured-box p,
+    .description p {
+        margin-right: 10px;
+    }
+    .type-featured {text-transform:uppercase;
+        margin-top: 10px;
+        } /*this styles the part of h2 that specifies the type of thing featured--Collection or Exhibit */
+    .featured-box.title, 
+    .featured-box.title a {
+        text-transform:uppercase;
+        font-weight: bold;
+        text-decoration:none;}
+    .featured-box img {
+        float:left;
+        margin:1em 10px 10px 0;
+    }
+        
+    /*styles for sidebar featured item */
+    #sidebar-featured-item {padding-top:10px;} 
+        .featured img {
+            float:left;
+            margin:0 10px;
+            padding:5px;
+        }
+        #sidebar-featured-item .description p {
+            font-weight:normal;
+            margin: 0 5px 5px 10px;
+            padding-bottom: 20px;
+        }
+        #sidebar-featured-item h2 {
+            text-align:center;
+            letter-spacing: 0;
+            margin-bottom: 10px;
+            font-weight:normal;
+        } 
+            #sidebar-featured-item a {text-decoration:none;}
+
+/*Blue styles*/
+.blue #wrap {background: #fff url(../images/blue/bg-top.jpg) top left no-repeat;}
+.blue header {
+    border-bottom: 5px solid #9ce;
+    border-top: 5px solid #9ce;
+    background: #3c3231 url(../images/blue/bg_header.gif) repeat top;
+}
+.blue header #about p {color:#fff;}
+.blue header #about .more a {color:#bb8;}
+.blue header #about .more a:hover {color: #9ce;}
+.blue #searchwrap {background-color:#9ce;}
+    .blue #searchwrap a {color:#fff;}
+    .blue #searchwrap a:visited{color:#323232;}
+    .blue #searchwrap a:hover {color:#fff;}
+    .blue header #search {
+        border: 5px solid #9ce;
+        background: #fff;
+    }
+    .blue #submit_search {color:#fff;}
+    .blue #advanced-search-link a {color:#345;}
+.blue #primary-nav{background-color:#fff;}
+    .blue #primary-nav ul li{background:url(../images/blue/bullet-omeka.png) no-repeat 0 50%;}
+    .blue .navigation li {color: #3c3c31;}
+    .blue .navigation a {color: #3c3c31;}
+    .blue #primary-nav a:hover,
+    .blue .navigation a:hover{
+        color:#9ce;
+    }    
+    .blue #primary-nav .current a, 
+    .blue .exhibits #primary-nav li.nav-exhibits a, 
+    .blue .collections #primary-nav li.nav-collections a, 
+    .blue .about #primary-nav li.nav-about a, 
+    .blue .items #primary-nav li.nav-items a {
+        color:#bb8;
+        background-color:#fff;
+    } /* makes the primary nav link on the current page tan; gets class [exhibits, .collections, .about] from assigned body class in theme php */
+    /* == secondary == */    
+    .blue #secondary {border-left: 1px solid #9ce;}
+    /* == footer == */        
+    .blue footer {background:#fff url(../images/blue/bg-footer.jpg) no-repeat left top;}
+        .blue footer .navigation {background:#fff;}
+        .blue footer .navigation li {background:transparent url(../images/blue/bullet-omeka.png) no-repeat scroll 0 50%;}
+        .blue footer .navigation a {color:#323231;}
+        .blue footer .navigation .current a {color:#BBBB88;}
+        .blue footer footer-text {color:#000;}    
+.blue body {
+    color:#3c3231;
+    background-color: #3c3231;
+}
+.blue #primary h1 {color:#543;}
+.blue h2 {color:#9ce;}
+.blue h3,
+.blue h4 {
+    color:#bb8;
+}
+.blue p,
+.blue .exhibit .description,
+.blue .exhibit-item,
+.blue .exhibit-text,
+.blue .item-description {
+    color:#3c3c31;
+}
+    .blue p.sitetitle {color:#fff;}
+        .blue p.sitetitle a {color:#fff;}
+    .blue p.tagline {color:#fff;}
+.blue .exhibit .tags {color:#3c3c31}
+.blue .exhibit .tags a{color:#9ce;}
+.blue a:link {color:#9ce;}
+.blue a:visited {color:#9ce;}
+.blue a:hover {color:#3c3c31;}
+.blue a:active { color:#ddb; }
+
+.blue .archive a:link {color:#9ce;}
+.blue .archive a:visited {color:#9ce;}
+.blue .archive a:hover {color: #9ce;}
+.blue .archive a:active {color: #9ce;}
+
+.blue header h1 a {color:#fff;}
+
+.blue #secondary h2 {color: #554422;}
+
+.blue #secondary dl,
+.blue #secondary dt a {
+    color:#323232;
+}
+.blue #secondary dt {border-top: 1px dashed #bb8;}
+.blue #secondary #show-sidebar {
+    background-color:#eed;
+    border-top: 1px dashed #bb8;
+    border-bottom: 1px dashed #bb8;
+}
+    .blue .show #secondary dl {color:#544;}
+
+    .blue .show #secondary a {color: #000;}
+
+    .blue .show #secondary a:hover {color:#fff;}
+.blue .advanced-search form {background-color:#9ce;}
+    .blue label,
+    .blue .label {
+        color:#000;
+    }
+    .blue .field {border-bottom:1px dashed #fff;}
+    .blue .field .textinput,
+    .blue .field select {
+        background-color:#fff;
+    }
+
+    .blue textarea#rights {color:#444;}
+.blue ul.navigation li {background:url(../images/blue/bullet-omeka.png) no-repeat 0 50%;}
+.blue ul.title-list li{color:#543;}
+.blue #secondary .exhibit-section-nav a {color:#554;}
+    .blue #secondary .exhibit-section-nav a:hover{color: #bb8;}
+    .blue #secondary .exhibit-section-nav .current a {color:#bb8;}
+
+.blue #secondary .exhibit-page-nav a {color:#554;}
+    .blue #secondary .exhibit-page-nav a:hover {color: #bb8;}
+    .blue #secondary .exhibit-page-nav .current a {color:#bb8;}
+
+.blue .popular a, .blue .popular a:visited {color: #3c3c31;} 
+.blue .v-popular a, .blue .v-popular a:visited {color: #3c3c31;}
+.blue .vv-popular a, .blue .vv-popular a:visited {color: #3c3c31;}
+.blue .vvv-popular a, .blue .vvv-popular a:visited {color: #7ac;}
+.blue .vvvv-popular a, .blue .vvvv-popular a:visited {color: #7ac;}
+.blue .vvvvv-popular a, .blue .vvvvv-popular a:visited {color: #9ce;}
+.blue .vvvvvv-popular a, .blue .vvvvvv-popular a:visited {color: #9ce;}
+.blue .vvvvvvv-popular a, .blue .vvvvvvv-popular a:visited {color: #9ce;}
+.blue .vvvvvvvv-popular a, .blue .vvvvvvvv-popular a:visited {color: #9ce;}
+
+.blue .secondary-nav a {color: #fff;}
+    .blue .secondary-nav a:link,
+    .blue .secondary-nav a:visited {
+        background-color: #bb8;
+    }
+    .blue .secondary-nav a:hover,
+    .blue .secondary-nav a:active {
+        background-color: #9ce;
+    }
+    .blue .secondary-nav li.current a {background: #3c3c31;}
+.blue .pagination_current{color:#cca;}
+
+.blue .pagination li a {color: #323232;}
+    .blue .pagination li a:hover {color: #9ce;}
+    .blue .pagination ul li.pagination_next a,
+    .blue .pagination ul li.pagination_last a,
+    .blue .pagination ul li.pagination_previous a,
+    .blue .pagination ul li.pagination_first a {
+        color:#9ce;
+    }
+    .blue .pagination ul li.pagination_next a:hover, 
+    .blue .pagination ul li.pagination_last a:hover, 
+    .blue .pagination ul li.pagination_previous a:hover, 
+    .blue .pagination ul li.pagination_first a:hover {
+        color:#3c3c31;
+    }
+.blue .item-img img {border: 1px solid #ddb;}
+.blue .item-type {color: #554433;}
+.blue .item-meta {border-top: 1px dashed #ddb;}
+.blue p.view-items-link {color:#554;}
+.blue p.view-items-link a {color:#554;}
+.blue .meta-main {border-top: 1px dashed #ddb;}
+.blue .meta-main .runinHead {color:#543;}
+.blue #secondary .featured-box p .title, 
+.blue #secondary .featured-box p .title a, 
+.blue #primary .featured-box p .title, 
+.blue #primary .featured-box p .title a:visited, 
+.blue #secondary .featured-box p .title a:visited {
+    color:#fff;
+}
+.blue #secondary .featured-box p .title a, 
+.blue #primary .featured-box p .title a{
+    color:#fff;
+}
+.blue .featured-box h2 {
+    color: #3c3c31;
+    ;border-bottom:1px dashed white;
+}
+.blue .featured-box.title a {color:#fff;}
+.blue .featured-box.title a:visited{color:#fff;} /* this styles the title of featured item in the start of the featured-box p */
+.blue .featured-box img {border: 10px solid #fff;}
+.blue #featured-exhibit,
+.blue #featured-item {
+    background-color: #bb8;
+}
+.blue #featured-collection {background-color: #9ce;}
+.blue #featured-collection.featured-box a:link {color:#554422;}
+.blue #featured-collection.featured-box a:visited {color:#554422;}
+.blue #sidebar-featured-item {background: #544;}
+.blue .featured img {
+    border: 1px solid #ddb;
+    background:#fff;
+}
+.blue #sidebar-featured-item .description p {color: #fff;}
+.blue #sidebar-featured-item h2 {color: #fff;}
+.blue #sidebar-featured-item a {color:#fff;}
+.blue #featured-item a:hover {color: #9ce;}
+
+/*Fall Styles*/
+#wrap {background: #fffff7 url(../images/fall/bg-top.png) top left no-repeat;}
+header {
+    border-bottom: 5px solid #cc9933;
+    border-top: 5px solid #cc9933;
+    background: #3d3d3d url(../images/fall/bg-header.png) repeat top;
+}
+header #about p {color:#fffff7;}
+header #about .more a {color:#b3ad9c;}
+header #about .more a:hover {color: #cc9933;}
+#searchwrap {background-color:#cc9933;}
+#searchwrap a{color:#fffff7;}
+#searchwrap a:visited{color:#221111;} 
+#searchwrap a:hover {color:#fffff7;}
+header #search {border: 5px solid #cc9933; background: #fffff7;}
+#submit_search {color:#fffff7;}
+#advanced-search-link a {color:#345;}
+#primary-nav{
+    position:relative;
+    background-color:#fffff7;
+}
+#primary-nav ul li{background:url(../images/fall/bullet-omeka.png) no-repeat 0 50%;}
+#primary-nav li,
+.navigation li{
+    color: #221111;
+}
+#primary-nav a,
+.navigation a {
+    color: #221111;
+}
+#primary-nav a:hover,
+.navigation a:hover{
+    color:#cc9933;
+}
+#primary-nav .current a, 
+.exhibits #primary-nav li.nav-exhibits a, 
+.collections #primary-nav li.nav-collections a, 
+.about #primary-nav li.nav-about a, 
+.items #primary-nav li.nav-items a {
+    color:#cc9933;
+    background-color:#fffff7;
+}
+#secondary {border-left: 1px solid #cc9933;}
+footer {background:#fffff7 url(../images/fall/bg-footer.png) no-repeat left top;}
+footer .navigation {background:#fffff7;}
+footer .navigation li {background:transparent url(../images/fall/bullet-omeka.png) no-repeat scroll 0 50%;}
+footer .navigation a {color:#221111;}
+footer .navigation .current a {color:#b3ad9c;}
+footer footer-text {color:#000;}
+body {
+    color:#332211;
+    background-color: #b3ad9c;
+}
+#primary h1 {color:#543;}
+h2 {color:#cc9933;}
+h3,
+h4 {
+    color:#b3ad9c;
+}
+p,
+.exhibit .description,
+.exhibit-item,
+.exhibit-text {
+    color:#221111;
+ }
+p.sitetitle {color:#fff;}
+p.sitetitle a {color:#fff;}
+p.tagline {color:#fff;}
+.exhibit .tags {color:#221111}
+.exhibit .tags a{color:#cc9933;}
+a:link {color:#770000;}
+a:visited {color:#3d3d3d;}
+a:hover {color:#cc9933;}
+a:active { color:#cc9933; }
+.archive a:link {color:#770000;}
+.archive a:visited {color:#3d3d3d;}
+.archive a:hover {color: #cc9933;}
+.archive a:active {color: #cc9933;}
+.tags a:link{color:#c93;} 
+.tags a:hover{color:#700;}
+header h1 a {color:#fff;} 
+#secondary h2 {color: #770000;} 
+#secondary #featured-item h2{color:#221111;}
+#secondary dl,
+#secondary dt a {
+    color:#221111;
+}
+#secondary dt {border-top: 1px dashed #b3ad9c;}
+#secondary #show-sidebar {
+    background-color:#eed;
+    border-top: 1px dashed #b3ad9c;
+    border-bottom: 1px dashed #b3ad9c;
+}
+.show #secondary dl {color:#544;}
+.show #secondary a {color: #000;}
+.show #secondary a:hover {color:#fff;}
+.advanced-search form {background-color:#cc9933;}
+label,
+.label {color:#000;}
+.field {border-bottom:1px dashed #fff;}
+.field .textinput,
+.field select {
+    background-color:#fff;
+}
+textarea#rights {color:#444;}
+ul.navigation li {background:url(../images/fall/bullet-omeka.png) no-repeat 0 50%;}
+ul.title-list li{color:#543;}
+#secondary .exhibit-section-nav a {color:#770000;}
+#secondary .exhibit-section-nav a:hover{color: #c93;}
+#secondary .exhibit-section-nav .current a {color:#c93;}
+#secondary .exhibit-page-nav a {color:#770000;} 
+#secondary .exhibit-page-nav a:hover{color: #c93;}
+#secondary .exhibit-page-nav .current a {color:#c93;}
+.popular a{color: #cc9933;text-decoration:none;} .popular a:visited {color: #777;}
+.v-popular a{color: #cc9933;text-decoration:none;} .v-popular a:visited {color: #777;}
+.vv-popular a{color: #cc9933;text-decoration:none;} .vv-popular a:visited {color: #777;}
+.vvv-popular a{color: #cc9933;text-decoration:none;} .vvv-popular a:visited {color: #777;}
+.vvvv-popular a{color: #cc9933;text-decoration:none;} .vvvv-popular a:visited {color: #777;}
+.vvvvv-popular a{color: #cc9933;text-decoration:none;} .vvvvv-popular a:visited {color: #777;}
+.vvvvvv-popular a{color: #cc9933;text-decoration:none;} .vvvvvv-popular a:visited {color: #777;}
+.vvvvvvv-popular a{color: #cc9933;text-decoration:none;} .vvvvvvv-popular a:visited {color: #777;}
+.vvvvvvvv-popular a{color: #cc9933;text-decoration:none;} .vvvvvvvv-popular a:visited {color: #777;}
+.secondary-nav a {color: #fff;}
+.secondary-nav a:link,
+.secondary-nav a:visited {background-color: #900;}
+.secondary-nav a:hover,
+.secondary-nav a:active {
+    background-color: #c93;
+}
+.secondary-nav li.current a {background: #211;}
+.pagination_current{color:#cc9933;}
+.pagination li a {color: #221111;} 
+.pagination li a:hover {color: #cc9933;}
+.pagination ul li.pagination_next a,
+.pagination ul li.pagination_last a,
+.pagination ul li.pagination_previous a,
+.pagination ul li.pagination_first a {
+    color:#cc9933;
+}
+.pagination ul li.pagination_next a:hover, 
+.pagination ul li.pagination_last a:hover, 
+.pagination ul li.pagination_previous a:hover, 
+.pagination ul li.pagination_first a:hover {
+    color:#770000;
+}
+.item-img img {border: 1px solid #b3ad9c;}
+.item-type {color: #554433;}
+.item-meta {border-top: 1px dashed #fffff7;}
+p.view-items-link {color:#554;}
+p.view-items-link a {color:#554;}
+.meta-main {border-top: 1px dashed #fffff7;}
+.meta-main .runinHead {color:#543;}
+#secondary .featured-box p .title, 
+#secondary .featured-box p .title a, 
+#primary .featured-box p .title, 
+#primary .featured-box p .title a:visited, 
+#secondary .featured-box p .title a:visited {
+    color:#fff;
+}
+#secondary .featured-box p .title a, 
+#primary .featured-box p .title a{
+    color:#fff;
+}
+.featured-box h2 {
+    color: #221111;
+    border-bottom:1px dashed white;
+}
+.featured-box.title,
+.featured-box.title a {
+    color:#fff;
+}
+.featured-box.title a:visited{color:#fff;}
+.featured-box img {border: 10px solid #fff;}
+#featured-exhibit,
+#featured-item {
+    background-color: #b3ad9c;
+}
+#featured-collection {background-color: #cc9933;}
+#sidebar-featured-item {background: #544;}
+.featured img {border: 1px solid #fffff7;background:#fff;}
+#sidebar-featured-item .description p {color: #fff;}
+#sidebar-featured-item h2 {color: #fff;}
+#sidebar-featured-item a {color:#fff;}
+#featured-item a:hover {color: #cc9933;}
+
+/*Spring Styles*/
+
+.spring {
+    
+    #featured-item h2,
+    #featured-exhibit h2 {
+        color: lighten(#668888, 25%);
+    }
+}
+
+.spring #wrap {background: #fff url(../images/spring/bg-top.png) top left no-repeat;}
+.spring header {
+    border-bottom: 5px solid #ccdd44;
+    border-top: 5px solid #ccdd44;
+    background: #bb3344 url(../images/spring/bg-header.png) repeat top;
+}
+.spring header #about p {color:#fff;}
+.spring header #about .more a {color:#707066;}
+.spring header #about .more a:hover {color: #ccdd44;}
+.spring #searchwrap {background-color:#ccdd44;}
+.spring #searchwrap a{color:#fff;}
+.spring #searchwrap a:visited{color:#1a030c;} 
+.spring #searchwrap a:hover {color:#fff;}
+.spring header #search {
+    border: 5px solid #ccdd44;
+    border-bottom: 0px;
+    background: #fff;
+}
+.spring #submit_search {color:#fff;}
+.spring #advanced-search-link a {color:#345;}
+.spring #primary-nav{background-color:#fff;}
+.spring #primary-nav ul li{background:url(../images/spring/bullet-omeka.png) no-repeat 0 50%;}
+.spring #primary-nav li,
+.spring .navigation li{
+    color: #1a030c;
+}
+.spring #primary-nav a,
+.spring .navigation a {
+    color: #1a030c;
+}
+.spring #primary-nav a:hover,
+.spring .navigation a:hover{
+    color:#ccdd44;
+}
+.spring #primary-nav .current a, 
+.spring .exhibits #primary-nav li.nav-exhibits a, 
+.spring .collections #primary-nav li.nav-collections a, 
+.spring .about #primary-nav li.nav-about a, 
+.spring .items #primary-nav li.nav-items a {
+    color:#707066;
+    background-color:#fff;
+}
+.spring #secondary {border-left: 1px solid #ccdd44;}
+.spring footer {background:#fff url(../images/spring/bg-footer.png) no-repeat left top;}
+.spring footer .navigation {background:#fff;}
+.spring footer .navigation li {background:transparent url(../images/spring/bullet-omeka.png) no-repeat scroll 0 50%;}
+.spring footer .navigation a {color:#1a030c;}
+.spring footer .navigation .current a {color:#7070668;}
+.spring footer footer-text {color:#000;}
+.spring body {
+    color:#663344;
+    background-color: #2b1520;
+}
+.spring #primary h1{color:#663344;}
+.spring h2 {color:#668888;}
+.spring h3,
+.spring h4 {
+    color:#707066;
+}
+.spring p,
+.spring .exhibit .description,
+.spring .exhibit-item,
+.spring .exhibit-text {
+    color:#1a030c;
+}
+.spring p.sitetitle {color:#fff;}
+.spring p.sitetitle a {color:#fff;}
+.spring p.tagline {color:#fff;}
+.spring .exhibit .tags {color:#1a030c}
+.spring .exhibit .tags a{color:#ccdd44;}
+.spring a:link {color:#668888;}
+.spring a:visited {color:#ccdd44;}
+.spring a:hover {color:#ccdd44;}
+.spring a:active { color:#663344; }
+.spring .archive a:link {color:#668888;}
+.spring .archive a:visited {color:#ccdd44;}
+.spring .archive a:hover {color: #ccdd44;}
+.spring .archive a:active {color: #668888;}
+.spring .tags a:link{color:#668888;} 
+.spring .tags a:hover{color:#ccdd44;}
+.spring header h1 a {color:#fff;} 
+.spring #secondary h2 {color: #668888;}
+.spring #secondary #featured-item h2{color:#1a030c;}
+.spring #secondary dl,
+.spring #secondary dt a {
+    color:#1a030c;
+}
+.spring #secondary dt {border-top: 1px dashed #707066;}
+.spring #secondary #show-sidebar {
+    background-color:#eed;
+    border-top: 1px dashed #707066;
+    border-bottom: 1px dashed #707066;
+}
+.spring .show #secondary dl {color:#544;}
+.spring .show #secondary a {color: #000;}
+.spring .show #secondary a:hover {color:#fff;}
+.spring .advanced-search form {background-color:#ccdd44;}
+.spring label,
+.spring .label {
+    color:#000;
+}
+.spring .field {border-bottom:1px dashed #fff;}
+.spring .field .textinput,
+.spring .field select {
+    background-color:#fff;
+}
+.spring textarea#rights {color:#444;}
+.spring ul.navigation li {background:url(../images/spring/bullet-omeka.png) no-repeat 0 50%;}
+.spring ul.title-list li{color:#543;}
+.spring #secondary .exhibit-section-nav a,
+.spring #secondary .exhibit-page-nav a {
+    color:#688;
+}
+.spring #secondary .exhibit-section-nav a:hover,
+.spring #secondary .exhibit-section-nav .current a,
+.spring #secondary .exhibit-page-nav a:hover,
+.spring #secondary .exhibit-page-nav .current a {
+    color:#634;
+}
+.spring .popular a{color: #668888;text-decoration:none;} .spring .popular a:visited {color: #777;}
+.spring .v-popular a{color: #668888;text-decoration:none;} .spring .v-popular a:visited {color: #777;}
+.spring .vv-popular a{color: #668888;text-decoration:none;} .spring .vv-popular a:visited {color: #777;}
+.spring .vvv-popular a{color: #668888;text-decoration:none;} .spring .vvv-popular a:visited {color: #777;}
+.spring .vvvv-popular a{color: #668888;text-decoration:none;} .spring .vvvv-popular a:visited {color: #777;}
+.spring .vvvvv-popular a{color: #668888;text-decoration:none;} .spring .vvvvv-popular a:visited {color: #777;}
+.spring .vvvvvv-popular a{color: #668888;text-decoration:none;} .spring .vvvvvv-popular a:visited {color: #777;}
+.spring .vvvvvvv-popular a{color: #668888;text-decoration:none;} .spring .vvvvvvv-popular a:visited {color: #777;}
+.spring .vvvvvvvv-popular a{color: #668888;text-decoration:none;} .spring .vvvvvvvv-popular a:visited {color: #777;}
+.spring .secondary-nav a {color: #fff;}
+.spring .secondary-nav a:link,
+.spring .secondary-nav a:visited {
+    background-color: #688;
+}
+.spring .secondary-nav a:hover,
+.spring .secondary-nav a:active  {
+    background-color: #cd4;
+}
+.spring .secondary-nav li.current a {background: #634;}
+.spring .pagination li a {color: #1a030c;} 
+.spring .pagination_current,
+.spring .pagination li a:hover,
+.spring .pagination ul li.pagination_next a,
+.spring .pagination ul li.pagination_last a,
+.spring .pagination ul li.pagination_previous a,
+.spring .pagination ul li.pagination_first a {
+    color:#ccdd44;
+}
+.spring .pagination ul li.pagination_next a:hover, 
+.spring .pagination ul li.pagination_last a:hover, 
+.spring .pagination ul li.pagination_previous a:hover, 
+.spring .pagination ul li.pagination_first a:hover {
+    color:#668888;
+}
+.spring .item-img img {border: 1px solid #ccdd44;}
+.spring .item-type {color: #554433;}
+.spring .item-meta {border-top: 1px dashed #bfbfbf;}
+.spring p.view-items-link,
+.spring p.view-items-link a {
+    color:#554;
+}
+.spring .meta-main {border-top: 1px dashed #bfbfbf;}
+.spring .meta-main .runinHead {color:#543;}
+.spring #secondary .featured-box p .title, 
+.spring #secondary .featured-box p .title a, 
+.spring #primary .featured-box p .title, 
+.spring #primary .featured-box p .title a:visited, 
+.spring #secondary .featured-box p .title a:visited,
+.spring #secondary .featured-box p .title a, 
+.spring #primary .featured-box p .title a {
+    color:#fff;
+}
+.spring .featured-box h2 {
+    color: #1a030c;
+    border-bottom:1px dashed white;
+}
+.spring .featured-box.title,
+.spring .featured-box.title a,
+.spring .featured-box.title a:visited {
+    color:#fff;
+}
+.spring .featured-box img {border: 10px solid #fff;}
+.spring #featured-exhibit,
+.spring #featured-item {
+    background-color: #668888;
+}
+
+.spring #featured-item a,
+.spring #featured-item a:visited {
+    color:#fff;
+}
+
+.spring #featured-collection {background-color: #ccdd44;}
+.spring #sidebar-featured-item {background: #544;}
+.spring .featured img {
+    border: 1px solid #bfbfbf;
+    background:#fff;
+}
+.spring #sidebar-featured-item .description p,
+.spring #sidebar-featured-item h2,
+.spring #sidebar-featured-item a  {
+    color: #fff;
+}
+.spring #featured-item a:hover {color: #ccdd44;}
