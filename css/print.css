@@ -10,7 +10,7 @@ body {
   float: none;
 }
 
-/* line 10, sass/print.scss */
+/* line 9, sass/print.scss */
 h1,
 #site-title {
   font-size: 16pt;
@@ -46,7 +46,7 @@ a:link:after {
   font-size: 80%;
 }
 
-/* line 40, sass/print.scss */
+/* line 33, sass/print.scss */
 #search-container,
 #primary-nav,
 #header-image,

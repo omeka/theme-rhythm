@@ -1,0 +1,153 @@
+@import "base";
+@import "susyone";
+
+/* @group ----- Reusable classes ----- */
+
+#wrap {
+    @include container(12);
+}
+
+#outputs {
+    text-align: right;
+}
+
+/* @end */
+
+/* @group ----- Header ----- */
+
+header {
+    position: relative;
+    min-height: rhythm(4);
+}
+
+#title-tagline {
+    width: 70%;
+}
+
+#search-container {
+    position: absolute;
+    bottom: 0;
+    right: gutter(12);
+    width: 30%;
+    padding: rhythm(.25) gutter(12);
+}
+
+/* @end */
+
+/* @group ----- Footer ----- */
+
+footer {
+    @include bleed(0);
+    padding: rhythm(2) gutter(12) 0 gutter(12);
+}
+
+/* @end */
+
+/* @group ----- Navigation ----- */
+
+#primary-nav {
+
+    li {
+        float: left;
+        width: auto;
+        @include trailing-border(0, 0, $base-font-size, solid);
+        margin-right: 20px;
+        padding-top: 0;
+        
+        &:last-of-type {
+            @include trailing-border(0, 0, $base-font-size, solid);
+        }
+    }
+    
+    ul {
+        @include padding-leader(.75);
+        @include trailing-border(5px, .75, $base-font-size, solid);
+    }
+    
+    .sub-nav {
+        padding: 0 gutter(12) rhythm(.5) gutter(12);
+        top: rhythm(1.5);
+    }
+}
+
+#primary-nav + * {
+    clear: both;
+}
+
+.pagination {
+    clear: none;
+}
+
+/* @end */
+
+/* @group ----- Home ----- */
+
+#featured-item,
+#featured-collection,
+#featured-exhibit {
+    @include span-columns(8 alpha);
+    @include bleed(0);
+    margin-right: gutter(12);
+    padding: rhythm(.5) gutter(12);
+    @include trailer();
+}
+
+#recent-items {
+    width: columns(4);
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+/* @end */
+
+/* @group ----- Items/Browse ----- */
+
+.items.browse #featured-item {
+    width: 100%;
+    @include bleed(0);
+    padding: rhythm(1) gutter(12);
+    
+    h3 {
+        font-size: 1.5 * $base-font-size;
+        @include trailer(1, 1.5 * $base-font-size);
+    }
+}
+
+.items.browse .pagination {
+    float: left;
+    @include trailer();
+}
+
+.items.browse .secondary-nav {
+    margin-bottom: 0;
+}
+
+#sort-links {
+    clear: none;
+    text-align: right;
+    padding: rhythm(1) 0;
+}
+
+/* @end */
+
+/* @group ----- Exhibits ----- */
+
+.exhibits #content > * {
+    @include span-columns(8 alpha);
+}
+
+.exhibits #content > #exhibit-pages {
+    @include span-columns(4 omega);
+    @include leader(.5);
+}
+
+.summary #exhibit-pages {
+    @include leader(.5);
+}
+
+#exhibit-child-pages + .exhibit-block {
+    clear: none;
+}
+
+/* @end */

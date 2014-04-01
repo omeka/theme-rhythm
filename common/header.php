@@ -22,6 +22,7 @@
     ?>
 
     <!-- JavaScripts -->
+    <?php queue_js_file(array('globals', 'jquery-accessibleMegaMenu')); ?>
     <?php echo head_js(); ?>
 </head>
 <?php echo body_tag(array('id' => @$bodyid, 'class' => @$bodyclass)); ?>
@@ -36,8 +37,13 @@
             <?php echo rhythm_display_tagline(); ?>
         </div> <!-- end #site-title -->
 	
-        <div id="searchwrap">
-            <?php echo search_form(); ?>
+        <div id="search-container">
+            <?php if (get_theme_option('use_advanced_search')): ?>
+            <?php echo search_form(array('show_advanced' => true)); ?>
+            <?php else: ?>
+            <?Php echo search_form(); ?>
+            <?php endif; ?>
+            
     	</div> <!-- end #searchwrap -->
     </header>
   

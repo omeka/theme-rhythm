@@ -1,0 +1,186 @@
+#wrap {background: #fff url(../images/blue/bg-top.jpg) top left repeat-x;}
+header {
+    border-bottom: 5px solid #9ce;
+    border-top: 5px solid #9ce;
+    background: #3c3231 url(../images/blue/bg_header.gif) repeat top;
+}
+header #about p {color:#fff;}
+header #about .more a {color:#bb8;}
+header #about .more a:hover {color: #9ce;}
+#search-container {background-color:#9ce;}
+    #search-container a {color:#fff;}
+    #search-container a:visited{color:#323232;}
+    #search-container a:hover {color:#fff;}
+    header #search {
+        border: 5px solid #9ce;
+        background: #fff;
+    }
+    #submit_search {color:#fff;}
+    #advanced-search-link a {color:#345;}
+#primary-nav{background-color:#fff;}
+    #primary-nav ul a {background:url(../images/blue/bullet-omeka.png) no-repeat 0 50%;}
+    .navigation li {color: #3c3c31;}
+    .navigation a {color: #3c3c31;}
+    #primary-nav a:hover,
+    .navigation a:hover{
+        color:#9ce;
+    }    
+    #primary-nav .current a, 
+    .exhibits #primary-nav li.nav-exhibits a, 
+    .collections #primary-nav li.nav-collections a, 
+    .about #primary-nav li.nav-about a, 
+    .items #primary-nav li.nav-items a {
+        color:#bb8;
+        background-color:#fff;
+    } /* makes the primary nav link on the current page tan; gets class [exhibits, .collections, .about] from assigned body class in theme php */
+    /* == secondary == */    
+    #secondary {border-left: 1px solid #9ce;}
+    /* == footer == */        
+    footer {background:#fff url(../images/blue/bg-footer.jpg) repeat-x left top;}
+        footer .navigation {background:#fff;}
+        footer .navigation li {background:transparent url(../images/blue/bullet-omeka.png) no-repeat scroll 0 50%;}
+        footer .navigation a {color:#323231;}
+        footer .navigation .current a {color:#BBBB88;}
+        footer footer-text {color:#000;}    
+body {
+    color:#3c3231;
+    background-color: #3c3231;
+}
+#primary h1 {color:#543;}
+h3,
+h4 {
+    color:#bb8;
+}
+p,
+.exhibit .description,
+.exhibit-item,
+.exhibit-text,
+.item-description {
+    color:#3c3c31;
+}
+    p.sitetitle {color:#fff;}
+        p.sitetitle a {color:#fff;}
+    p.tagline {color:#fff;}
+.exhibit .tags {color:#3c3c31}
+.exhibit .tags a{color:#9ce;}
+a:link {color:#9ce;}
+a:visited {color:#9ce;}
+a:hover {color:#3c3c31;}
+a:active { color:#ddb; }
+
+.archive a:link {color:#9ce;}
+.archive a:visited {color:#9ce;}
+.archive a:hover {color: #9ce;}
+.archive a:active {color: #9ce;}
+
+header h1 a {color:#fff;}
+
+#secondary h2 {color: #554422;}
+
+dl,
+dt a {
+    color:#323232;
+}
+#show-sidebar {
+    background-color:#eed;
+    border-top: 1px dashed #bb8;
+    border-bottom: 1px dashed #bb8;
+}
+    .show #secondary dl {color:#544;}
+
+    .show #secondary a {color: #000;}
+
+    .show #secondary a:hover {color:#fff;}
+    label,
+    .label {
+        color:#000;
+    }
+    .field {border-bottom:1px dashed #fff;}
+    .field .textinput,
+    .field select {
+        background-color:#fff;
+    }
+
+    textarea#rights {color:#444;}
+ul.title-list li{color:#543;}
+#secondary .exhibit-section-nav a {color:#554;}
+    #secondary .exhibit-section-nav a:hover{color: #bb8;}
+    #secondary .exhibit-section-nav .current a {color:#bb8;}
+
+#secondary .exhibit-page-nav a {color:#554;}
+    #secondary .exhibit-page-nav a:hover {color: #bb8;}
+    #secondary .exhibit-page-nav .current a {color:#bb8;}
+
+.popular a, .popular a:visited {color: #3c3c31;} 
+.v-popular a, .v-popular a:visited {color: #3c3c31;}
+.vv-popular a, .vv-popular a:visited {color: #3c3c31;}
+.vvv-popular a, .vvv-popular a:visited {color: #7ac;}
+.vvvv-popular a, .vvvv-popular a:visited {color: #7ac;}
+.vvvvv-popular a, .vvvvv-popular a:visited {color: #9ce;}
+.vvvvvv-popular a, .vvvvvv-popular a:visited {color: #9ce;}
+.vvvvvvv-popular a, .vvvvvvv-popular a:visited {color: #9ce;}
+.vvvvvvvv-popular a, .vvvvvvvv-popular a:visited {color: #9ce;}
+
+.pagination_current{color:$primary-gray;}
+
+.pagination li a {color: #323232;}
+    .pagination li a:hover {color: #9ce;}
+    .pagination ul li.pagination_next a,
+    .pagination ul li.pagination_last a,
+    .pagination ul li.pagination_previous a,
+    .pagination ul li.pagination_first a {
+        color:#9ce;
+    }
+    .pagination ul li.pagination_next a:hover, 
+    .pagination ul li.pagination_last a:hover, 
+    .pagination ul li.pagination_previous a:hover, 
+    .pagination ul li.pagination_first a:hover {
+        color:#3c3c31;
+    }
+.item-img img {border: 1px solid #ddb;}
+.item-type {color: #554433;}
+
+.secondary-nav ul,
+#sort-links, 
+.browse .item-meta {
+    border-color: #ddb;
+}
+
+p.view-items-link {color:#554;}
+p.view-items-link a {color:#554;}
+.meta-main {border-top: 1px dashed #ddb;}
+.meta-main .runinHead {color:#543;}
+#secondary .featured-box p .title, 
+#secondary .featured-box p .title a, 
+#primary .featured-box p .title, 
+#primary .featured-box p .title a:visited, 
+#secondary .featured-box p .title a:visited {
+    color:#fff;
+}
+#secondary .featured-box p .title a, 
+#primary .featured-box p .title a{
+    color:#fff;
+}
+.featured-box h2 {
+    color: #3c3c31;
+    ;border-bottom:1px dashed white;
+}
+.featured-box.title a {color:#fff;}
+.featured-box.title a:visited{color:#fff;} /* this styles the title of featured item in the start of the featured-box p */
+.featured-box img {border: 10px solid #fff;}
+#featured-exhibit,
+#featured-item {
+    background-color: #bb8;
+}
+#featured-collection {background-color: #9ce;}
+#featured-collection.featured-box a:link {color:#554422;}
+#featured-collection.featured-box a:visited {color:#554422;}
+#sidebar-featured-item {background: #544;}
+.featured img {
+    border: 1px solid #ddb;
+    background:#fff;
+}
+#sidebar-featured-item .description p {color: #fff;}
+#sidebar-featured-item h2 {color: #fff;}
+#sidebar-featured-item a {color:#fff;}
+#featured-item a:hover {color: #9ce;}

@@ -3,15 +3,6 @@ $pageTitle = __('Browse Items');
 echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
 ?>
 
-<?php if(count(get_random_featured_items()) > 0): ?>
-<div id="featured-item">
-    <h2>Featured Item</h2>
-    <?php 
-    echo random_featured_items(1); 
-    ?>
-</div>
-<?php endif; ?>
-
 <h1><?php echo $pageTitle;?> <?php echo __('(%s total)', $total_results); ?></h1>
 
 <nav class="items-nav navigation secondary-nav">
@@ -36,6 +27,15 @@ $sortLinks[__('Date Added')] = 'added';
 <?php endif; ?>
 
 <div class="items-list">
+    <?php if(count(get_random_featured_items()) > 0): ?>
+    <div id="featured-item">
+        <h2>Featured Item</h2>
+        <?php 
+        echo random_featured_items(1); 
+        ?>
+    </div>
+    <?php endif; ?>
+    
     <?php foreach (loop('items') as $item): ?>
     <div class="item hentry">
         <h2><?php echo link_to_item(metadata('item', array('Dublin Core', 'Title')), array('class'=>'permalink')); ?></h2>

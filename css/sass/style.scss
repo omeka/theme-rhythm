@@ -1,5 +1,17 @@
+@import "base";
+@import "compass/css3";
+@import "susy";
+
 @media screen {
     @import "screen";
+}
+
+@media screen and (min-width:560px) {
+    @import "screen_560";
+}
+
+@media screen and (min-width:960px) {
+    @import "screen_full";
 }
 
 @media print {
