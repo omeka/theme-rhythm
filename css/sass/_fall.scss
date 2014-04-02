@@ -1,176 +1,287 @@
+/* @group ----- FALL: Generic HTML Elements ----- */
+
 th {
     border-color: $gold;
 }
-#wrap {background: #fffff7 url(../images/fall/bg-top.png) top left repeat-x;}
-header {
-    border-bottom: 5px solid #cc9933;
-    border-top: 5px solid #cc9933;
-    background: #3d3d3d url(../images/fall/bg-header.png) repeat top;
+
+body {
+    color:#332211;
+    background-color: $fall-bg;
 }
-header #about p {color:#fffff7;}
-header #about .more a {color:#b3ad9c;}
-header #about .more a:hover {color: #cc9933;}
-#search-container {background-color:#cc9933;}
-#search-container a{color:#fffff7;}
-#search-container a:visited{color:#221111;} 
-#search-container a:hover {color:#fffff7;}
-header #search {border: 5px solid #cc9933; background: #fffff7;}
-#submit_search {color:#fffff7;}
+
+p,
+.exhibit .description,
+.exhibit-item,
+.exhibit-text {
+    color: $fall-text;
+}
+
+a:link {
+    color: $red;
+}
+
+a:visited {
+    color: desaturate($red, 15%);
+}
+
+a:hover,
+a:active { 
+    color: saturate(lighten($red, 15%), 15%);
+}
+
+dl,
+dt a {
+    color: $fall-text;
+}
+
+/* @end */
+
+/* @group ----- FALL: Reusable classes ----- */
+
+#wrap {
+    background: $cream url(../images/fall/bg-top.png) top left repeat-x;
+}
+
+#primary h1 {
+    color:#543;
+}
+
+.featured-box h2 {
+    color: $fall-text;
+    border-bottom:1px dashed white;
+}
+
+.featured-box.title,
+.featured-box.title a {
+    color:#fff;
+}
+
+.featured-box.title a:visited{
+    color:#fff;
+}
+
+.featured-box img {
+    border: 10px solid #fff;
+}
+
+#featured-exhibit,
+#featured-item {
+    background-color: $fall-bg;
+}
+
+#featured-collection {
+    background-color: $gold;
+}
+
+#sidebar-featured-item {
+    background: #544;
+}
+
+.featured img {
+    border: 1px solid $cream;
+    background:#fff;
+}
+
+#sidebar-featured-item .description p {
+    color: #fff;
+}
+
+#sidebar-featured-item h2 {
+    color: #fff;
+}
+
+#sidebar-featured-item a {
+    color:#fff;
+}
+
+label,
+.label {
+    color :#000;
+}
+
+.field {
+    border-bottom: 1px dashed #fff;
+}
+
+.field .textinput,
+.field select {
+    background-color:#fff;
+}
+
+p.view-items-link {
+    color:#554;
+}
+
+p.view-items-link a {
+    color:#554;
+}
+
+.item-img img {
+    border: 1px solid $fall-bg;
+}
+
+div.tags a:link {
+    color: $gold;
+} 
+
+div.tags a:hover {
+    color: $red;
+}
+
+/* @end */
+
+/* @group ----- FALL: Header ----- */
+
+header {
+    border-bottom: 5px solid $gold;
+    border-top: 5px solid $gold;
+    background: $gray url(../images/fall/bg-header.png) repeat top;
+}
+
+header #about p {
+    color: $cream;
+}
+
+#site-title {
+    color:#fff;
+}
+
+#site-title a {
+    color:#fff;
+}
+
+#search-container {
+    background-color: $gold;
+}
+
+#search-container a{
+    color: $cream;
+}
+
+#search-container a:visited{
+    color: $fall-text;
+} 
+
+#search-container a:hover {
+    color: $cream;
+}
+
+#search-container input[type="submit"],
+.show-advanced {
+    background-color: $red;
+    color : $cream;
+}
+
 #advanced-search-link a {color:#345;}
+
+/* @end */
+
+/* @group ----- FALL: Navigation ----- */
+
 #primary-nav{
     position:relative;
-    background-color:#fffff7;
+    background-color: $cream;
 }
-#primary-nav ul a {background:url(../images/fall/bullet-omeka.png) no-repeat 0 50%;}
+#primary-nav ul a {
+    background:url(../images/fall/bullet-omeka.png) no-repeat 0 50%;
+}
+
 #primary-nav li,
-.navigation li{
-    color: #221111;
+.navigation li {
+    color: $fall-text;
 }
+
 #primary-nav a,
 .navigation a {
-    color: #221111;
+    color: $fall-text;
 }
+
 #primary-nav a:hover,
-.navigation a:hover{
-    color:#cc9933;
+.navigation a:hover {
+    color: $gold;
 }
+
 #primary-nav .current a, 
 .exhibits #primary-nav li.nav-exhibits a, 
 .collections #primary-nav li.nav-collections a, 
 .about #primary-nav li.nav-about a, 
 .items #primary-nav li.nav-items a {
-    color:#cc9933;
-    background-color:#fffff7;
+    color: $gold;
+    background-color: $cream;
 }
-#secondary {border-left: 1px solid #cc9933;}
-footer {background:#fffff7 url(../images/fall/bg-footer.png) repeat-x left top;}
-footer .navigation {background:#fffff7;}
-footer .navigation li {background:transparent url(../images/fall/bullet-omeka.png) no-repeat scroll 0 50%;}
-footer .navigation a {color:#221111;}
-footer .navigation .current a {color:#b3ad9c;}
-footer footer-text {color:#000;}
-body {
-    color:#332211;
-    background-color: #b3ad9c;
+
+.pagination li a {
+    color: $fall-text;
+} 
+
+.pagination li:hover {
+    background-color: darken(#ccc, 15%);
 }
-#primary h1 {color:#543;}
-p,
-.exhibit .description,
-.exhibit-item,
-.exhibit-text {
-    color:#221111;
- }
-p.sitetitle {color:#fff;}
-p.sitetitle a {color:#fff;}
-p.tagline {color:#fff;}
-.exhibit .tags {color:#221111}
-.exhibit .tags a{color:#cc9933;}
-a:link {color:#770000;}
-a:visited {color:#3d3d3d;}
-a:hover {color:#cc9933;}
-a:active { color:#cc9933; }
-.archive a:link {color:#770000;}
-.archive a:visited {color:#3d3d3d;}
-.archive a:hover {color: #cc9933;}
-.archive a:active {color: #cc9933;}
-.tags a:link{color:#c93;} 
-.tags a:hover{color:#700;}
-header h1 a {color:#fff;} 
-#secondary h2 {color: #770000;} 
-#secondary #featured-item h2{color:#221111;}
-dl,
-dt a {
-    color:#221111;
+
+/* @end */
+
+/* @group ----- FALL: Footer ----- */
+
+footer {
+    background: $cream url(../images/fall/bg-footer.png) repeat-x left top;
 }
+
+footer .navigation li {
+    background: transparent url(../images/fall/bullet-omeka.png) no-repeat scroll 0 50%;
+}
+
+footer .navigation a {
+    color: $fall-text;
+}
+
+footer .navigation .current a {
+    color: $fall-bg;
+}
+
+footer footer-text {
+    color:#000;
+}
+
+/* @end */
+
+/* @group ----- FALL: Items/Tags ----- */
+
+/* @group ----- FALL: Search ----- */
+
+#search-filters li,
+#item-filters li {
+    background-color: lighten($gold, 25%);
+}
+
+/* @end */
+
+.hTagcloud a {
+    background-color: $gold;
+    text-decoration: none;
+}
+
+.hTagcloud a:visited {
+    background-color: desaturate($gold, 25%);
+}
+
+/* @end */
+
+.exhibit .tags {
+    color: $fall-text
+}
+
 #show-sidebar {
     background-color:#eed;
-    border-top: 1px dashed #b3ad9c;
-    border-bottom: 1px dashed #b3ad9c;
+    border-top: 1px dashed $fall-bg;
+    border-bottom: 1px dashed $fall-bg;
 }
-.show #secondary dl {color:#544;}
-.show #secondary a {color: #000;}
-.show #secondary a:hover {color:#fff;}
-label,
-.label {color:#000;}
-.field {border-bottom:1px dashed #fff;}
-.field .textinput,
-.field select {
-    background-color:#fff;
+
+.item-type {
+    color: #554433;
 }
-textarea#rights {color:#444;}
-ul.title-list li{color:#543;}
-#secondary .exhibit-section-nav a {color:#770000;}
-#secondary .exhibit-section-nav a:hover{color: #c93;}
-#secondary .exhibit-section-nav .current a {color:#c93;}
-#secondary .exhibit-page-nav a {color:#770000;} 
-#secondary .exhibit-page-nav a:hover{color: #c93;}
-#secondary .exhibit-page-nav .current a {color:#c93;}
-.popular a{color: #cc9933;text-decoration:none;} .popular a:visited {color: #777;}
-.v-popular a{color: #cc9933;text-decoration:none;} .v-popular a:visited {color: #777;}
-.vv-popular a{color: #cc9933;text-decoration:none;} .vv-popular a:visited {color: #777;}
-.vvv-popular a{color: #cc9933;text-decoration:none;} .vvv-popular a:visited {color: #777;}
-.vvvv-popular a{color: #cc9933;text-decoration:none;} .vvvv-popular a:visited {color: #777;}
-.vvvvv-popular a{color: #cc9933;text-decoration:none;} .vvvvv-popular a:visited {color: #777;}
-.vvvvvv-popular a{color: #cc9933;text-decoration:none;} .vvvvvv-popular a:visited {color: #777;}
-.vvvvvvv-popular a{color: #cc9933;text-decoration:none;} .vvvvvvv-popular a:visited {color: #777;}
-.vvvvvvvv-popular a{color: #cc9933;text-decoration:none;} .vvvvvvvv-popular a:visited {color: #777;}
-.pagination_current{color:#cc9933;}
-.pagination li a {color: #221111;} 
-.pagination li a:hover {color: #cc9933;}
-.pagination ul li.pagination_next a,
-.pagination ul li.pagination_last a,
-.pagination ul li.pagination_previous a,
-.pagination ul li.pagination_first a {
-    color:#cc9933;
-}
-.pagination ul li.pagination_next a:hover, 
-.pagination ul li.pagination_last a:hover, 
-.pagination ul li.pagination_previous a:hover, 
-.pagination ul li.pagination_first a:hover {
-    color:#770000;
-}
-.item-img img {border: 1px solid #b3ad9c;}
-.item-type {color: #554433;}
 
 .secondary-nav ul,
 #sort-links,
 .browse .item-meta {
     border-color: $cream;
 }
-
-p.view-items-link {color:#554;}
-p.view-items-link a {color:#554;}
-.meta-main {border-top: 1px dashed #fffff7;}
-.meta-main .runinHead {color:#543;}
-#secondary .featured-box p .title, 
-#secondary .featured-box p .title a, 
-#primary .featured-box p .title, 
-#primary .featured-box p .title a:visited, 
-#secondary .featured-box p .title a:visited {
-    color:#fff;
-}
-#secondary .featured-box p .title a, 
-#primary .featured-box p .title a{
-    color:#fff;
-}
-.featured-box h2 {
-    color: #221111;
-    border-bottom:1px dashed white;
-}
-.featured-box.title,
-.featured-box.title a {
-    color:#fff;
-}
-.featured-box.title a:visited{color:#fff;}
-.featured-box img {border: 10px solid #fff;}
-#featured-exhibit,
-#featured-item {
-    background-color: #b3ad9c;
-}
-#featured-collection {background-color: #cc9933;}
-#sidebar-featured-item {background: #544;}
-.featured img {border: 1px solid #fffff7;background:#fff;}
-#sidebar-featured-item .description p {color: #fff;}
-#sidebar-featured-item h2 {color: #fff;}
-#sidebar-featured-item a {color:#fff;}
-#featured-item a:hover {color: #cc9933;}

@@ -531,7 +531,7 @@ nav ul {
 .sub-nav.open {
     display: block;
     background-color: #fff;
-    min-width: 150%;
+    width: 100%;
 }
 
 /* list of items within sub-navigation panel */
@@ -818,7 +818,7 @@ nav a,
     @include leader();
 }
 
-.tags:last-child p {
+div.tags:last-child p {
     @include trailer(0);
 }
 
@@ -864,6 +864,15 @@ nav a,
 }
 
 /* @end */
+
+/* @group ----- Items/Tags ----- */
+
+.hTagcloud a:link,
+.hTagcloud a:visited {
+    padding: rhythm(.25) 10px;
+    @include border-radius(3px);
+    color: #fff !important;
+}
 
 /* @group ----- Items/Search ----- */
 

@@ -46,7 +46,6 @@ footer {
 /* @group ----- Navigation ----- */
 
 #primary-nav {
-
     li {
         float: left;
         width: auto;
@@ -67,6 +66,10 @@ footer {
     .sub-nav {
         padding: 0 gutter(12) rhythm(.5) gutter(12);
         top: rhythm(1.5);
+    }
+    
+    .sub-nav.open {
+        min-width: 150%;
     }
 }
 
