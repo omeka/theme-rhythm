@@ -32,24 +32,24 @@
     <header>
 	    <?php fire_plugin_hook('public_header'); ?>
 	    <?php echo theme_header_image(); ?>
-        <div id="title-tagline">    
+        <div id="title-tagline">
             <div id="site-title"><?php echo link_to_home_page(theme_logo()); ?></div>
             <?php echo rhythm_display_tagline(); ?>
         </div> <!-- end #site-title -->
-	
+
         <div id="search-container">
             <?php if (get_theme_option('use_advanced_search')): ?>
             <?php echo search_form(array('show_advanced' => true)); ?>
             <?php else: ?>
             <?Php echo search_form(); ?>
             <?php endif; ?>
-            
+
     	</div> <!-- end #searchwrap -->
     </header>
-  
+
     <nav id="primary-nav">
             <?php echo public_nav_main(); ?>
     </nav>  <!-- end #primary-nav -->
-    
+
     <div id="content">
-        <?php fire_plugin_hook('public_content_top'); ?>
+        <?php fire_plugin_hook('public_content_top', array('view' => $this)); ?>
