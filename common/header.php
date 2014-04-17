@@ -26,11 +26,11 @@
     <?php echo head_js(); ?>
 </head>
 <?php echo body_tag(array('id' => @$bodyid, 'class' => @$bodyclass)); ?>
-    <?php fire_plugin_hook('public_body'); ?>
+    <?php fire_plugin_hook('public_body', array('view' => $this)); ?>
 
 <div id="wrap">
     <header>
-	    <?php fire_plugin_hook('public_header'); ?>
+	    <?php fire_plugin_hook('public_header', array('view' => $this)); ?>
 	    <?php echo theme_header_image(); ?>
         <div id="title-tagline">
             <div id="site-title"><?php echo link_to_home_page(theme_logo()); ?></div>
