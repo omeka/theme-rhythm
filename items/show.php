@@ -6,43 +6,43 @@
     <div class="item hentry">
          <div class="item-meta">
             <?php //while (loop('files') as $file): ?>
-    
-               <div class="item-img">    <?php 
+
+               <div class="item-img">    <?php
                     /* $file = get_current_record('file');
                     if ($file->hasThumbnail()):
                     echo file_markup($file,array('imageSize'=>'fullsize'));
                     endif; */
-                ?>                    
+                ?>
                </div>
-            
+
             <?php //endforeach; ?>
 
             <?php echo all_element_texts('item'); ?>
-                
-         </div>  <!-- end item-meta -->    
-    </div><!-- end item hentry --> 
+
+         </div>  <!-- end item-meta -->
+    </div><!-- end item hentry -->
 
      <!-- end #primary-->
     <div id="show-sidebar">
          <dl>
          <dt id="publisher"><?php echo __('Date Added'); ?></dt>
          <dd><?php echo rhythm_display_date_added(); ?></dd>
-        
+
          <?php if (metadata('item', 'Collection Name')): ?>
          <dt id="creator"><?php echo __('Collection'); ?></dt>
          <dd><?php echo link_to_collection_for_item(); ?></dd>
          <?php endif; ?>
-         
+
          <?php if (metadata('item', 'Item Type Name')): ?>
          <dt id="source"><?php echo __('Item Type'); ?></dt>
          <dd><?php echo metadata('item', 'Item Type Name'); ?></dd>
          <?php endif; ?>
-         
+
          <?php if(metadata('item', 'has tags')): ?>
         <dt><?php echo __('Tags'); ?></dt>
         <dd><?php echo item_tags_as_string(); ?></dd>
-        <?php endif;?>   
-              
+        <?php endif;?>
+
          <dt id="subject"><?php echo __('Citation'); ?></dt>
          <dd><?php echo metadata('item', 'citation', array('no_escape' => true)); ?></dd>
          </dl>
@@ -55,8 +55,8 @@
         <?php endif; ?>
     </div> <!-- end show-sidebar -->
 
-    <?php echo fire_plugin_hook('public_items_show'); ?>
-   
+    <?php echo fire_plugin_hook('public_items_show', array('view' => $this, 'item' => $item)); ?>
+
     <ul class="item-pagination navigation">
         <li id="previous-item" class="previous button">
             <?php echo link_to_previous_item_show(); ?>
@@ -64,6 +64,6 @@
         <li id="next-item" class="next button">
             <?php echo link_to_next_item_show (); ?>
         </li>
-    </ul>  
+    </ul>
 
 <?php echo foot(); ?>
