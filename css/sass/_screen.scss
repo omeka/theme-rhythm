@@ -509,6 +509,7 @@ nav ul {
     position: absolute;
     display: none;
     top: rhythm(2);
+    left: 0;
     padding: 0 .5em;
     border: 0;
     margin: 0 0 0 -.5em;
@@ -517,9 +518,10 @@ nav ul {
 }
 
 #primary-nav .sub-nav li {
-    max-width: 100%;
+    width: 100%;
     border-color: transparent !important;
-    padding: 0 0 0 1.5em;;
+    padding: 0;
+    margin-right: 0;
 }
 
 #primary-nav .sub-nav a {
@@ -835,11 +837,12 @@ div.tags:last-child p {
 }
 
 #show-sidebar {
-    clear:both;
+    clear: both;
     @include trailer();
+    word-break: break-word;
 }
 
-#items.show {
+.items.show {
     h1 {
         @include trailer(1, 2 * $base-font-size);
     }
@@ -996,6 +999,10 @@ ul.exhibit-section-nav{
 
 .exhibits .secondary-nav {
     @include trailer();
+}
+
+.layout-text *:last-child {
+    @include trailer(0);
 }
 
 /* @end */

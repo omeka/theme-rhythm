@@ -80,7 +80,7 @@ label,
 
 #featured-item h2,
 #featured-exhibit h2 {
-    color: lighten($spring-item, 25%);
+    color: #fff;
 }
 
 .tags a:link{color:$spring-item;} 
@@ -238,6 +238,39 @@ footer {
 
 /* @end */
 
+/* @group ----- SPRING: Home ----- */
+
+.featured-box h2 {
+    color: $spring-text;
+    border-bottom:1px dashed white;
+}
+.featured-box.title,
+.featured-box.title a,
+.featured-box.title a:visited {
+    color:#fff;
+}
+.featured-box img {border: 10px solid #fff;}
+#featured-exhibit,
+#featured-item {
+    background-color: darken(desaturate($spring-item, 10%), 10%);
+}
+
+#featured-item a,
+#featured-item a:visited {
+    color:#fff;
+}
+
+#featured-collection {background-color: $green;}
+#sidebar-featured-item {background: #544;}
+.featured img {
+    border: 1px solid #bfbfbf;
+    background:#fff;
+}
+
+#featured-item a:hover {color: $green;}
+
+/* @end */
+
 #show-sidebar {
     background-color:#eed;
     border-top: 1px dashed $secondary-gray;
@@ -323,39 +356,11 @@ p.view-items-link a {
 #primary .featured-box p .title a {
     color:#fff;
 }
-.featured-box h2 {
-    color: $spring-text;
-    border-bottom:1px dashed white;
-}
-.featured-box.title,
-.featured-box.title a,
-.featured-box.title a:visited {
-    color:#fff;
-}
-.featured-box img {border: 10px solid #fff;}
-#featured-exhibit,
-#featured-item {
-    background-color: darken(desaturate($spring-item, 10%), 10%);
-}
-
-#featured-item a,
-#featured-item a:visited {
-    color:#fff;
-}
-
-#featured-collection {background-color: $green;}
-#sidebar-featured-item {background: #544;}
-.featured img {
-    border: 1px solid #bfbfbf;
-    background:#fff;
-}
 #sidebar-featured-item .description p,
 #sidebar-featured-item h2,
 #sidebar-featured-item a  {
     color: #fff;
 }
-#featured-item a:hover {color: $green;}
-
 #exhibit-pages {
     background-color: lighten($green, 25%);
     

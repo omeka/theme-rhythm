@@ -19,11 +19,11 @@ p,
 }
 
 a:link, a:visited {
-    color:$blue;
+    color: darken($blue, 30%);
 }
 
 a:hover {
-    color:$text-brown;
+    color: darken($blue, 15%);
 }
 a:active {
     color:#ddb;
@@ -103,8 +103,14 @@ h4 {
     color: #fff;
 }
 
-#featured-item a:hover {
-    color: $blue;
+#featured-item,
+#featured-exhibit {
+    a:link {
+        color: lighten($secondary-tan, 25%);
+    }
+    a:hover {
+        color: #fff;
+    }
 }
 
 label, 

@@ -64,12 +64,12 @@ footer {
     }
     
     .sub-nav {
-        padding: 0 gutter(12) rhythm(.5) gutter(12);
+        padding: 0 7px rhythm(.5);
         top: rhythm(1.5);
     }
     
     .sub-nav.open {
-        min-width: 150%;
+        min-width: 13em;
     }
 }
 
@@ -130,6 +130,24 @@ footer {
     clear: none;
     text-align: right;
     padding: rhythm(1) 0;
+}
+
+/* @end */
+
+/* @group ----- Items/Show ----- */
+
+.items.show .hentry {
+    @include span-columns(8 alpha);
+}
+
+.items.show #show-sidebar {
+    @include span-columns(4 omega);
+    clear: none;
+    padding: 0 gutter(12);
+}
+
+.item-pagination {
+    clear: both;
 }
 
 /* @end */
