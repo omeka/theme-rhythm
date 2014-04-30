@@ -1,4 +1,4 @@
-<?php echo head(array('title' => metadata('Item', array('Dublin Core', 'Title')),'bodyid'=>'items','bodyclass' => 'show')); ?>
+<?php echo head(array('title' => metadata('Item', array('Dublin Core', 'Title')), 'bodyclass' => 'items show')); ?>
 
 
     <h1><?php echo metadata('Item', array('Dublin Core', 'Title')); ?></h1>
@@ -18,6 +18,16 @@
             <?php //endforeach; ?>
 
             <?php echo all_element_texts('item'); ?>
+
+             <!-- The following returns all of the files associated with an item. -->
+            <?php if (metadata('item', 'has files')): ?>
+            <div id="itemfiles" class="element">
+                <h3><?php echo __('Files'); ?></h3>
+                <div class="element-text"><?php echo files_for_item(); ?></div>
+            </div>
+            <?php endif; ?>
+
+            <?php echo fire_plugin_hook('public_items_show', array('view' => $this, 'item' => $item)); ?>
 
          </div>  <!-- end item-meta -->
     </div><!-- end item hentry -->
@@ -40,22 +50,14 @@
 
          <?php if(metadata('item', 'has tags')): ?>
         <dt><?php echo __('Tags'); ?></dt>
-        <dd><?php echo item_tags_as_string(); ?></dd>
+        <dd><?php echo tag_string('item'); ?></dd>
         <?php endif;?>
 
          <dt id="subject"><?php echo __('Citation'); ?></dt>
          <dd><?php echo metadata('item', 'citation', array('no_escape' => true)); ?></dd>
          </dl>
-         <!-- The following returns all of the files associated with an item. -->
-        <?php if (metadata('item', 'has files')): ?>
-        <div id="itemfiles" class="element">
-            <h3><?php echo __('Files'); ?></h3>
-            <div class="element-text"><?php echo files_for_item(); ?></div>
-        </div>
-        <?php endif; ?>
     </div> <!-- end show-sidebar -->
 
-    <?php echo fire_plugin_hook('public_items_show', array('view' => $this, 'item' => $item)); ?>
 
     <ul class="item-pagination navigation">
         <li id="previous-item" class="previous button">
