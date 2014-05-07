@@ -171,6 +171,7 @@ fieldset {
     @include trailing-border(1px, 1, $base-font-size, dashed);
     @include trailer();
     clear: left;
+    overflow: hidden;
     
     *:last-child {
         margin-bottom: 0;
