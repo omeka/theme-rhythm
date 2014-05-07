@@ -135,6 +135,10 @@ div.tags a:hover {
     color: $red;
 }
 
+#sort-links {
+    border-color: $gray;
+}
+
 /* @end */
 
 /* @group ----- FALL: Header ----- */
@@ -292,7 +296,6 @@ footer footer-text {
 }
 
 .secondary-nav ul,
-#sort-links,
 .browse .item-meta {
     border-color: $cream;
 }

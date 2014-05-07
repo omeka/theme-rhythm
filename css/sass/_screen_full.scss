@@ -115,9 +115,9 @@ footer {
 /* @group ----- Items/Browse ----- */
 
 .items.browse #featured-item {
-    width: 100%;
     @include bleed(0);
     padding: rhythm(1) gutter(12);
+    @include span-columns(4 omega);
     
     h3 {
         font-size: 1.5 * $base-font-size;
@@ -125,18 +125,38 @@ footer {
     }
 }
 
-.items.browse .pagination {
+.items.browse .items-list {
+    @include span-columns(8 alpha);
+    
+    .item:last-child {
+        @include trailer(.5);
+    }
+}
+
+.items.browse .pagination-nav {
     float: left;
-    @include trailer();
+    @include trailer(.5);
+}
+
+.items.browse .pagination {
+    @include trailer(0);
+    clear: both;
 }
 
 .items.browse .secondary-nav {
     margin-bottom: 0;
 }
 
+.pagination-nav {
+    margin-right: 1em;
+}
+
+.pagination-nav + #sort-links {
+    @include padding-trailer();
+}
+
 #sort-links {
     clear: none;
-    text-align: right;
     padding: rhythm(.5) 0;
 }
 

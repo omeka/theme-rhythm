@@ -87,6 +87,13 @@ label,
 
 .tags a:hover{color:$green;}
 
+.item,
+.collection,
+.exhibit,
+#sort-links {
+    border-color: $secondary-gray;
+}
+
 /* @end */
 
 /* @group ----- SPRING: Header ----- */
@@ -329,7 +336,6 @@ ul.title-list li{color:#543;}
 .item-type {color: #554433;}
 
 .secondary-nav ul,
-#sort-links,
 #search-filters ul,
 #item-filters ul,
 .items .field,
