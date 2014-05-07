@@ -306,10 +306,10 @@ ul.title-list li{
 .vvvvvvv-popular a, .vvvvvvv-popular a:visited {color: $blue;}
 .vvvvvvvv-popular a, .vvvvvvvv-popular a:visited {color: $blue;}
 
-
 /* @end */
 
 /* @group ----- RHYTHM: Pagination Links ----- */  
+
 .pagination_current{
     color:$primary-gray;
 }
@@ -332,3 +332,4 @@ ul.title-list li{
     .pagination ul li.pagination_first a:hover {
         color:$text-brown;
     }
+/* @end */

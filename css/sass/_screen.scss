@@ -168,6 +168,13 @@ fieldset {
 .item {
     @include trailing-border(1px, 1, $base-font-size, dashed);
     @include trailer();
+
+    img {
+        width: auto;
+        height: rhythm(3.5);
+        float: left;
+        margin: 0 rhythm(.5) rhythm(.5) 0;
+    }
 }
 
 #wrap {
@@ -238,7 +245,7 @@ header {
     button {
         width: rhythm(1.5);
         position: absolute;
-        top: rhythm(.25);
+        top: rhythm(.5);
         right: rhythm(1.75);
         text-indent: -9999px;
         @include border-radius(0px);
@@ -275,7 +282,7 @@ header {
     }
     
     .show-advanced {
-        top: rhythm(.25);
+        top: rhythm(.5);
         width: rhythm(1.5);
         color: #fff !important;
         display: block;
@@ -668,17 +675,19 @@ nav a,
     }
 }
 
+#featured-item .item,
+#featured-collection .collection,
+#featured-exhibit .exhibit {
+    @include trailing-border(0px, 0, $base-font-size, solid);
+    margin-bottom: 0;
+}
+
 #recent-items {
     margin: rhythm() 0;
-}
-
-#recent-items .item-img {
-    width: 50px;
-    height: 50px;
-}
-
-#recent-items .item-img img {
-    max-width:100%;
+    
+    .item *:last-child {
+        margin-bottom: 0;
+    }
 }
 
 .item-description .show {
