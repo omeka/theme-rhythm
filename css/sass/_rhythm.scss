@@ -34,6 +34,13 @@ dt a {
     color:#323232;
 }
 
+.button,
+button,
+input[type="submit"] {
+    background-color: $item-brown;
+    color: #fff;
+}
+
 /* @end */
 
 /* @group ----- RHYTHM: Reusable classes ----- */
@@ -160,31 +167,19 @@ header #about .more a:hover {
 
 #search-container {
     background-color:$blue;
-}
-    #search-container a {
+    
+    a {
         color:#fff;
     }
-    #search-container a:visited{
+    
+    a:visited{
         color:#323232;
     }
-    #search-container a:hover {
+    
+    a:hover {
         color:#fff;
     }
-    header #search {
-        border: 5px solid $blue;
-        background: #fff;
-    }
-    #submit_search {
-        color:#fff;
-    }
-    #search-container input[type="submit"],
-        .show-advanced {
-            //background-color:;KIM
-            //color :;
-        }
-    #advanced-search-link a {
-        color:#345;
-    }
+}
 
 .meta-main {
     border-top: 1px dashed #ddb;

@@ -218,41 +218,12 @@ header {
     padding: 0 gutter(12);
 }
 
-#search-form {
-    margin-bottom: 0;
-    overflow: auto;
-    
-    input {
-        margin-bottom: 0;
-        display: block;
-        float: left;
-    }
-    
-    input[type="text"] {
-        width: 70%;
-    }
-    
-    input[type="submit"] {
-        @include border-radius(0 3px 3px 0);
-        width: 30%;
-    }
-    
-    * {
-        position: relative;
-    }
-    
-    *:focus {
-        outline: none;
-        @include box-shadow(0 0 7px rgba(0,0,0,.85) inset);
-    }
-}
-
 #search-container {
     text-align: right;
     vertical-align: top;
     position: relative;
     width: 100%;
-    padding: rhythm(.5) gutter(12);
+    padding: rhythm(.5) rhythm(.25);
 
     form {
         margin: 0;
@@ -264,50 +235,60 @@ header {
         }
     }
     
-    input {
-        vertical-align: top;
-        margin: 0;
-    }
-    
-    input[type=text] {
-        width: 70%;
-        float: left;
-        height: 1.5 * $base-line-height;
-    }
-    
-    input[type=submit] {
-        width: 30%;
-        float: left;
+    button {
+        width: rhythm(1.5);
+        position: absolute;
+        top: rhythm(.25);
+        right: rhythm(1.75);
+        text-indent: -9999px;
+        @include border-radius(0px);
+        
+        &:after {
+            font-family: "FontAwesome";
+            content: "\f002";
+            text-indent: 0;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: rhythm(1.5);
+            line-height: rhythm(1.5);
+            text-align: center;
+        }
     }
 }
 
+#query {
+    width: 100%;
+    padding-right: rhythm(1.75);
+    height: 1.5 * $base-line-height;
+    margin-bottom: 0;
+    @include border-radius(3px);
+}
+
 #search-container.with-advanced {
-    input[type=text] {
-        width: 55%;
+    #query {
+        padding-right: rhythm(3.25);
     }
     
-    input[type=submit] {
-        width: 30%;
+    button {
+        right: rhythm(1.75);
     }
     
     .show-advanced {
-        width: 15%;
+        top: rhythm(.25);
+        width: rhythm(1.5);
         color: #fff !important;
         display: block;
-        float: left;
         text-align: center;
         border-left: 1px solid rgba(0,0,0,.08);
         @include border-radius(0px);
         height: rhythm(1.5);
         border-right: 1px rgba(255,255,255,.25) solid;
+        position: absolute;
+        right: rhythm(.25);
+        @include border-radius(0 3px 3px 0);
     }
 }
-
-#search-container #advanced-form a {
-    font-weight: normal;
-}
-    
-
 
 #advanced-form {
     position: absolute;
@@ -353,10 +334,10 @@ header {
     & > *:last-child {
         margin-bottom: 0;
     }
-}
-
-#query {
-    @include border-radius(3px 0 0 3px);
+    
+    a {
+        font-weight: normal;
+    }
 }
 
 #site-title a {

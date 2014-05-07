@@ -34,6 +34,13 @@ dt a {
     color: $fall-text;
 }
 
+button,
+.button,
+input[type="submit"] {
+    background-color: $red;
+    color: $cream;
+}
+
 /* @end */
 
 /* @group ----- FALL: Reusable classes ----- */
@@ -83,11 +90,11 @@ dt a {
 }
 
 #sidebar-featured-item .description p {
-    color: #fff;
+    color: $cream;
 }
 
 #sidebar-featured-item h2 {
-    color: #fff;
+    color: $cream;
 }
 
 #sidebar-featured-item a {

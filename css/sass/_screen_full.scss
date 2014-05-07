@@ -29,7 +29,7 @@ header {
     bottom: 0;
     right: gutter(12);
     width: 30%;
-    padding: rhythm(.25) gutter(12);
+    padding: rhythm(.25);
 }
 
 /* @end */
@@ -58,7 +58,7 @@ footer {
         }
     }
     
-    ul {
+    & > ul {
         @include padding-leader(.75);
         @include trailing-border(5px, .75, $base-font-size, solid);
     }
