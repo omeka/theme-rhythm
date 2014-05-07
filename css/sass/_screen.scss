@@ -624,8 +624,31 @@ nav a,
 }
 
 .pagination_next,
-.pagination_prev {
+.pagination_previous {
     background-color: rgba(0,0,0,.25);
+    
+    a {
+        text-indent: -9999px;
+        position: relative;
+        width: rhythm(2);
+        
+        &:after {
+            font-family: "FontAwesome";
+            position: absolute;
+            left: 0;
+            text-indent: 0;
+            width: rhythm(2);
+            text-align: center;
+        }
+    }
+}
+
+.pagination_next a:after {
+    content: "\f0da";
+}
+
+.pagination_previous a:after {
+    content: "\f0d9";
 }
 
 .item-pagination {
@@ -796,14 +819,18 @@ nav a,
     font-weight: bold;
 
     &:after {
-        content: "\25BC";
+        font-family: "FontAwesome";
         display: inline-block;
         margin: 0 5px;
     }
 }
 
 .asc a:after {
-    @include transform(rotate(180deg));
+    content: "\f0d8";
+}
+
+.desc a:after {
+    content: "\f0d7";
 }
 
 .item-description + .tags {
