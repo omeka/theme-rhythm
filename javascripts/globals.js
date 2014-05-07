@@ -7,7 +7,10 @@
         /* 
             Setup classes and DOM elements jQuery will use.
         */
-        $('#search-container').addClass('with-advanced');
+        
+        if(advanced_form.length > 0) {
+            $('#search-container').addClass('with-advanced');
+        }
         advanced_form.addClass('closed').before(show_advanced);
         
         /*

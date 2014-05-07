@@ -246,9 +246,9 @@ header {
         width: rhythm(1.5);
         position: absolute;
         top: rhythm(.5);
-        right: rhythm(1.75);
+        right: rhythm(.25);
         text-indent: -9999px;
-        @include border-radius(0px);
+        @include border-radius(0px 3px 3px 0);
         
         &:after {
             font-family: "FontAwesome";
@@ -279,6 +279,7 @@ header {
     
     button {
         right: rhythm(1.75);
+        @include border-radius(0px);
     }
     
     .show-advanced {
