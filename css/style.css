@@ -171,7 +171,7 @@
   }
 
   .item,
-  .collection,
+  .collection:not(.record-image),
   .exhibit {
     border-bottom-width: 0.0625em;
     border-bottom-style: dashed;
@@ -181,7 +181,7 @@
     overflow: hidden;
   }
   .item *:last-child,
-  .collection *:last-child,
+  .collection:not(.record-image) *:last-child,
   .exhibit *:last-child {
     margin-bottom: 0;
   }
@@ -191,6 +191,17 @@
     height: 5.25em;
     float: left;
     margin: 0 0.75em 0.75em 0;
+  }
+
+  .collection.record-image {
+    overflow: visible;
+  }
+
+  .collection.record-image img {
+    -moz-box-shadow: -3px -3px 0 rgba(0, 0, 0, 0.2), -6px -6px 0 rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: -3px -3px 0 rgba(0, 0, 0, 0.2), -6px -6px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: -3px -3px 0 rgba(0, 0, 0, 0.2), -6px -6px 0 rgba(0, 0, 0, 0.1);
+    margin-left: 6px !important;
   }
 
   #wrap {
@@ -712,6 +723,14 @@
   #featured-exhibit p:last-of-type {
     margin-bottom: 0em;
   }
+  #featured-item img,
+  #featured-collection img,
+  #featured-exhibit img {
+    height: 6em;
+    width: auto;
+    float: left;
+    margin: 0.375em 0.75em 0.375em 0;
+  }
 
   #featured-item .item,
   #featured-collection .collection,
@@ -720,6 +739,7 @@
     border-bottom-style: solid;
     padding-bottom: 0em;
     margin-bottom: 0;
+    overflow: visible;
   }
 
   #recent-items {
@@ -931,6 +951,19 @@
 
   .remove_search {
     margin-bottom: 1.5em;
+  }
+
+  /* @end */
+  /* @group ----- Collections/Browse ----- */
+  .browse .collection.record-image {
+    float: left;
+    display: block;
+    margin: 0 1.5em 1.5em 0;
+  }
+  .browse .collection.record-image img {
+    vertical-align: top;
+    height: 7.5em;
+    width: auto;
   }
 
   /* @end */

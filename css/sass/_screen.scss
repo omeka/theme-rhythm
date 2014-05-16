@@ -166,7 +166,7 @@ fieldset {
 }
 
 .item,
-.collection,
+.collection:not(.record-image),
 .exhibit {
     @include trailing-border(1px, 1, $base-font-size, dashed);
     @include trailer();
@@ -185,6 +185,14 @@ fieldset {
     margin: 0 rhythm(.5) rhythm(.5) 0;
 }
 
+.collection.record-image {
+    overflow: visible;
+}
+
+.collection.record-image img {
+    @include box-shadow(-3px -3px 0 rgba(0,0,0,.2), -6px -6px 0 rgba(0,0,0,.1));
+    margin-left: 6px !important;
+}
 
 #wrap {
     @include padding-leader(2);
@@ -686,7 +694,7 @@ nav a,
 #featured-collection,
 #featured-exhibit {
     padding: rhythm(.5) gutter(12);
-    
+
     h2 {
         font-size: $base-font-size;
         line-height: $base-line-height;
@@ -703,6 +711,13 @@ nav a,
     p:last-of-type {
         @include trailer(0);
     }
+    
+    img {
+        height: rhythm(4);
+        width: auto;
+        float: left;
+        margin: rhythm(.25) rhythm(.5) rhythm(.25) 0;
+    }
 }
 
 #featured-item .item,
@@ -710,6 +725,7 @@ nav a,
 #featured-exhibit .exhibit {
     @include trailing-border(0px, 0, $base-font-size, solid);
     margin-bottom: 0;
+    overflow: visible;
 }
 
 #recent-items {
@@ -929,6 +945,22 @@ div.tags:last-child p {
 
 .remove_search {
     @include trailer();
+}
+
+/* @end */
+
+/* @group ----- Collections/Browse ----- */
+
+.browse .collection.record-image {
+    float: left;
+    display: block;
+    margin: 0 rhythm() rhythm() 0;
+    
+    img {
+        vertical-align: top;
+        height: rhythm(5);
+        width: auto;
+    }
 }
 
 /* @end */
