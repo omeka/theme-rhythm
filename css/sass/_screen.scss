@@ -166,7 +166,7 @@ fieldset {
 }
 
 .item,
-.collection:not(.record-image),
+.collection,
 .exhibit {
     @include trailing-border(1px, 1, $base-font-size, dashed);
     @include trailer();
@@ -185,11 +185,12 @@ fieldset {
     margin: 0 rhythm(.5) rhythm(.5) 0;
 }
 
-.collection.record-image {
+.image {
     overflow: visible;
 }
 
-.collection.record-image img {
+.collection .image img,
+.exhibit .image img {
     @include box-shadow(-3px -3px 0 rgba(0,0,0,.2), -6px -6px 0 rgba(0,0,0,.1));
     margin-left: 6px !important;
 }
@@ -800,6 +801,20 @@ nav a,
     @include leader(-.5);
 }
 
+.search td {
+    vertical-align: top;
+}
+
+.search .image {
+    overflow: auto;
+    float: left;
+}
+
+.search .image img {
+    height: rhythm(4);
+    margin: rhythm(.25) rhythm() rhythm(.25) 0;
+}
+
 /* @end */
 
 /* @group ----- Items/Browse ----- */
@@ -951,7 +966,7 @@ div.tags:last-child p {
 
 /* @group ----- Collections/Browse ----- */
 
-.browse .collection.record-image {
+.browse .collection .image {
     float: left;
     display: block;
     margin: 0 rhythm() rhythm() 0;
