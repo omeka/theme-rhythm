@@ -5,17 +5,6 @@
 
     <div class="item hentry">
          <div class="item-meta">
-            <?php //while (loop('files') as $file): ?>
-
-               <div class="item-img">    <?php
-                    /* $file = get_current_record('file');
-                    if ($file->hasThumbnail()):
-                    echo file_markup($file,array('imageSize'=>'fullsize'));
-                    endif; */
-                ?>
-               </div>
-
-            <?php //endforeach; ?>
 
             <?php echo all_element_texts('item'); ?>
 
