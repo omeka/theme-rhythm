@@ -916,7 +916,7 @@ div.tags:last-child p {
     }
     
     .item {
-        @include trailer(0);
+        @include trailer(1);
         border: 0;
         padding: 0;
     }

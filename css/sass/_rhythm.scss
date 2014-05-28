@@ -35,6 +35,7 @@ dt a {
 }
 
 .button,
+.button a,
 button,
 input[type="submit"] {
     background-color: $item-brown;
@@ -291,6 +292,10 @@ p.tagline {color:#fff;}
     }
 ul.title-list li{
     color:$item-brown;
+}
+
+.navigation.item-pagination a {
+    color: #fff;
 }
 
 /* @end */

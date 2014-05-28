@@ -922,7 +922,7 @@
     margin: 0 0 1.5em;
   }
   .items.show .item {
-    margin-bottom: 0em;
+    margin-bottom: 1.5em;
     border: 0;
     padding: 0;
   }
@@ -1121,6 +1121,7 @@
     color: #323232;
   }
   .blue .button,
+  .blue .button a,
   .blue button,
   .blue input[type="submit"] {
     background-color: #554433;
@@ -1346,6 +1347,9 @@
   .blue ul.title-list li {
     color: #554433;
   }
+  .blue .navigation.item-pagination a {
+    color: #fff;
+  }
   .blue .popular a, .blue .popular a:visited {
     color: #3c3c31;
   }
@@ -1433,6 +1437,7 @@
 
   button,
   .button,
+  .button a,
   input[type="submit"] {
     background-color: #770000;
     color: #fffff7;
@@ -1647,6 +1652,12 @@
 
   footer footer-text {
     color: #000;
+  }
+
+  /* @end */
+  /* @group ----- FALL: Items/Show ----- */
+  .navigation.item-pagination a {
+    color: #fffff7;
   }
 
   /* @end */
