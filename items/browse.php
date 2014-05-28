@@ -28,7 +28,7 @@ $sortLinks[__('Date Added')] = 'added';
 
 <?php if(count(get_random_featured_items()) > 0): ?>
 <div id="featured-item">
-    <h2>Featured Item</h2>
+    <h2><?php echo __('Featured Item'); ?></h2>
     <?php 
     echo random_featured_items(1); 
     ?>
