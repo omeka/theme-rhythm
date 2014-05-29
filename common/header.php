@@ -17,7 +17,7 @@
     <!-- Stylesheets -->
     <?php
     queue_css_file(array('iconfonts', 'normalize', 'style'));
-    queue_css_url('http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic|PT+Serif:700');
+    queue_css_url('//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic|PT+Serif:700');
     echo head_css();
     ?>
 
