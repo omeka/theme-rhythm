@@ -153,6 +153,13 @@ a.button:hover,
     text-decoration: none;
 }
 
+select {
+    display: inline-block;
+    height: 1.5 * $base-line-height;
+    line-height: 1.5 * $base-line-height;
+    vertical-align: top;
+}
+
 fieldset {
     margin: 0;
 }
@@ -945,12 +952,13 @@ div.tags:last-child p {
     @include trailer(.5);
 }
 
-.items .field input {
+.items .field input[type=text] {
     @include trailer(0);
+    display: inline-block;
 }
 
-.items .field input[type="text"] {
-    width: 100%;
+.items .field select {
+    margin-right: 3px;
 }
 
 .search-entry select,
@@ -960,6 +968,21 @@ div.tags:last-child p {
 
 .remove_search {
     @include trailer();
+    text-indent: -9999px;
+    width: 1.5 * $base-line-height;
+    position: relative;
+    
+    &:after {
+        font-family: "FontAwesome";
+        content: "\f00d";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        text-indent: 0;
+        line-height: 1.5 * $base-line-height;
+    }
 }
 
 /* @end */

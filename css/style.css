@@ -160,6 +160,13 @@
     text-decoration: none;
   }
 
+  select {
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    vertical-align: top;
+  }
+
   fieldset {
     margin: 0;
   }
@@ -951,12 +958,13 @@
     margin-bottom: 0.75em;
   }
 
-  .items .field input {
+  .items .field input[type=text] {
     margin-bottom: 0em;
+    display: inline-block;
   }
 
-  .items .field input[type="text"] {
-    width: 100%;
+  .items .field select {
+    margin-right: 3px;
   }
 
   .search-entry select,
@@ -966,6 +974,20 @@
 
   .remove_search {
     margin-bottom: 1.5em;
+    text-indent: -9999px;
+    width: 36px;
+    position: relative;
+  }
+  .remove_search:after {
+    font-family: "FontAwesome";
+    content: "\f00d";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    text-indent: 0;
+    line-height: 36px;
   }
 
   /* @end */
