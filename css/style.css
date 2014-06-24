@@ -1095,6 +1095,10 @@
     margin-bottom: 0em;
   }
 
+  .exhibit-block {
+    clear: left;
+  }
+
   /* @end */
   /*Blue styles*/
   .blue {
