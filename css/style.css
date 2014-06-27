@@ -954,6 +954,9 @@
     border: 0;
     padding: 0;
   }
+  .items.show .item img {
+    height: 7.5em;
+  }
 
   /* @end */
   /* @group ----- Items/Tags ----- */

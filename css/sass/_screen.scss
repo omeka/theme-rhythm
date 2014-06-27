@@ -946,6 +946,10 @@ div.tags:last-child p {
         @include trailer(1);
         border: 0;
         padding: 0;
+        
+        img {
+            height: rhythm(5);
+        }
     }
 }
 
