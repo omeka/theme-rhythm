@@ -212,6 +212,17 @@
     margin-left: 6px !important;
   }
 
+  .browse .image {
+    float: left;
+    display: block;
+    margin: 0 1.5em 1.5em 0;
+  }
+  .browse .image img {
+    vertical-align: top;
+    height: 7.5em;
+    width: auto;
+  }
+
   #wrap {
     padding-top: 3em;
   }
@@ -739,6 +750,11 @@
     float: left;
     margin: 0.375em 0.75em 0.375em 0;
   }
+  #featured-item .image,
+  #featured-collection .image,
+  #featured-exhibit .image {
+    margin: 0;
+  }
 
   #featured-item .item,
   #featured-collection .collection,
@@ -779,6 +795,10 @@
 
   /* @end */
   /* @group ----- Search ----- */
+  #search-filters,
+  #item-filters {
+    margin-bottom: 0.75em;
+  }
   #search-filters ul,
   #item-filters ul {
     padding: 0.75em 0 0 0;
@@ -796,6 +816,7 @@
     display: inline-block;
     padding: 0.375em 10px;
     margin: 0 0.375em 0.75em 0;
+    border-style: none;
   }
   #search-filters li ul,
   #item-filters li ul {
@@ -991,19 +1012,6 @@
   }
 
   /* @end */
-  /* @group ----- Collections/Browse ----- */
-  .browse .collection .image {
-    float: left;
-    display: block;
-    margin: 0 1.5em 1.5em 0;
-  }
-  .browse .collection .image img {
-    vertical-align: top;
-    height: 7.5em;
-    width: auto;
-  }
-
-  /* @end */
   /* @group ----- Exhibits ----- */
   .summary #exhibit-pages {
     padding: 0 1.69492%;
@@ -1085,10 +1093,6 @@
 
   .exhibits h1 {
     margin-bottom: 0em;
-  }
-
-  .exhibits .secondary-nav {
-    margin-bottom: 1.5em;
   }
 
   .layout-text *:last-child {

@@ -192,6 +192,7 @@ fieldset {
     margin: 0 rhythm(.5) rhythm(.5) 0;
 }
 
+
 .image {
     overflow: visible;
 }
@@ -200,6 +201,18 @@ fieldset {
 .exhibit .image img {
     @include box-shadow(-3px -3px 0 rgba(0,0,0,.2), -6px -6px 0 rgba(0,0,0,.1));
     margin-left: 6px !important;
+}
+
+.browse .image {
+    float: left;
+    display: block;
+    margin: 0 rhythm() rhythm() 0;
+    
+    img {
+        vertical-align: top;
+        height: rhythm(5);
+        width: auto;
+    }
 }
 
 #wrap {
@@ -726,6 +739,10 @@ nav a,
         float: left;
         margin: rhythm(.25) rhythm(.5) rhythm(.25) 0;
     }
+    
+    .image {
+        margin: 0;
+    }
 }
 
 #featured-item .item,
@@ -768,6 +785,8 @@ nav a,
 
 #search-filters,
 #item-filters {
+    @include trailer(.5);
+
     ul {
         padding: rhythm(.5) 0 0 0;
         @include trailing-border(1px, 0, $base-font-size, dashed);
@@ -780,6 +799,7 @@ nav a,
         display: inline-block;
         padding: rhythm(.25) 10px;
         margin: 0 rhythm(.25) rhythm(.5) 0;
+        border-style: none;
         
         ul {
             @include trailing-border(0px, 0, $base-font-size, dashed);
@@ -987,22 +1007,6 @@ div.tags:last-child p {
 
 /* @end */
 
-/* @group ----- Collections/Browse ----- */
-
-.browse .collection .image {
-    float: left;
-    display: block;
-    margin: 0 rhythm() rhythm() 0;
-    
-    img {
-        vertical-align: top;
-        height: rhythm(5);
-        width: auto;
-    }
-}
-
-/* @end */
-
 /* @group ----- Exhibits ----- */
 
 .summary #exhibit-pages {
@@ -1090,10 +1094,6 @@ ul.exhibit-section-nav{
 
 .exhibits h1 {
     @include trailer(0);
-}
-
-.exhibits .secondary-nav {
-    @include trailer();
 }
 
 .layout-text *:last-child {
