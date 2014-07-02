@@ -1,0 +1,3191 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* == Reset == */
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+@media screen {
+  /* line 19, sass/screen.scss */
+  html, body, div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, font, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: normal;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    vertical-align: baseline;
+  }
+
+  /* remember to define focus styles! */
+  /* line 30, sass/screen.scss */
+  :focus, :active {
+    outline: 0;
+  }
+
+  /* line 33, sass/screen.scss */
+  body {
+    line-height: 1;
+    color: black;
+    background: white;
+  }
+
+  /* line 38, sass/screen.scss */
+  ol, ul {
+    list-style: none;
+  }
+
+  /* tables still need 'cellspacing="0"' in the markup */
+  /* line 42, sass/screen.scss */
+  table {
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+
+  /* line 46, sass/screen.scss */
+  caption, th, td {
+    text-align: left;
+    font-weight: normal;
+  }
+
+  /* line 51, sass/screen.scss */
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+    content: "";
+  }
+
+  /* line 54, sass/screen.scss */
+  blockquote, q {
+    quotes: "" "";
+  }
+
+  /* == Pixel pattern in background of header thanks to 
+  http://www.kollermedia.at/pattern4u/lined/ == */
+  /*	== theme design by Chris Raymond, www.designtank.ws == */
+  /* Designed to a 960 px wide grid of 12 columns, each 60 px wide, with 20px gutters
+     12 col = 940 px wide [#content has 10px padding left and right, 940+10+10=960]
+     11 col = 860 px
+     10 col = 780 px
+      9 col = 700 px
+      8 col = 620 px
+      7 col = 540 px
+      6 col = 460 px
+      5 col = 380 px
+      4 col = 300 px
+      3 col = 220 px
+      2 col = 140 px
+  */
+  /* == Blue color palette:
+     == tans:#cca, #bb8  
+     == browns:#554 (body backgounrd color), #3C3C31 (main text/body text), #543 (item-type p) 
+     == lt. blue: #9ce
+  */
+  /* == Spring color palette:
+     == grays:#cca, #707066  
+     == deep purple:#bb3344 (body background color), #1a030c (main text/body text), #668888 (item-type p) 
+     == spring green: #ccdd44
+  */
+  /* == Fall color palette:
+     == gold:#cc9933  
+     == brick red:#770000, main body text: #221111 
+     == dark warm gray: #3d3d3d
+     == mocha (body background color): #b3ad9c
+     == cream (main content background color): #fffff7 
+  */
+  /* for this theme, image widths should conform to the grid: 140px, 220px, 300px, 380px, 460px,540px;
+     maximum width for image in primary div is 600px, allowing 20px space to right for breathing room;
+  */
+  /* ======== START LAYOUT ======= */
+  /* line 101, sass/screen.scss */
+  #wrap {
+    margin: 0 auto;
+    /* the auto margins (in conjunction with a width) center the page */
+    text-align: left;
+    /* this overrides the text-align: center on the body element. */
+    width: 960px;
+    padding-top: 60px;
+  }
+
+  /* == header == */
+  /* line 107, sass/screen.scss */
+  #header {
+    position: relative;
+    padding: 0 0 10px 0;
+    /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+  }
+
+  /* line 112, sass/screen.scss */
+  #site-title {
+    padding: 15px 0 0 15px;
+  }
+
+  /* line 116, sass/screen.scss */
+  #header #about {
+    position: relative;
+    top: -30px;
+    left: 400px;
+    width: 320px;
+  }
+
+  /* line 124, sass/screen.scss */
+  .browse #header #about,
+  .show #header #about,
+  .item #header #about {
+    display: none;
+  }
+
+  /*hides the About copy on inside pages*/
+  /* line 127, sass/screen.scss */
+  #header #about p {
+    font-family: Baskerville, "Hoefler Text", "Baskerville Old Face", "Palatino Linotype", "Book Antiqua", "Times New Roman", serif;
+    font-size: 18px;
+    line-height: 1.2em;
+    font-weight: normal;
+  }
+
+  /* line 133, sass/screen.scss */
+  #header #about .more a {
+    font-size: .8em;
+    font-weight: normal;
+    text-decoration: none;
+    letter-spacing: 1px;
+  }
+
+  /* line 140, sass/screen.scss */
+  #searchwrap {
+    position: absolute;
+    bottom: 0px;
+    right: 5px;
+    text-align: right;
+    height: 45px;
+  }
+
+  /* line 147, sass/screen.scss */
+  #searchwrap a {
+    text-decoration: none;
+    padding: 10px 5px 20px 0;
+    line-height: 20px;
+  }
+
+  /* line 152, sass/screen.scss */
+  #header #search {
+    border-bottom: 0px;
+    padding: 5px 5px 0 10px;
+    font: 10px Verdana, Geneva, sans-serif;
+    width: 120px;
+  }
+
+  /* line 159, sass/screen.scss */
+  #submit_search {
+    border: none;
+    background-color: transparent;
+    padding: 5px 5px 0px 0px;
+    font: 10px Verdana, Geneva, sans-serif;
+  }
+
+  /* line 165, sass/screen.scss */
+  #advanced-search-link a {
+    text-decoration: none;
+    border: none;
+    clear: both;
+    text-align: right;
+    font-size: 1em;
+    padding: 4px 0;
+    font-weight: bold;
+  }
+
+  /* == content == */
+  /* line 175, sass/screen.scss */
+  #content {
+    padding: 20px 10px 20px 10px;
+  }
+
+  /* remember that padding is the space inside the div box and margin is the space outside the div box */
+  /* == primary == */
+  /* line 181, sass/screen.scss */
+  #primary {
+    float: left;
+    width: 610px;
+  }
+
+  /* line 185, sass/screen.scss */
+  #primary ul li {
+    font-weight: normal;
+    list-style-type: square;
+  }
+
+  /* line 189, sass/screen.scss */
+  #primary ul {
+    margin-left: 1.2em;
+  }
+
+  /* line 192, sass/screen.scss */
+  #primary img.full {
+    max-width: 100%;
+  }
+
+  /* line 195, sass/screen.scss */
+  .advanced-search #primary {
+    width: 920px;
+    border: none;
+    padding-top: 30px;
+  }
+
+  /* line 200, sass/screen.scss */
+  #primary-nav {
+    position: relative;
+    padding: 10px 0;
+    margin: 0;
+  }
+
+  /*== primary navigation div == */
+  /* line 207, sass/screen.scss */
+  #primary-nav ul {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+
+  /* line 212, sass/screen.scss */
+  #primary-nav ul li {
+    margin-right: 10px;
+  }
+
+  /* line 216, sass/screen.scss */
+  #primary-nav li,
+  .navigation li {
+    display: inline;
+    font-family: "Century Gothic", "Apple Gothic", "Lucida Sans Unicode", "Franklin Gothic Medium", sans-serif;
+    padding: .5em;
+    margin-left: 0px;
+    font-weight: normal;
+    font-size: 1em;
+  }
+
+  /* line 225, sass/screen.scss */
+  #primary-nav a,
+  .navigation a {
+    text-decoration: none;
+    font-weight: normal;
+    margin-left: 15px;
+  }
+
+  /* == secondary == */
+  /* line 231, sass/screen.scss */
+  #secondary {
+    float: right;
+    width: 310px;
+    margin-right: 0px;
+    overflow: hidden;
+    padding-left: 10px;
+  }
+
+  /* == footer == */
+  /* line 238, sass/screen.scss */
+  #footer {
+    clear: both;
+    padding-top: 20px;
+    overflow: hidden;
+    zoom: 1;
+    position: relative;
+  }
+
+  /* line 245, sass/screen.scss */
+  #footer .navigation {
+    float: right;
+    width: 100%;
+    text-align: right;
+    padding: 5px 5px 0 0;
+  }
+
+  /* line 251, sass/screen.scss */
+  #footer .navigation li {
+    list-style-type: none;
+    margin-left: 5px;
+    padding: 0.5em 0.5em 0.5em 5px;
+  }
+
+  /* line 256, sass/screen.scss */
+  #footer .navigation a {
+    font-size: 0.75em;
+  }
+
+  /* line 260, sass/screen.scss */
+  #footer #footer-text {
+    float: left;
+    width: 590px;
+    padding: 10px;
+    font-size: 9px;
+    line-height: 1em;
+  }
+
+  /* ==== END LAYOUT ==== */
+  /* ===== TYPOGRAPHY, GENERIC STYLES and MISC CLASSES ======== */
+  /* line 271, sass/screen.scss */
+  body {
+    font-size: 62.5%;
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  /* line 278, sass/screen.scss */
+  h1,
+  h2 {
+    font-family: Baskerville, "Hoefler Text", "Baskerville Old Face", "Palatino Linotype", "Book Antiqua", "Times New Roman", serif;
+  }
+
+  /* line 281, sass/screen.scss */
+  #header h1 {
+    font-size: 2.8em;
+    margin-bottom: 0.5em;
+    line-height: 1em;
+    letter-spacing: -1px;
+    font-weight: normal;
+  }
+
+  /* line 288, sass/screen.scss */
+  #primary h1 {
+    font-size: 2.5em;
+    letter-spacing: normal;
+    line-height: 2em;
+    margin-bottom: 1em;
+  }
+
+  /* line 294, sass/screen.scss */
+  .bolded {
+    font-weight: bold;
+    font-family: inherit;
+  }
+
+  /* line 298, sass/screen.scss */
+  h2 {
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+    line-height: 1em;
+  }
+
+  /* line 304, sass/screen.scss */
+  h3,
+  h4 {
+    font-family: Verdana, sans-serif;
+    font-weight: bold;
+  }
+
+  /* line 308, sass/screen.scss */
+  h3 {
+    font-size: 1.2em;
+    margin-bottom: .5em;
+    line-height: 1em;
+  }
+
+  /* line 313, sass/screen.scss */
+  h4 {
+    font-size: 1em;
+    margin-bottom: .5em;
+    line-height: 1em;
+  }
+
+  /* line 323, sass/screen.scss */
+  p,
+  .exhibit .description,
+  .exhibit-item,
+  .exhibit-text,
+  .item-description,
+  .element-text {
+    font-family: "Century Gothic", "Apple Gothic", "Lucida Sans Unicode", "Franklin Gothic", sans-serif;
+  }
+
+  /* line 326, sass/screen.scss */
+  .exhibit-item {
+    font-weight: bold;
+    line-height: 2em;
+    font-size: 1.25em;
+  }
+
+  /* line 332, sass/screen.scss */
+  p.sitetitle {
+    font-size: 3.8em;
+    margin-bottom: 0em;
+    line-height: 1.5em;
+  }
+
+  /* line 337, sass/screen.scss */
+  p.sitetitle a {
+    text-decoration: none;
+  }
+
+  /* line 340, sass/screen.scss */
+  p.tagline {
+    margin-top: -0em;
+    font-size: 1.5em;
+    font-style: italic;
+  }
+
+  /* line 348, sass/screen.scss */
+  h1 a,
+  h2 a,
+  h3 a {
+    text-decoration: none;
+  }
+
+  /* line 352, sass/screen.scss */
+  #secondary h2 {
+    text-align: center;
+  }
+
+  /* line 357, sass/screen.scss */
+  #secondary dl a {
+    text-decoration: none;
+  }
+
+  /* line 358, sass/screen.scss */
+  #secondary dl {
+    overflow: hidden;
+  }
+
+  /* line 359, sass/screen.scss */
+  #secondary dd {
+    margin-left: 0px;
+    font-weight: normal;
+    margin-bottom: 1.5em;
+    margin-top: 0;
+    padding-top: 5px;
+    font-size: .8em;
+    line-height: 1.5em;
+  }
+
+  /* line 368, sass/screen.scss */
+  #secondary dt {
+    margin-left: 0;
+    padding-top: 5px;
+    margin-top: 10px;
+  }
+
+  /* line 373, sass/screen.scss */
+  #secondary dt,
+  #secondary dt a {
+    font-weight: bold;
+  }
+
+  /* line 376, sass/screen.scss */
+  #secondary dd .item-img {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin: 5px 25px 20px 0;
+  }
+
+  /*= this is the containing div to force images to 100% width using jquery.imagefit.js; = 
+    = this function is applied in custom.js in your theme put margins on the container, not the image =
+  */
+  /* more specific styles for show page sidebar def list*/
+  /* line 387, sass/screen.scss */
+  #secondary #show-sidebar {
+    padding: 20px 5px 20px 10px;
+  }
+
+  /* line 390, sass/screen.scss */
+  .show #secondary dd {
+    margin-left: 10px;
+    font-weight: normal;
+    margin-bottom: .5em;
+  }
+
+  /* line 395, sass/screen.scss */
+  .show #secondary dt {
+    margin-left: 0;
+    font-weight: bold;
+    border: none;
+    padding-top: 0px;
+  }
+
+  /* line 401, sass/screen.scss */
+  .show #secondary a {
+    text-decoration: none;
+    font-weight: normal;
+  }
+
+  /* line 405, sass/screen.scss */
+  .show .desc {
+    clear: left;
+  }
+
+  /* Misc. Elements */
+  /* line 408, sass/screen.scss */
+  object {
+    margin-bottom: 18px;
+    display: block;
+  }
+
+  /* line 418, sass/screen.scss */
+  p,
+  ul,
+  ol,
+  dl,
+  .item-description,
+  .exhibit .description,
+  .element-text {
+    font-size: 1.3em;
+    line-height: 1.5em;
+    margin-bottom: 1.5em;
+  }
+
+  /* line 423, sass/screen.scss */
+  li * {
+    font-size: 1.1em;
+  }
+
+  /* line 424, sass/screen.scss */
+  ul {
+    list-style: square;
+  }
+
+  /* line 425, sass/screen.scss */
+  ol {
+    list-style: decimal;
+  }
+
+  /* line 426, sass/screen.scss */
+  ul, ol {
+    margin-left: 30px;
+  }
+
+  /* line 427, sass/screen.scss */
+  ul li {
+    font-weight: normal;
+  }
+
+  /* line 428, sass/screen.scss */
+  ul ul {
+    margin-left: 30px;
+  }
+
+  /* line 429, sass/screen.scss */
+  ul ul li {
+    list-style-type: square;
+    background: none;
+    font-size: 0.75em;
+    padding-left: 0px;
+  }
+
+  /* line 435, sass/screen.scss */
+  ul.bibliography li {
+    margin-bottom: 1.5em;
+    text-indent: -1.5em;
+    margin-left: 1.5em;
+  }
+
+  /* line 440, sass/screen.scss */
+  dd {
+    margin-left: 1.33333em;
+  }
+
+  /* line 441, sass/screen.scss */
+  em, i {
+    font-style: italic;
+  }
+
+  /* line 442, sass/screen.scss */
+  strong, b {
+    font-weight: bold;
+  }
+
+  /* line 444, sass/screen.scss */
+  .field p {
+    margin-bottom: 0.5em;
+  }
+
+  /* line 445, sass/screen.scss */
+  .more {
+    font: .75em Century Gothic, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  /* line 450, sass/screen.scss */
+  .hidden {
+    text-indent: -999em;
+  }
+
+  /* line 451, sass/screen.scss */
+  .utility-text {
+    font-size: 10px;
+  }
+
+  /* Forms */
+  /* line 455, sass/screen.scss */
+  form {
+    margin-bottom: 3em;
+  }
+
+  /* line 456, sass/screen.scss */
+  .advanced-search form {
+    padding: 20px 5px 20px 20px;
+    width: 540px;
+  }
+
+  /* line 460, sass/screen.scss */
+  form#simple-search {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+  }
+
+  /* line 465, sass/screen.scss */
+  legend {
+    display: none;
+  }
+
+  /* line 466, sass/screen.scss */
+  fieldset {
+    display: block;
+    clear: both;
+  }
+
+  /* line 471, sass/screen.scss */
+  label,
+  .label {
+    font-size: 1.5em;
+  }
+
+  /* line 474, sass/screen.scss */
+  .label {
+    width: 114px;
+  }
+
+  /* line 477, sass/screen.scss */
+  .field {
+    padding: .5em 0 .5em 0;
+    overflow: hidden;
+    width: 512px;
+    margin-bottom: 2em;
+  }
+
+  /* line 483, sass/screen.scss */
+  .field label {
+    float: left;
+    width: 114px;
+    font-weight: normal;
+    clear: left;
+  }
+
+  /* line 490, sass/screen.scss */
+  .field .textinput,
+  .field select {
+    float: right;
+    width: 378px;
+  }
+
+  /* line 494, sass/screen.scss */
+  .field select {
+    width: 382px;
+  }
+
+  /* line 495, sass/screen.scss */
+  .field input {
+    margin: 0;
+  }
+
+  /* line 497, sass/screen.scss */
+  input.submitinput {
+    margin-top: 1em;
+  }
+
+  /* line 499, sass/screen.scss */
+  .radioinputs {
+    display: block;
+    margin-bottom: 0.5em;
+    overflow: hidden;
+  }
+
+  /* line 504, sass/screen.scss */
+  .radioinputs label {
+    display: block;
+    float: left;
+    width: 48%;
+    clear: none;
+  }
+
+  /* line 511, sass/screen.scss */
+  input#description {
+    width: 378px;
+    height: 312px;
+  }
+
+  /* line 515, sass/screen.scss */
+  #advanced-0-terms {
+    margin: 5px 0 0 130px;
+  }
+
+  /* line 516, sass/screen.scss */
+  #submit_search_advanced {
+    margin-top: 20px;
+    margin-left: 460px;
+  }
+
+  /* line 520, sass/screen.scss */
+  textarea#rights {
+    float: none;
+    display: none;
+    line-height: 1.33333em;
+    width: 512px;
+    border: none;
+    font: 1.5em Baskerville,"Times New Roman",Times, serif;
+    height: 31em;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* line 532, sass/screen.scss */
+  #items_search {
+    float: right;
+  }
+
+  /* Misc classes */
+  /* line 535, sass/screen.scss */
+  .item-pagination {
+    overflow: hidden;
+    width: 560px;
+    margin-bottom: 1.5em;
+    padding-top: 2em;
+  }
+
+  /* line 541, sass/screen.scss */
+  .item-pagination li.previous {
+    display: block;
+    float: left;
+    width: 20%;
+    padding-left: 15px;
+  }
+
+  /* line 547, sass/screen.scss */
+  .item-pagination li.next {
+    float: right;
+    display: block;
+    width: 48%;
+    text-align: left;
+    padding-left: 15px;
+  }
+
+  /* line 554, sass/screen.scss */
+  .hide {
+    text-indent: -1000em;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+
+  /* line 559, sass/screen.scss */
+  div.error {
+    font-size: 1.5em;
+    line-height: 1.33333em;
+    margin: 1.33333em 0;
+  }
+
+  /* line 565, sass/screen.scss */
+  .fltrt {
+    /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+    float: right;
+    margin-left: 8px;
+  }
+
+  /* line 569, sass/screen.scss */
+  .fltlft {
+    /* this class can be used to float an element left in your page */
+    float: left;
+    margin: 0;
+    padding: 5px 10px 0 0;
+  }
+
+  /* line 574, sass/screen.scss */
+  .clearfloat {
+    /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+    clear: both;
+    height: 0;
+    font-size: 1px;
+    line-height: 0px;
+  }
+
+  /* line 580, sass/screen.scss */
+  ul.navigation li {
+    font-weight: normal;
+    list-style-type: none;
+    padding-left: 20px;
+  }
+
+  /* line 585, sass/screen.scss */
+  .browse ul.navigation li {
+    background: none;
+  }
+
+  /* line 586, sass/screen.scss */
+  .navigation li, .pagination li {
+    display: inline;
+  }
+
+  /* line 587, sass/screen.scss */
+  .pagination li {
+    display: inline-block;
+  }
+
+  /* line 588, sass/screen.scss */
+  .navigation a, .pagination a {
+    text-decoration: none;
+  }
+
+  /* line 590, sass/screen.scss */
+  ul.item-pagination li {
+    background-image: none;
+    font-weight: normal;
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  /* line 596, sass/screen.scss */
+  ul.item-pagination a {
+    margin-left: 0;
+  }
+
+  /* line 597, sass/screen.scss */
+  ul.title-list {
+    padding-left: 0px;
+  }
+
+  /* line 598, sass/screen.scss */
+  ul.title-list li {
+    list-style-type: square;
+    list-style-position: inside;
+    font-style: italic;
+    line-height: 1.5em;
+    font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+  }
+
+  /* line 606, sass/screen.scss */
+  ul.exhibit-section-nav {
+    margin-top: 2em;
+    margin-bottom: .5em;
+  }
+
+  /* line 611, sass/screen.scss */
+  #exhibit-page-navigation {
+    clear: both;
+    margin-bottom: 1em;
+    float: right;
+  }
+
+  /* line 616, sass/screen.scss */
+  #exhibit-page-navigation .next-page {
+    margin-left: 2em;
+  }
+
+  /* line 620, sass/screen.scss */
+  #secondary .exhibit-section-nav a {
+    text-decoration: none;
+  }
+
+  /* line 621, sass/screen.scss */
+  #secondary .exhibit-section-nav a:hover {
+    text-decoration: underline;
+  }
+
+  /* line 623, sass/screen.scss */
+  #secondary .exhibit-page-nav a {
+    text-decoration: none;
+  }
+
+  /* line 624, sass/screen.scss */
+  #secondary .exhibit-page-nav a:hover {
+    text-decoration: underline;
+  }
+
+  /* Microformats */
+  /* line 627, sass/screen.scss */
+  .hTagcloud {
+    margin-top: 2em;
+  }
+
+  /* line 628, sass/screen.scss */
+  .hTagcloud ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    line-height: 2.2em;
+  }
+
+  /* line 634, sass/screen.scss */
+  .hTagcloud li {
+    display: inline;
+    margin-right: 8px;
+    background-image: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  /* line 642, sass/screen.scss */
+  .popular {
+    font-size: 100%;
+  }
+
+  /* line 643, sass/screen.scss */
+  .v-popular {
+    font-size: 140%;
+  }
+
+  /* line 644, sass/screen.scss */
+  .vv-popular {
+    font-size: 180%;
+  }
+
+  /* line 645, sass/screen.scss */
+  .vvv-popular {
+    font-size: 220%;
+  }
+
+  /* line 646, sass/screen.scss */
+  .vvvv-popular {
+    font-size: 260%;
+  }
+
+  /* line 647, sass/screen.scss */
+  .vvvvv-popular {
+    font-size: 300%;
+  }
+
+  /* line 648, sass/screen.scss */
+  .vvvvvv-popular {
+    font-size: 340%;
+  }
+
+  /* line 649, sass/screen.scss */
+  .vvvvvvv-popular {
+    font-size: 380%;
+  }
+
+  /* line 650, sass/screen.scss */
+  .vvvvvvvv-popular {
+    font-size: 420%;
+  }
+
+  /* == Browsing secondary nav css sprites == */
+  /* line 654, sass/screen.scss */
+  ul#secondary-nav {
+    font-size: 86%;
+    margin-left: 0;
+    list-style: none;
+  }
+
+  /* line 659, sass/screen.scss */
+  ul#secondary-nav li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* line 665, sass/screen.scss */
+  ul#secondary-nav a {
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    text-transform: uppercase;
+    padding: 6px 10px;
+    margin: 0;
+    letter-spacing: 1px;
+  }
+
+  /* == Pagination Navigation ==*/
+  /* line 676, sass/screen.scss */
+  .pagination ul {
+    text-align: right;
+    list-style: none;
+    padding: 0 0.5em;
+    margin-bottom: 30px;
+  }
+
+  /* line 684, sass/screen.scss */
+  .pagination ul li,
+  .pagination li,
+  .pagination li a {
+    font-size: 11px;
+    font-family: Verdana, Arial, sans-serif;
+  }
+
+  /* line 688, sass/screen.scss */
+  .pagination ul li {
+    background: none;
+  }
+
+  /* line 689, sass/screen.scss */
+  .pagination li {
+    display: inline-block;
+    margin-bottom: 0;
+    padding: .5em;
+  }
+
+  /* line 694, sass/screen.scss */
+  .pagination li a {
+    text-decoration: none;
+  }
+
+  /* items meta data and browsing pages styles */
+  /* line 698, sass/screen.scss */
+  .item {
+    float: left;
+    clear: both;
+    margin-bottom: 30px;
+  }
+
+  /* line 703, sass/screen.scss */
+  .item-img img {
+    float: left;
+    padding: 5px;
+    margin: 0 10px 20px 0;
+  }
+
+  /* line 708, sass/screen.scss */
+  .show img {
+    border: none;
+    margin-bottom: 20px;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  /* line 715, sass/screen.scss */
+  .item .desc h4,
+  .item .desc p {
+    font-weight: normal;
+    padding-right: 10px;
+    font-size: 1.3em;
+    line-height: 150%;
+  }
+
+  /* line 721, sass/screen.scss */
+  .item-type {
+    font-weight: bold;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  /* line 726, sass/screen.scss */
+  p.item-type {
+    margin-bottom: .5em;
+    text-transform: uppercase;
+    font-size: .7em;
+  }
+
+  /* line 731, sass/screen.scss */
+  .item-meta {
+    margin-left: 20px;
+    width: 580px;
+    padding-top: 15px;
+  }
+
+  /* line 736, sass/screen.scss */
+  .show .item-meta {
+    margin-left: 0;
+    width: 610px;
+    border-top: 0px;
+    padding-top: 0;
+  }
+
+  /* line 742, sass/screen.scss */
+  .item-meta h3 {
+    font-size: 1.33em;
+  }
+
+  /* line 744, sass/screen.scss */
+  .tags strong {
+    font-size: .9em;
+  }
+
+  /* line 745, sass/screen.scss */
+  p.view-items-link {
+    text-align: right;
+    padding-right: 0px;
+    font-size: .8em;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+
+  /* line 752, sass/screen.scss */
+  p.view-items-link a {
+    text-decoration: none;
+  }
+
+  /* line 754, sass/screen.scss */
+  p.tags {
+    margin-bottom: 2em;
+  }
+
+  /* .meta-main is the div that positions the item meta data in the primary content area and puts a dashed border above it */
+  /* line 757, sass/screen.scss */
+  .meta-main {
+    padding: 10px 0 0 100px;
+    margin-bottom: 20px;
+  }
+
+  /* line 761, sass/screen.scss */
+  .meta-main p {
+    text-align: right;
+    padding-right: 10px;
+  }
+
+  /* line 765, sass/screen.scss */
+  .meta-main .runinHead {
+    font-family: Verdana, sans-serif;
+    font-weight: bold;
+    font-size: .8em;
+  }
+
+  /*featured box styles  --may need to modify properties for these boxes on inside pages 
+  and add .home in front of these 	selectors--*/
+  /* line 773, sass/screen.scss */
+  .featured-box {
+    float: left;
+    width: 560px;
+    position: relative;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+
+  /* line 780, sass/screen.scss */
+  #secondary .featured-box {
+    width: 280px;
+    padding: 20px 10px;
+  }
+
+  /* line 781, sass/screen.scss */
+  #secondary .featured-box p {
+    clear: both;
+  }
+
+  /* line 782, sass/screen.scss */
+  #secondary .featured-box p {
+    clear: both;
+  }
+
+  /* line 787, sass/screen.scss */
+  #secondary .featured-box p .title,
+  #secondary .featured-box p .title a,
+  #primary .featured-box p .title,
+  #primary .featured-box p .title a:visited,
+  #secondary .featured-box p .title a:visited {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  /* line 792, sass/screen.scss */
+  #secondary .featured-box p .title a,
+  #primary .featured-box p .title a {
+    text-decoration: none;
+  }
+
+  /* line 795, sass/screen.scss */
+  #secondary .featured-box img {
+    margin-left: 65px;
+  }
+
+  /*NOTE: The featured item img in secondary is the square thumbnail, which is constrained to*/
+  /* line 796, sass/screen.scss */
+  .featured-box h2 {
+    font-family: "Baskerville", Georgia, serif;
+    font-size: 2em;
+    margin-bottom: .75em;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  /* line 805, sass/screen.scss */
+  .featured-box p,
+  .description p {
+    font: 1.2em/1.5em "Century Gothic", "Apple Gothic", "Lucida Sans Unicode", "Franklin Gothic", sans-serif;
+    margin-right: 10px;
+  }
+
+  /* line 809, sass/screen.scss */
+  .type-featured {
+    text-transform: uppercase;
+    margin-top: 10px;
+    font: .9em "Century Gothic", Arial, sans-serif;
+  }
+
+  /*this styles the part of h2 that specifies the type of thing featured--Collection or Exhibit */
+  /* line 814, sass/screen.scss */
+  .featured-box.title,
+  .featured-box.title a {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Century Gothic", "Apple Gothic", "Lucida Sans Unicode", "Franklin Gothic Medium";
+    text-decoration: none;
+  }
+
+  /* line 819, sass/screen.scss */
+  .featured-box img {
+    float: left;
+    margin: 1em 10px 10px 0;
+  }
+
+  /*styles for sidebar featured item */
+  /* line 825, sass/screen.scss */
+  #sidebar-featured-item {
+    padding-top: 10px;
+  }
+
+  /* line 826, sass/screen.scss */
+  .featured img {
+    float: left;
+    margin: 0 10px;
+    padding: 5px;
+  }
+
+  /* line 831, sass/screen.scss */
+  #sidebar-featured-item .description p {
+    font-weight: normal;
+    margin: 0 5px 5px 10px;
+    padding-bottom: 20px;
+  }
+
+  /* line 836, sass/screen.scss */
+  #sidebar-featured-item h2 {
+    text-align: center;
+    letter-spacing: 0;
+    margin-bottom: 10px;
+    font-weight: normal;
+  }
+
+  /* line 842, sass/screen.scss */
+  #sidebar-featured-item a {
+    text-decoration: none;
+  }
+
+  /* Styles for home sidebar recent items */
+  /* line 845, sass/screen.scss */
+  #recent-items .item-img {
+    width: 50px;
+    height: 50px;
+  }
+
+  /* line 850, sass/screen.scss */
+  #recent-items .item-img img {
+    max-width: 100%;
+  }
+
+  /*Blue styles*/
+  /* line 855, sass/screen.scss */
+  .blue #wrap {
+    background: white url(../images/blue/bg-top.jpg) top left no-repeat;
+  }
+
+  /* line 856, sass/screen.scss */
+  .blue #header {
+    border-bottom: 5px solid #9ce;
+    border-top: 5px solid #9ce;
+    background: #3c3231 url(../images/blue/bg_header.gif) repeat top;
+  }
+
+  /* line 861, sass/screen.scss */
+  .blue #header #about p {
+    color: #fff;
+  }
+
+  /* line 862, sass/screen.scss */
+  .blue #header #about .more a {
+    color: #bb8;
+  }
+
+  /* line 863, sass/screen.scss */
+  .blue #header #about .more a:hover {
+    color: #9ce;
+  }
+
+  /* line 864, sass/screen.scss */
+  .blue #searchwrap {
+    background-color: #9ce;
+  }
+
+  /* line 865, sass/screen.scss */
+  .blue #searchwrap a {
+    color: #fff;
+  }
+
+  /* line 866, sass/screen.scss */
+  .blue #searchwrap a:visited {
+    color: #323232;
+  }
+
+  /* line 867, sass/screen.scss */
+  .blue #searchwrap a:hover {
+    color: #fff;
+  }
+
+  /* line 868, sass/screen.scss */
+  .blue #header #search {
+    border: 5px solid #9ce;
+    background: #fff;
+  }
+
+  /* line 872, sass/screen.scss */
+  .blue #submit_search {
+    color: #fff;
+  }
+
+  /* line 873, sass/screen.scss */
+  .blue #advanced-search-link a {
+    color: #345;
+  }
+
+  /* line 874, sass/screen.scss */
+  .blue #primary-nav {
+    background-color: #fff;
+  }
+
+  /* line 875, sass/screen.scss */
+  .blue #primary-nav ul li {
+    background: url(../images/blue/bullet-omeka.png) no-repeat 0 50%;
+  }
+
+  /* line 876, sass/screen.scss */
+  .blue .navigation li {
+    color: #3c3c31;
+  }
+
+  /* line 877, sass/screen.scss */
+  .blue .navigation a {
+    color: #3c3c31;
+  }
+
+  /* line 879, sass/screen.scss */
+  .blue #primary-nav a:hover,
+  .blue .navigation a:hover {
+    color: #9ce;
+  }
+
+  /* line 886, sass/screen.scss */
+  .blue #primary-nav .current a,
+  .blue .exhibits #primary-nav li.nav-exhibits a,
+  .blue .collections #primary-nav li.nav-collections a,
+  .blue .about #primary-nav li.nav-about a,
+  .blue .items #primary-nav li.nav-items a {
+    color: #bb8;
+    background-color: #fff;
+  }
+
+  /* makes the primary nav link on the current page tan; gets class [exhibits, .collections, .about] from assigned body class in theme php */
+  /* == secondary == */
+  /* line 891, sass/screen.scss */
+  .blue #secondary {
+    border-left: 1px solid #9ce;
+  }
+
+  /* == footer == */
+  /* line 893, sass/screen.scss */
+  .blue #footer {
+    background: white url(../images/blue/bg-footer.jpg) no-repeat left top;
+  }
+
+  /* line 894, sass/screen.scss */
+  .blue #footer .navigation {
+    background: #fff;
+  }
+
+  /* line 895, sass/screen.scss */
+  .blue #footer .navigation li {
+    background: transparent url(../images/blue/bullet-omeka.png) no-repeat scroll 0 50%;
+  }
+
+  /* line 896, sass/screen.scss */
+  .blue #footer .navigation a {
+    color: #323231;
+  }
+
+  /* line 897, sass/screen.scss */
+  .blue #footer .navigation .current a {
+    color: #BBBB88;
+  }
+
+  /* line 898, sass/screen.scss */
+  .blue #footer #footer-text {
+    color: #000;
+  }
+
+  /* line 899, sass/screen.scss */
+  .blue body {
+    color: #3c3231;
+    background-color: #3c3231;
+  }
+
+  /* line 903, sass/screen.scss */
+  .blue #primary h1 {
+    color: #543;
+  }
+
+  /* line 904, sass/screen.scss */
+  .blue h2 {
+    color: #9ce;
+  }
+
+  /* line 906, sass/screen.scss */
+  .blue h3,
+  .blue h4 {
+    color: #bb8;
+  }
+
+  /* line 913, sass/screen.scss */
+  .blue p,
+  .blue .exhibit .description,
+  .blue .exhibit-item,
+  .blue .exhibit-text,
+  .blue .item-description {
+    color: #3c3c31;
+  }
+
+  /* line 916, sass/screen.scss */
+  .blue p.sitetitle {
+    color: #fff;
+  }
+
+  /* line 917, sass/screen.scss */
+  .blue p.sitetitle a {
+    color: #fff;
+  }
+
+  /* line 918, sass/screen.scss */
+  .blue p.tagline {
+    color: #fff;
+  }
+
+  /* line 919, sass/screen.scss */
+  .blue .exhibit .tags {
+    color: #3c3c31;
+  }
+
+  /* line 920, sass/screen.scss */
+  .blue .exhibit .tags a {
+    color: #9ce;
+  }
+
+  /* line 921, sass/screen.scss */
+  .blue a:link {
+    color: #9ce;
+  }
+
+  /* line 922, sass/screen.scss */
+  .blue a:visited {
+    color: #9ce;
+  }
+
+  /* line 923, sass/screen.scss */
+  .blue a:hover {
+    color: #3c3c31;
+  }
+
+  /* line 924, sass/screen.scss */
+  .blue a:active {
+    color: #ddb;
+  }
+
+  /* line 926, sass/screen.scss */
+  .blue .archive a:link {
+    color: #9ce;
+  }
+
+  /* line 927, sass/screen.scss */
+  .blue .archive a:visited {
+    color: #9ce;
+  }
+
+  /* line 928, sass/screen.scss */
+  .blue .archive a:hover {
+    color: #9ce;
+  }
+
+  /* line 929, sass/screen.scss */
+  .blue .archive a:active {
+    color: #9ce;
+  }
+
+  /* line 931, sass/screen.scss */
+  .blue #header h1 a {
+    color: #fff;
+  }
+
+  /* line 933, sass/screen.scss */
+  .blue #secondary h2 {
+    color: #554422;
+  }
+
+  /* line 936, sass/screen.scss */
+  .blue #secondary dl,
+  .blue #secondary dt a {
+    color: #323232;
+  }
+
+  /* line 939, sass/screen.scss */
+  .blue #secondary dt {
+    border-top: 1px dashed #bb8;
+  }
+
+  /* line 940, sass/screen.scss */
+  .blue #secondary #show-sidebar {
+    background-color: #eed;
+    border-top: 1px dashed #bb8;
+    border-bottom: 1px dashed #bb8;
+  }
+
+  /* line 945, sass/screen.scss */
+  .blue .show #secondary dl {
+    color: #544;
+  }
+
+  /* line 947, sass/screen.scss */
+  .blue .show #secondary a {
+    color: #000;
+  }
+
+  /* line 949, sass/screen.scss */
+  .blue .show #secondary a:hover {
+    color: #fff;
+  }
+
+  /* line 950, sass/screen.scss */
+  .blue .advanced-search form {
+    background-color: #9ce;
+  }
+
+  /* line 952, sass/screen.scss */
+  .blue label,
+  .blue .label {
+    color: #000;
+  }
+
+  /* line 955, sass/screen.scss */
+  .blue .field {
+    border-bottom: 1px dashed #fff;
+  }
+
+  /* line 957, sass/screen.scss */
+  .blue .field .textinput,
+  .blue .field select {
+    background-color: #fff;
+  }
+
+  /* line 961, sass/screen.scss */
+  .blue textarea#rights {
+    color: #444;
+  }
+
+  /* line 962, sass/screen.scss */
+  .blue ul.navigation li {
+    background: url(../images/blue/bullet-omeka.png) no-repeat 0 50%;
+  }
+
+  /* line 963, sass/screen.scss */
+  .blue ul.title-list li {
+    color: #543;
+  }
+
+  /* line 964, sass/screen.scss */
+  .blue #secondary .exhibit-section-nav a {
+    color: #554;
+  }
+
+  /* line 965, sass/screen.scss */
+  .blue #secondary .exhibit-section-nav a:hover {
+    color: #bb8;
+  }
+
+  /* line 966, sass/screen.scss */
+  .blue #secondary .exhibit-section-nav .current a {
+    color: #bb8;
+  }
+
+  /* line 968, sass/screen.scss */
+  .blue #secondary .exhibit-page-nav a {
+    color: #554;
+  }
+
+  /* line 969, sass/screen.scss */
+  .blue #secondary .exhibit-page-nav a:hover {
+    color: #bb8;
+  }
+
+  /* line 970, sass/screen.scss */
+  .blue #secondary .exhibit-page-nav .current a {
+    color: #bb8;
+  }
+
+  /* line 972, sass/screen.scss */
+  .blue .popular a, .blue .popular a:visited {
+    color: #3c3c31;
+  }
+
+  /* line 973, sass/screen.scss */
+  .blue .v-popular a, .blue .v-popular a:visited {
+    color: #3c3c31;
+  }
+
+  /* line 974, sass/screen.scss */
+  .blue .vv-popular a, .blue .vv-popular a:visited {
+    color: #3c3c31;
+  }
+
+  /* line 975, sass/screen.scss */
+  .blue .vvv-popular a, .blue .vvv-popular a:visited {
+    color: #7ac;
+  }
+
+  /* line 976, sass/screen.scss */
+  .blue .vvvv-popular a, .blue .vvvv-popular a:visited {
+    color: #7ac;
+  }
+
+  /* line 977, sass/screen.scss */
+  .blue .vvvvv-popular a, .blue .vvvvv-popular a:visited {
+    color: #9ce;
+  }
+
+  /* line 978, sass/screen.scss */
+  .blue .vvvvvv-popular a, .blue .vvvvvv-popular a:visited {
+    color: #9ce;
+  }
+
+  /* line 979, sass/screen.scss */
+  .blue .vvvvvvv-popular a, .blue .vvvvvvv-popular a:visited {
+    color: #9ce;
+  }
+
+  /* line 980, sass/screen.scss */
+  .blue .vvvvvvvv-popular a, .blue .vvvvvvvv-popular a:visited {
+    color: #9ce;
+  }
+
+  /* line 982, sass/screen.scss */
+  .blue ul#secondary-nav a {
+    color: #fff;
+  }
+
+  /* line 984, sass/screen.scss */
+  .blue ul#secondary-nav a:link,
+  .blue ul#secondary-nav a:visited {
+    background-color: #bb8;
+  }
+
+  /* line 988, sass/screen.scss */
+  .blue ul#secondary-nav a:hover,
+  .blue ul#secondary-nav a:active {
+    background-color: #9ce;
+  }
+
+  /* line 991, sass/screen.scss */
+  .blue ul#secondary-nav li.current a {
+    background: #3c3c31;
+  }
+
+  /* line 992, sass/screen.scss */
+  .blue .pagination_current {
+    color: #cca;
+  }
+
+  /* line 994, sass/screen.scss */
+  .blue .pagination li a {
+    color: #323232;
+  }
+
+  /* line 995, sass/screen.scss */
+  .blue .pagination li a:hover {
+    color: #9ce;
+  }
+
+  /* line 999, sass/screen.scss */
+  .blue .pagination ul li.pagination_next a,
+  .blue .pagination ul li.pagination_last a,
+  .blue .pagination ul li.pagination_previous a,
+  .blue .pagination ul li.pagination_first a {
+    color: #9ce;
+  }
+
+  /* line 1005, sass/screen.scss */
+  .blue .pagination ul li.pagination_next a:hover,
+  .blue .pagination ul li.pagination_last a:hover,
+  .blue .pagination ul li.pagination_previous a:hover,
+  .blue .pagination ul li.pagination_first a:hover {
+    color: #3c3c31;
+  }
+
+  /* line 1008, sass/screen.scss */
+  .blue .item-img img {
+    border: 1px solid #ddb;
+  }
+
+  /* line 1009, sass/screen.scss */
+  .blue .item-type {
+    color: #554433;
+  }
+
+  /* line 1010, sass/screen.scss */
+  .blue .item-meta {
+    border-top: 1px dashed #ddb;
+  }
+
+  /* line 1011, sass/screen.scss */
+  .blue p.view-items-link {
+    color: #554;
+  }
+
+  /* line 1012, sass/screen.scss */
+  .blue p.view-items-link a {
+    color: #554;
+  }
+
+  /* line 1013, sass/screen.scss */
+  .blue .meta-main {
+    border-top: 1px dashed #ddb;
+  }
+
+  /* line 1014, sass/screen.scss */
+  .blue .meta-main .runinHead {
+    color: #543;
+  }
+
+  /* line 1019, sass/screen.scss */
+  .blue #secondary .featured-box p .title,
+  .blue #secondary .featured-box p .title a,
+  .blue #primary .featured-box p .title,
+  .blue #primary .featured-box p .title a:visited,
+  .blue #secondary .featured-box p .title a:visited {
+    color: #fff;
+  }
+
+  /* line 1023, sass/screen.scss */
+  .blue #secondary .featured-box p .title a,
+  .blue #primary .featured-box p .title a {
+    color: #fff;
+  }
+
+  /* line 1026, sass/screen.scss */
+  .blue .featured-box h2 {
+    color: #3c3c31;
+    border-bottom: 1px dashed white;
+  }
+
+  /* line 1030, sass/screen.scss */
+  .blue .featured-box.title a {
+    color: #fff;
+  }
+
+  /* line 1031, sass/screen.scss */
+  .blue .featured-box.title a:visited {
+    color: #fff;
+  }
+
+  /* this styles the title of featured item in the start of the featured-box p */
+  /* line 1032, sass/screen.scss */
+  .blue .featured-box img {
+    border: 10px solid #fff;
+  }
+
+  /* line 1034, sass/screen.scss */
+  .blue #featured-exhibit,
+  .blue #featured-item {
+    background-color: #bb8;
+  }
+
+  /* line 1037, sass/screen.scss */
+  .blue #featured-collection {
+    background-color: #9ce;
+  }
+
+  /* line 1038, sass/screen.scss */
+  .blue #featured-collection.featured-box a:link {
+    color: #554422;
+  }
+
+  /* line 1039, sass/screen.scss */
+  .blue #featured-collection.featured-box a:visited {
+    color: #554422;
+  }
+
+  /* line 1040, sass/screen.scss */
+  .blue #sidebar-featured-item {
+    background: #544;
+  }
+
+  /* line 1041, sass/screen.scss */
+  .blue .featured img {
+    border: 1px solid #ddb;
+    background: #fff;
+  }
+
+  /* line 1045, sass/screen.scss */
+  .blue #sidebar-featured-item .description p {
+    color: #fff;
+  }
+
+  /* line 1046, sass/screen.scss */
+  .blue #sidebar-featured-item h2 {
+    color: #fff;
+  }
+
+  /* line 1047, sass/screen.scss */
+  .blue #sidebar-featured-item a {
+    color: #fff;
+  }
+
+  /* line 1048, sass/screen.scss */
+  .blue #featured-item a:hover {
+    color: #9ce;
+  }
+
+  /*Fall Styles*/
+  /* line 1051, sass/screen.scss */
+  #wrap {
+    background: #fffff7 url(../images/fall/bg-top.png) top left no-repeat;
+  }
+
+  /* line 1052, sass/screen.scss */
+  #header {
+    border-bottom: 5px solid #cc9933;
+    border-top: 5px solid #cc9933;
+    background: #3d3d3d url(../images/fall/bg-header.png) repeat top;
+  }
+
+  /* line 1057, sass/screen.scss */
+  #header #about p {
+    color: #fffff7;
+  }
+
+  /* line 1058, sass/screen.scss */
+  #header #about .more a {
+    color: #b3ad9c;
+  }
+
+  /* line 1059, sass/screen.scss */
+  #header #about .more a:hover {
+    color: #cc9933;
+  }
+
+  /* line 1060, sass/screen.scss */
+  #searchwrap {
+    background-color: #cc9933;
+  }
+
+  /* line 1061, sass/screen.scss */
+  #searchwrap a {
+    color: #fffff7;
+  }
+
+  /* line 1062, sass/screen.scss */
+  #searchwrap a:visited {
+    color: #221111;
+  }
+
+  /* line 1063, sass/screen.scss */
+  #searchwrap a:hover {
+    color: #fffff7;
+  }
+
+  /* line 1064, sass/screen.scss */
+  #header #search {
+    border: 5px solid #cc9933;
+    background: #fffff7;
+  }
+
+  /* line 1065, sass/screen.scss */
+  #submit_search {
+    color: #fffff7;
+  }
+
+  /* line 1066, sass/screen.scss */
+  #advanced-search-link a {
+    color: #345;
+  }
+
+  /* line 1067, sass/screen.scss */
+  #primary-nav {
+    position: relative;
+    background-color: #fffff7;
+  }
+
+  /* line 1071, sass/screen.scss */
+  #primary-nav ul li {
+    background: url(../images/fall/bullet-omeka.png) no-repeat 0 50%;
+  }
+
+  /* line 1073, sass/screen.scss */
+  #primary-nav li,
+  .navigation li {
+    color: #221111;
+  }
+
+  /* line 1077, sass/screen.scss */
+  #primary-nav a,
+  .navigation a {
+    color: #221111;
+  }
+
+  /* line 1081, sass/screen.scss */
+  #primary-nav a:hover,
+  .navigation a:hover {
+    color: #cc9933;
+  }
+
+  /* line 1088, sass/screen.scss */
+  #primary-nav .current a,
+  .exhibits #primary-nav li.nav-exhibits a,
+  .collections #primary-nav li.nav-collections a,
+  .about #primary-nav li.nav-about a,
+  .items #primary-nav li.nav-items a {
+    color: #cc9933;
+    background-color: #fffff7;
+  }
+
+  /* line 1092, sass/screen.scss */
+  #secondary {
+    border-left: 1px solid #cc9933;
+  }
+
+  /* line 1093, sass/screen.scss */
+  #footer {
+    background: #fffff7 url(../images/fall/bg-footer.png) no-repeat left top;
+  }
+
+  /* line 1094, sass/screen.scss */
+  #footer .navigation {
+    background: #fffff7;
+  }
+
+  /* line 1095, sass/screen.scss */
+  #footer .navigation li {
+    background: transparent url(../images/fall/bullet-omeka.png) no-repeat scroll 0 50%;
+  }
+
+  /* line 1096, sass/screen.scss */
+  #footer .navigation a {
+    color: #221111;
+  }
+
+  /* line 1097, sass/screen.scss */
+  #footer .navigation .current a {
+    color: #b3ad9c;
+  }
+
+  /* line 1098, sass/screen.scss */
+  #footer #footer-text {
+    color: #000;
+  }
+
+  /* line 1099, sass/screen.scss */
+  body {
+    color: #332211;
+    background-color: #b3ad9c;
+  }
+
+  /* line 1103, sass/screen.scss */
+  #primary h1 {
+    color: #543;
+  }
+
+  /* line 1104, sass/screen.scss */
+  h2 {
+    color: #cc9933;
+  }
+
+  /* line 1106, sass/screen.scss */
+  h3,
+  h4 {
+    color: #b3ad9c;
+  }
+
+  /* line 1112, sass/screen.scss */
+  p,
+  .exhibit .description,
+  .exhibit-item,
+  .exhibit-text {
+    color: #221111;
+  }
+
+  /* line 1115, sass/screen.scss */
+  p.sitetitle {
+    color: #fff;
+  }
+
+  /* line 1116, sass/screen.scss */
+  p.sitetitle a {
+    color: #fff;
+  }
+
+  /* line 1117, sass/screen.scss */
+  p.tagline {
+    color: #fff;
+  }
+
+  /* line 1118, sass/screen.scss */
+  .exhibit .tags {
+    color: #221111;
+  }
+
+  /* line 1119, sass/screen.scss */
+  .exhibit .tags a {
+    color: #cc9933;
+  }
+
+  /* line 1120, sass/screen.scss */
+  a:link {
+    color: #770000;
+  }
+
+  /* line 1121, sass/screen.scss */
+  a:visited {
+    color: #3d3d3d;
+  }
+
+  /* line 1122, sass/screen.scss */
+  a:hover {
+    color: #cc9933;
+  }
+
+  /* line 1123, sass/screen.scss */
+  a:active {
+    color: #cc9933;
+  }
+
+  /* line 1124, sass/screen.scss */
+  .archive a:link {
+    color: #770000;
+  }
+
+  /* line 1125, sass/screen.scss */
+  .archive a:visited {
+    color: #3d3d3d;
+  }
+
+  /* line 1126, sass/screen.scss */
+  .archive a:hover {
+    color: #cc9933;
+  }
+
+  /* line 1127, sass/screen.scss */
+  .archive a:active {
+    color: #cc9933;
+  }
+
+  /* line 1128, sass/screen.scss */
+  .tags a:link {
+    color: #c93;
+  }
+
+  /* line 1129, sass/screen.scss */
+  .tags a:hover {
+    color: #700;
+  }
+
+  /* line 1130, sass/screen.scss */
+  #header h1 a {
+    color: #fff;
+  }
+
+  /* line 1131, sass/screen.scss */
+  #secondary h2 {
+    color: #770000;
+  }
+
+  /* line 1132, sass/screen.scss */
+  #secondary #featured-item h2 {
+    color: #221111;
+  }
+
+  /* line 1134, sass/screen.scss */
+  #secondary dl,
+  #secondary dt a {
+    color: #221111;
+  }
+
+  /* line 1137, sass/screen.scss */
+  #secondary dt {
+    border-top: 1px dashed #b3ad9c;
+  }
+
+  /* line 1138, sass/screen.scss */
+  #secondary #show-sidebar {
+    background-color: #eed;
+    border-top: 1px dashed #b3ad9c;
+    border-bottom: 1px dashed #b3ad9c;
+  }
+
+  /* line 1143, sass/screen.scss */
+  .show #secondary dl {
+    color: #544;
+  }
+
+  /* line 1144, sass/screen.scss */
+  .show #secondary a {
+    color: #000;
+  }
+
+  /* line 1145, sass/screen.scss */
+  .show #secondary a:hover {
+    color: #fff;
+  }
+
+  /* line 1146, sass/screen.scss */
+  .advanced-search form {
+    background-color: #cc9933;
+  }
+
+  /* line 1148, sass/screen.scss */
+  label,
+  .label {
+    color: #000;
+  }
+
+  /* line 1149, sass/screen.scss */
+  .field {
+    border-bottom: 1px dashed #fff;
+  }
+
+  /* line 1151, sass/screen.scss */
+  .field .textinput,
+  .field select {
+    background-color: #fff;
+  }
+
+  /* line 1154, sass/screen.scss */
+  textarea#rights {
+    color: #444;
+  }
+
+  /* line 1155, sass/screen.scss */
+  ul.navigation li {
+    background: url(../images/fall/bullet-omeka.png) no-repeat 0 50%;
+  }
+
+  /* line 1156, sass/screen.scss */
+  ul.title-list li {
+    color: #543;
+  }
+
+  /* line 1157, sass/screen.scss */
+  #secondary .exhibit-section-nav a {
+    color: #770000;
+  }
+
+  /* line 1158, sass/screen.scss */
+  #secondary .exhibit-section-nav a:hover {
+    color: #c93;
+  }
+
+  /* line 1159, sass/screen.scss */
+  #secondary .exhibit-section-nav .current a {
+    color: #c93;
+  }
+
+  /* line 1160, sass/screen.scss */
+  #secondary .exhibit-page-nav a {
+    color: #770000;
+  }
+
+  /* line 1161, sass/screen.scss */
+  #secondary .exhibit-page-nav a:hover {
+    color: #c93;
+  }
+
+  /* line 1162, sass/screen.scss */
+  #secondary .exhibit-page-nav .current a {
+    color: #c93;
+  }
+
+  /* line 1163, sass/screen.scss */
+  .popular a {
+    color: #cc9933;
+    text-decoration: none;
+  }
+
+  /* line 1163, sass/screen.scss */
+  .popular a:visited {
+    color: #777;
+  }
+
+  /* line 1164, sass/screen.scss */
+  .v-popular a {
+    color: #cc9933;
+    text-decoration: none;
+  }
+
+  /* line 1164, sass/screen.scss */
+  .v-popular a:visited {
+    color: #777;
+  }
+
+  /* line 1165, sass/screen.scss */
+  .vv-popular a {
+    color: #cc9933;
+    text-decoration: none;
+  }
+
+  /* line 1165, sass/screen.scss */
+  .vv-popular a:visited {
+    color: #777;
+  }
+
+  /* line 1166, sass/screen.scss */
+  .vvv-popular a {
+    color: #cc9933;
+    text-decoration: none;
+  }
+
+  /* line 1166, sass/screen.scss */
+  .vvv-popular a:visited {
+    color: #777;
+  }
+
+  /* line 1167, sass/screen.scss */
+  .vvvv-popular a {
+    color: #cc9933;
+    text-decoration: none;
+  }
+
+  /* line 1167, sass/screen.scss */
+  .vvvv-popular a:visited {
+    color: #777;
+  }
+
+  /* line 1168, sass/screen.scss */
+  .vvvvv-popular a {
+    color: #cc9933;
+    text-decoration: none;
+  }
+
+  /* line 1168, sass/screen.scss */
+  .vvvvv-popular a:visited {
+    color: #777;
+  }
+
+  /* line 1169, sass/screen.scss */
+  .vvvvvv-popular a {
+    color: #cc9933;
+    text-decoration: none;
+  }
+
+  /* line 1169, sass/screen.scss */
+  .vvvvvv-popular a:visited {
+    color: #777;
+  }
+
+  /* line 1170, sass/screen.scss */
+  .vvvvvvv-popular a {
+    color: #cc9933;
+    text-decoration: none;
+  }
+
+  /* line 1170, sass/screen.scss */
+  .vvvvvvv-popular a:visited {
+    color: #777;
+  }
+
+  /* line 1171, sass/screen.scss */
+  .vvvvvvvv-popular a {
+    color: #cc9933;
+    text-decoration: none;
+  }
+
+  /* line 1171, sass/screen.scss */
+  .vvvvvvvv-popular a:visited {
+    color: #777;
+  }
+
+  /* line 1172, sass/screen.scss */
+  ul#secondary-nav a {
+    color: #fff;
+  }
+
+  /* line 1174, sass/screen.scss */
+  ul#secondary-nav a:link,
+  ul#secondary-nav a:visited {
+    background-color: #900;
+  }
+
+  /* line 1176, sass/screen.scss */
+  ul#secondary-nav a:hover,
+  ul#secondary-nav a:active {
+    background-color: #c93;
+  }
+
+  /* line 1179, sass/screen.scss */
+  ul#secondary-nav li.current a {
+    background: #211;
+  }
+
+  /* line 1180, sass/screen.scss */
+  .pagination_current {
+    color: #cc9933;
+  }
+
+  /* line 1181, sass/screen.scss */
+  .pagination li a {
+    color: #221111;
+  }
+
+  /* line 1182, sass/screen.scss */
+  .pagination li a:hover {
+    color: #cc9933;
+  }
+
+  /* line 1186, sass/screen.scss */
+  .pagination ul li.pagination_next a,
+  .pagination ul li.pagination_last a,
+  .pagination ul li.pagination_previous a,
+  .pagination ul li.pagination_first a {
+    color: #cc9933;
+  }
+
+  /* line 1192, sass/screen.scss */
+  .pagination ul li.pagination_next a:hover,
+  .pagination ul li.pagination_last a:hover,
+  .pagination ul li.pagination_previous a:hover,
+  .pagination ul li.pagination_first a:hover {
+    color: #770000;
+  }
+
+  /* line 1195, sass/screen.scss */
+  .item-img img {
+    border: 1px solid #b3ad9c;
+  }
+
+  /* line 1196, sass/screen.scss */
+  .item-type {
+    color: #554433;
+  }
+
+  /* line 1197, sass/screen.scss */
+  .item-meta {
+    border-top: 1px dashed #fffff7;
+  }
+
+  /* line 1198, sass/screen.scss */
+  p.view-items-link {
+    color: #554;
+  }
+
+  /* line 1199, sass/screen.scss */
+  p.view-items-link a {
+    color: #554;
+  }
+
+  /* line 1200, sass/screen.scss */
+  .meta-main {
+    border-top: 1px dashed #fffff7;
+  }
+
+  /* line 1201, sass/screen.scss */
+  .meta-main .runinHead {
+    color: #543;
+  }
+
+  /* line 1206, sass/screen.scss */
+  #secondary .featured-box p .title,
+  #secondary .featured-box p .title a,
+  #primary .featured-box p .title,
+  #primary .featured-box p .title a:visited,
+  #secondary .featured-box p .title a:visited {
+    color: #fff;
+  }
+
+  /* line 1210, sass/screen.scss */
+  #secondary .featured-box p .title a,
+  #primary .featured-box p .title a {
+    color: #fff;
+  }
+
+  /* line 1213, sass/screen.scss */
+  .featured-box h2 {
+    color: #221111;
+    border-bottom: 1px dashed white;
+  }
+
+  /* line 1218, sass/screen.scss */
+  .featured-box.title,
+  .featured-box.title a {
+    color: #fff;
+  }
+
+  /* line 1221, sass/screen.scss */
+  .featured-box.title a:visited {
+    color: #fff;
+  }
+
+  /* line 1222, sass/screen.scss */
+  .featured-box img {
+    border: 10px solid #fff;
+  }
+
+  /* line 1224, sass/screen.scss */
+  #featured-exhibit,
+  #featured-item {
+    background-color: #b3ad9c;
+  }
+
+  /* line 1227, sass/screen.scss */
+  #featured-collection {
+    background-color: #cc9933;
+  }
+
+  /* line 1228, sass/screen.scss */
+  #sidebar-featured-item {
+    background: #544;
+  }
+
+  /* line 1229, sass/screen.scss */
+  .featured img {
+    border: 1px solid #fffff7;
+    background: #fff;
+  }
+
+  /* line 1230, sass/screen.scss */
+  #sidebar-featured-item .description p {
+    color: #fff;
+  }
+
+  /* line 1231, sass/screen.scss */
+  #sidebar-featured-item h2 {
+    color: #fff;
+  }
+
+  /* line 1232, sass/screen.scss */
+  #sidebar-featured-item a {
+    color: #fff;
+  }
+
+  /* line 1233, sass/screen.scss */
+  #featured-item a:hover {
+    color: #cc9933;
+  }
+
+  /*Spring Styles*/
+  /* line 1236, sass/screen.scss */
+  .spring #wrap {
+    background: white url(../images/spring/bg-top.png) top left no-repeat;
+  }
+
+  /* line 1237, sass/screen.scss */
+  .spring #header {
+    border-bottom: 5px solid #ccdd44;
+    border-top: 5px solid #ccdd44;
+    background: #bb3344 url(../images/spring/bg-header.png) repeat top;
+  }
+
+  /* line 1242, sass/screen.scss */
+  .spring #header #about p {
+    color: #fff;
+  }
+
+  /* line 1243, sass/screen.scss */
+  .spring #header #about .more a {
+    color: #707066;
+  }
+
+  /* line 1244, sass/screen.scss */
+  .spring #header #about .more a:hover {
+    color: #ccdd44;
+  }
+
+  /* line 1245, sass/screen.scss */
+  .spring #searchwrap {
+    background-color: #ccdd44;
+  }
+
+  /* line 1246, sass/screen.scss */
+  .spring #searchwrap a {
+    color: #fff;
+  }
+
+  /* line 1247, sass/screen.scss */
+  .spring #searchwrap a:visited {
+    color: #1a030c;
+  }
+
+  /* line 1248, sass/screen.scss */
+  .spring #searchwrap a:hover {
+    color: #fff;
+  }
+
+  /* line 1249, sass/screen.scss */
+  .spring #header #search {
+    border: 5px solid #ccdd44;
+    border-bottom: 0px;
+    background: #fff;
+  }
+
+  /* line 1254, sass/screen.scss */
+  .spring #submit_search {
+    color: #fff;
+  }
+
+  /* line 1255, sass/screen.scss */
+  .spring #advanced-search-link a {
+    color: #345;
+  }
+
+  /* line 1256, sass/screen.scss */
+  .spring #primary-nav {
+    background-color: #fff;
+  }
+
+  /* line 1257, sass/screen.scss */
+  .spring #primary-nav ul li {
+    background: url(../images/spring/bullet-omeka.png) no-repeat 0 50%;
+  }
+
+  /* line 1259, sass/screen.scss */
+  .spring #primary-nav li,
+  .spring .navigation li {
+    color: #1a030c;
+  }
+
+  /* line 1263, sass/screen.scss */
+  .spring #primary-nav a,
+  .spring .navigation a {
+    color: #1a030c;
+  }
+
+  /* line 1267, sass/screen.scss */
+  .spring #primary-nav a:hover,
+  .spring .navigation a:hover {
+    color: #ccdd44;
+  }
+
+  /* line 1274, sass/screen.scss */
+  .spring #primary-nav .current a,
+  .spring .exhibits #primary-nav li.nav-exhibits a,
+  .spring .collections #primary-nav li.nav-collections a,
+  .spring .about #primary-nav li.nav-about a,
+  .spring .items #primary-nav li.nav-items a {
+    color: #707066;
+    background-color: #fff;
+  }
+
+  /* line 1278, sass/screen.scss */
+  .spring #secondary {
+    border-left: 1px solid #ccdd44;
+  }
+
+  /* line 1279, sass/screen.scss */
+  .spring #footer {
+    background: white url(../images/spring/bg-footer.png) no-repeat left top;
+  }
+
+  /* line 1280, sass/screen.scss */
+  .spring #footer .navigation {
+    background: #fff;
+  }
+
+  /* line 1281, sass/screen.scss */
+  .spring #footer .navigation li {
+    background: transparent url(../images/spring/bullet-omeka.png) no-repeat scroll 0 50%;
+  }
+
+  /* line 1282, sass/screen.scss */
+  .spring #footer .navigation a {
+    color: #1a030c;
+  }
+
+  /* line 1283, sass/screen.scss */
+  .spring #footer .navigation .current a {
+    color: #7070668;
+  }
+
+  /* line 1284, sass/screen.scss */
+  .spring #footer #footer-text {
+    color: #000;
+  }
+
+  /* line 1285, sass/screen.scss */
+  .spring body {
+    color: #663344;
+    background-color: #2b1520;
+  }
+
+  /* line 1289, sass/screen.scss */
+  .spring #primary h1 {
+    color: #663344;
+  }
+
+  /* line 1290, sass/screen.scss */
+  .spring h2 {
+    color: #668888;
+  }
+
+  /* line 1292, sass/screen.scss */
+  .spring h3,
+  .spring h4 {
+    color: #707066;
+  }
+
+  /* line 1298, sass/screen.scss */
+  .spring p,
+  .spring .exhibit .description,
+  .spring .exhibit-item,
+  .spring .exhibit-text {
+    color: #1a030c;
+  }
+
+  /* line 1301, sass/screen.scss */
+  .spring p.sitetitle {
+    color: #fff;
+  }
+
+  /* line 1302, sass/screen.scss */
+  .spring p.sitetitle a {
+    color: #fff;
+  }
+
+  /* line 1303, sass/screen.scss */
+  .spring p.tagline {
+    color: #fff;
+  }
+
+  /* line 1304, sass/screen.scss */
+  .spring .exhibit .tags {
+    color: #1a030c;
+  }
+
+  /* line 1305, sass/screen.scss */
+  .spring .exhibit .tags a {
+    color: #ccdd44;
+  }
+
+  /* line 1306, sass/screen.scss */
+  .spring a:link {
+    color: #668888;
+  }
+
+  /* line 1307, sass/screen.scss */
+  .spring a:visited {
+    color: #ccdd44;
+  }
+
+  /* line 1308, sass/screen.scss */
+  .spring a:hover {
+    color: #ccdd44;
+  }
+
+  /* line 1309, sass/screen.scss */
+  .spring a:active {
+    color: #663344;
+  }
+
+  /* line 1310, sass/screen.scss */
+  .spring .archive a:link {
+    color: #668888;
+  }
+
+  /* line 1311, sass/screen.scss */
+  .spring .archive a:visited {
+    color: #ccdd44;
+  }
+
+  /* line 1312, sass/screen.scss */
+  .spring .archive a:hover {
+    color: #ccdd44;
+  }
+
+  /* line 1313, sass/screen.scss */
+  .spring .archive a:active {
+    color: #668888;
+  }
+
+  /* line 1314, sass/screen.scss */
+  .spring .tags a:link {
+    color: #668888;
+  }
+
+  /* line 1315, sass/screen.scss */
+  .spring .tags a:hover {
+    color: #ccdd44;
+  }
+
+  /* line 1316, sass/screen.scss */
+  .spring #header h1 a {
+    color: #fff;
+  }
+
+  /* line 1317, sass/screen.scss */
+  .spring #secondary h2 {
+    color: #668888;
+  }
+
+  /* line 1318, sass/screen.scss */
+  .spring #secondary #featured-item h2 {
+    color: #1a030c;
+  }
+
+  /* line 1320, sass/screen.scss */
+  .spring #secondary dl,
+  .spring #secondary dt a {
+    color: #1a030c;
+  }
+
+  /* line 1323, sass/screen.scss */
+  .spring #secondary dt {
+    border-top: 1px dashed #707066;
+  }
+
+  /* line 1324, sass/screen.scss */
+  .spring #secondary #show-sidebar {
+    background-color: #eed;
+    border-top: 1px dashed #707066;
+    border-bottom: 1px dashed #707066;
+  }
+
+  /* line 1329, sass/screen.scss */
+  .spring .show #secondary dl {
+    color: #544;
+  }
+
+  /* line 1330, sass/screen.scss */
+  .spring .show #secondary a {
+    color: #000;
+  }
+
+  /* line 1331, sass/screen.scss */
+  .spring .show #secondary a:hover {
+    color: #fff;
+  }
+
+  /* line 1332, sass/screen.scss */
+  .spring .advanced-search form {
+    background-color: #ccdd44;
+  }
+
+  /* line 1334, sass/screen.scss */
+  .spring label,
+  .spring .label {
+    color: #000;
+  }
+
+  /* line 1337, sass/screen.scss */
+  .spring .field {
+    border-bottom: 1px dashed #fff;
+  }
+
+  /* line 1339, sass/screen.scss */
+  .spring .field .textinput,
+  .spring .field select {
+    background-color: #fff;
+  }
+
+  /* line 1342, sass/screen.scss */
+  .spring textarea#rights {
+    color: #444;
+  }
+
+  /* line 1343, sass/screen.scss */
+  .spring ul.navigation li {
+    background: url(../images/spring/bullet-omeka.png) no-repeat 0 50%;
+  }
+
+  /* line 1344, sass/screen.scss */
+  .spring ul.title-list li {
+    color: #543;
+  }
+
+  /* line 1346, sass/screen.scss */
+  .spring #secondary .exhibit-section-nav a,
+  .spring #secondary .exhibit-page-nav a {
+    color: #688;
+  }
+
+  /* line 1352, sass/screen.scss */
+  .spring #secondary .exhibit-section-nav a:hover,
+  .spring #secondary .exhibit-section-nav .current a,
+  .spring #secondary .exhibit-page-nav a:hover,
+  .spring #secondary .exhibit-page-nav .current a {
+    color: #634;
+  }
+
+  /* line 1355, sass/screen.scss */
+  .spring .popular a {
+    color: #668888;
+    text-decoration: none;
+  }
+
+  /* line 1355, sass/screen.scss */
+  .spring .popular a:visited {
+    color: #777;
+  }
+
+  /* line 1356, sass/screen.scss */
+  .spring .v-popular a {
+    color: #668888;
+    text-decoration: none;
+  }
+
+  /* line 1356, sass/screen.scss */
+  .spring .v-popular a:visited {
+    color: #777;
+  }
+
+  /* line 1357, sass/screen.scss */
+  .spring .vv-popular a {
+    color: #668888;
+    text-decoration: none;
+  }
+
+  /* line 1357, sass/screen.scss */
+  .spring .vv-popular a:visited {
+    color: #777;
+  }
+
+  /* line 1358, sass/screen.scss */
+  .spring .vvv-popular a {
+    color: #668888;
+    text-decoration: none;
+  }
+
+  /* line 1358, sass/screen.scss */
+  .spring .vvv-popular a:visited {
+    color: #777;
+  }
+
+  /* line 1359, sass/screen.scss */
+  .spring .vvvv-popular a {
+    color: #668888;
+    text-decoration: none;
+  }
+
+  /* line 1359, sass/screen.scss */
+  .spring .vvvv-popular a:visited {
+    color: #777;
+  }
+
+  /* line 1360, sass/screen.scss */
+  .spring .vvvvv-popular a {
+    color: #668888;
+    text-decoration: none;
+  }
+
+  /* line 1360, sass/screen.scss */
+  .spring .vvvvv-popular a:visited {
+    color: #777;
+  }
+
+  /* line 1361, sass/screen.scss */
+  .spring .vvvvvv-popular a {
+    color: #668888;
+    text-decoration: none;
+  }
+
+  /* line 1361, sass/screen.scss */
+  .spring .vvvvvv-popular a:visited {
+    color: #777;
+  }
+
+  /* line 1362, sass/screen.scss */
+  .spring .vvvvvvv-popular a {
+    color: #668888;
+    text-decoration: none;
+  }
+
+  /* line 1362, sass/screen.scss */
+  .spring .vvvvvvv-popular a:visited {
+    color: #777;
+  }
+
+  /* line 1363, sass/screen.scss */
+  .spring .vvvvvvvv-popular a {
+    color: #668888;
+    text-decoration: none;
+  }
+
+  /* line 1363, sass/screen.scss */
+  .spring .vvvvvvvv-popular a:visited {
+    color: #777;
+  }
+
+  /* line 1364, sass/screen.scss */
+  .spring ul#secondary-nav a {
+    color: #fff;
+  }
+
+  /* line 1366, sass/screen.scss */
+  .spring ul#secondary-nav a:link,
+  .spring ul#secondary-nav a:visited {
+    background-color: #688;
+  }
+
+  /* line 1370, sass/screen.scss */
+  .spring ul#secondary-nav a:hover,
+  .spring ul#secondary-nav a:active {
+    background-color: #cd4;
+  }
+
+  /* line 1373, sass/screen.scss */
+  .spring ul#secondary-nav li.current a {
+    background: #634;
+  }
+
+  /* line 1374, sass/screen.scss */
+  .spring .pagination li a {
+    color: #1a030c;
+  }
+
+  /* line 1380, sass/screen.scss */
+  .spring .pagination_current,
+  .spring .pagination li a:hover,
+  .spring .pagination ul li.pagination_next a,
+  .spring .pagination ul li.pagination_last a,
+  .spring .pagination ul li.pagination_previous a,
+  .spring .pagination ul li.pagination_first a {
+    color: #ccdd44;
+  }
+
+  /* line 1386, sass/screen.scss */
+  .spring .pagination ul li.pagination_next a:hover,
+  .spring .pagination ul li.pagination_last a:hover,
+  .spring .pagination ul li.pagination_previous a:hover,
+  .spring .pagination ul li.pagination_first a:hover {
+    color: #668888;
+  }
+
+  /* line 1389, sass/screen.scss */
+  .spring .item-img img {
+    border: 1px solid #ccdd44;
+  }
+
+  /* line 1390, sass/screen.scss */
+  .spring .item-type {
+    color: #554433;
+  }
+
+  /* line 1391, sass/screen.scss */
+  .spring .item-meta {
+    border-top: 1px dashed #bfbfbf;
+  }
+
+  /* line 1393, sass/screen.scss */
+  .spring p.view-items-link,
+  .spring p.view-items-link a {
+    color: #554;
+  }
+
+  /* line 1396, sass/screen.scss */
+  .spring .meta-main {
+    border-top: 1px dashed #bfbfbf;
+  }
+
+  /* line 1397, sass/screen.scss */
+  .spring .meta-main .runinHead {
+    color: #543;
+  }
+
+  /* line 1404, sass/screen.scss */
+  .spring #secondary .featured-box p .title,
+  .spring #secondary .featured-box p .title a,
+  .spring #primary .featured-box p .title,
+  .spring #primary .featured-box p .title a:visited,
+  .spring #secondary .featured-box p .title a:visited,
+  .spring #secondary .featured-box p .title a,
+  .spring #primary .featured-box p .title a {
+    color: #fff;
+  }
+
+  /* line 1407, sass/screen.scss */
+  .spring .featured-box h2 {
+    color: #1a030c;
+    border-bottom: 1px dashed white;
+  }
+
+  /* line 1413, sass/screen.scss */
+  .spring .featured-box.title,
+  .spring .featured-box.title a,
+  .spring .featured-box.title a:visited {
+    color: #fff;
+  }
+
+  /* line 1416, sass/screen.scss */
+  .spring .featured-box img {
+    border: 10px solid #fff;
+  }
+
+  /* line 1418, sass/screen.scss */
+  .spring #featured-exhibit,
+  .spring #featured-item {
+    background-color: #668888;
+  }
+
+  /* line 1423, sass/screen.scss */
+  .spring #featured-item a,
+  .spring #featured-item a:visited {
+    color: #fff;
+  }
+
+  /* line 1427, sass/screen.scss */
+  .spring #featured-collection {
+    background-color: #ccdd44;
+  }
+
+  /* line 1428, sass/screen.scss */
+  .spring #sidebar-featured-item {
+    background: #544;
+  }
+
+  /* line 1429, sass/screen.scss */
+  .spring .featured img {
+    border: 1px solid #bfbfbf;
+    background: #fff;
+  }
+
+  /* line 1435, sass/screen.scss */
+  .spring #sidebar-featured-item .description p,
+  .spring #sidebar-featured-item h2,
+  .spring #sidebar-featured-item a {
+    color: #fff;
+  }
+
+  /* line 1438, sass/screen.scss */
+  .spring #featured-item a:hover {
+    color: #ccdd44;
+  }
+}
+/*end @media screen*/
+/* Print Styles */
+@media print {
+  /* line 1443, sass/screen.scss */
+  body {
+    font: 12px Georgia, "Palatino Linotype", "Book Antiqua", "Times New Roman", Times, serif;
+  }
+
+  /* line 1446, sass/screen.scss */
+  #content {
+    width: 100%;
+    margin: 0;
+    float: none;
+  }
+
+  /* line 1452, sass/screen.scss */
+  h1,
+  #site-title {
+    font-size: 16pt;
+    font-weight: bold;
+  }
+
+  /* line 1456, sass/screen.scss */
+  h2 {
+    font-size: 14pt;
+    font-style: italic;
+  }
+
+  /* line 1460, sass/screen.scss */
+  h3 {
+    font-size: 14pt;
+  }
+
+  /* line 1463, sass/screen.scss */
+  h4 {
+    font-weight: bold;
+  }
+
+  /* line 1466, sass/screen.scss */
+  h5 {
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+  }
+
+  /* line 1471, sass/screen.scss */
+  a:link:after {
+    content: " (" attr(href) ") ";
+    font-size: 80%;
+  }
+
+  /* line 1482, sass/screen.scss */
+  #search-container,
+  #primary-nav,
+  #header-image,
+  .navigation,
+  .pagination,
+  #exhibit-page-navigation,
+  .exhibit-section-nav,
+  .exhibit-page-nav {
+    display: none;
+  }
+
+  /* line 1485, sass/screen.scss */
+  blockquote {
+    margin: 10pt 0 0 0;
+    font-style: italic;
+  }
+}
+/*end @media print*/

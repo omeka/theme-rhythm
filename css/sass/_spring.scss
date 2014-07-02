@@ -1,0 +1,389 @@
+// Spring Color Styles
+
+/* @group ----- SPRING: Generic HTML elements ----- */
+
+th {
+    border-color: $green;
+}
+
+blockquote {
+    background-color: $green;
+}    
+
+a:link.button,
+.button a:link,
+a:visited.button,
+.button a:visited {
+    color: $green;
+}
+
+button,
+a.button,
+.button a,
+input[type="submit"] {
+    background-color: darken($green, 35%);
+    color: #fff;
+    
+    &:hover {
+        background-color: darken($green, 20%);
+    }
+}
+
+body {
+    color:#663344;
+    background-color: #2b1520;
+}
+
+p,
+.exhibit .description,
+.exhibit-item,
+.exhibit-text {
+    color: $spring-text;
+}
+
+p.sitetitle a,
+p.tagline {
+    color: #fff;
+}
+
+a:link {
+    color: $spring-item;
+}
+
+a:visited { 
+    color: desaturate($spring-item, 15%); 
+}
+
+a:active,
+a:hover { 
+    color:#663344; 
+}
+
+label,
+.label {
+    color:#000;
+}
+
+/* @end */
+
+/* @group ----- SPRING: Reusable classes ----- */
+
+#content > h1:first-child,
+#primary-nav ul,
+#primary-nav a {
+    border-color: $green;
+}
+
+#wrap {
+    background: #fff url(../images/spring/bg-top.png) top left repeat-x;
+}
+
+#featured-item h2,
+#featured-exhibit h2 {
+    color: #fff;
+}
+
+.tags a:link{color:$spring-item;} 
+
+.tags a:hover{color:$green;}
+
+.item,
+.collection,
+.exhibit,
+#sort-links {
+    border-color: $secondary-gray;
+}
+
+/* @end */
+
+/* @group ----- SPRING: Header ----- */
+
+header {
+    border-top-color: $green;
+    background: $purple-bg url(../images/spring/bg-header.png) repeat top;
+    
+    #about p { 
+        color:#fff; 
+    }
+    
+    #about .more a {
+        color:$secondary-gray;
+    }
+    
+    #about .more a:hover {
+        color: $green;
+    }
+        
+    h1 a {color:#fff;} 
+}
+
+#search-container {
+    background-color:$green;
+    
+    a {
+        color:#fff;
+    }
+    
+    a:visited{
+        color:$spring-text;
+    } 
+
+    a:hover {
+        color:#fff;
+    }
+}
+
+#advanced-form {
+    border-color: $green;
+    
+    a:link {
+        color: $spring-item;
+    }
+    
+    a:visited { 
+        color: desaturate($spring-item, 15%); 
+    }
+    
+    a:active,
+    a:hover { 
+        color:#663344; 
+    }
+}
+
+#submit_search {
+    color:#fff;
+}
+
+/* @end */
+
+/* @group ----- SPRING: Navigation ----- */
+
+#primary-nav {
+    background-color:#fff;
+    
+    a {
+        background:url(../images/spring/bullet-omeka.png) no-repeat 0 50%;
+    }
+}
+
+#primary-nav li,
+.navigation li {
+    color: $spring-text;
+}
+
+#primary-nav a,
+.navigation a {
+    color: $spring-text;
+}
+
+#primary-nav a:hover,
+.navigation a:hover{
+    color:$green;
+}
+
+#primary-nav .current a, 
+.exhibits #primary-nav li.nav-exhibits a, 
+.collections #primary-nav li.nav-collections a, 
+.about #primary-nav li.nav-about a, 
+.items #primary-nav li.nav-items a {
+    color:$secondary-gray;
+    background-color:#fff;
+}
+
+.pagination li {
+    background-color: $green;
+    
+    &:hover {
+        background-color: darken($green, 15%);
+    }
+}
+
+.pagination a {
+    color: $spring-text;
+    
+    &:hover {
+        color: #fff !important;
+    }
+}
+
+/* @end */
+
+/* @group ----- SPRING: Footer ----- */
+
+footer {
+    background:#fff url(../images/spring/bg-footer.png) repeat-x left top;
+    
+    .navigation {
+        background:#fff;
+    }
+    
+    .navigation li {
+        background:transparent url(../images/spring/bullet-omeka.png) no-repeat scroll 0 50%;
+    }
+    
+    .navigation a {
+        color:$spring-text;
+    }
+    
+    .navigation .current a {
+        color:$secondary-gray;
+    }
+    
+    #footer-text {
+        color:#000;
+    }
+}
+
+/* @end */
+
+/* @group ----- SPRING: Search ----- */
+
+#search-filters li,
+#item-filters li {
+    background-color: lighten($green, 25%);
+}
+
+/* @end */
+
+/* @group ----- SPRING: Home ----- */
+
+.featured-box h2 {
+    color: $spring-text;
+    border-bottom:1px dashed white;
+}
+.featured-box.title,
+.featured-box.title a,
+.featured-box.title a:visited {
+    color:#fff;
+}
+.featured-box img {border: 10px solid #fff;}
+#featured-exhibit,
+#featured-item {
+    background-color: darken(desaturate($spring-item, 10%), 10%);
+}
+
+#featured-item a,
+#featured-item a:visited {
+    color:#fff;
+}
+
+#featured-collection {background-color: $green;}
+#sidebar-featured-item {background: #544;}
+.featured img {
+    border: 1px solid #bfbfbf;
+    background:#fff;
+}
+
+#featured-item a:hover {color: $green;}
+
+/* @end */
+
+#show-sidebar {
+    background-color:#eed;
+    border-top: 1px dashed $secondary-gray;
+    border-bottom: 1px dashed $secondary-gray;
+}
+
+.exhibit-section-nav a,
+.exhibit-page-nav a {
+    color:#688;
+}
+
+.field {border-bottom:1px dashed #fff;}
+
+.field .textinput,
+.field select {
+    background-color:#fff;
+}
+
+textarea#rights {
+    color:#444;
+}
+
+ul.title-list li{color:#543;}
+
+#secondary .exhibit-section-nav a:hover,
+#secondary .exhibit-section-nav .current a,
+#secondary .exhibit-page-nav a:hover,
+#secondary .exhibit-page-nav .current a {
+    color:#634;
+}
+.popular a{color: $spring-item;text-decoration:none;} .popular a:visited {color: #777;}
+.v-popular a{color: $spring-item;text-decoration:none;} .v-popular a:visited {color: #777;}
+.vv-popular a{color: $spring-item;text-decoration:none;} .vv-popular a:visited {color: #777;}
+.vvv-popular a{color: $spring-item;text-decoration:none;} .vvv-popular a:visited {color: #777;}
+.vvvv-popular a{color: $spring-item;text-decoration:none;} .vvvv-popular a:visited {color: #777;}
+.vvvvv-popular a{color: $spring-item;text-decoration:none;} .vvvvv-popular a:visited {color: #777;}
+.vvvvvv-popular a{color: $spring-item;text-decoration:none;} .vvvvvv-popular a:visited {color: #777;}
+.vvvvvvv-popular a{color: $spring-item;text-decoration:none;} .vvvvvvv-popular a:visited {color: #777;}
+.vvvvvvvv-popular a{color: $spring-item;text-decoration:none;} .vvvvvvvv-popular a:visited {color: #777;}
+.pagination li a {color: $spring-text;} 
+.pagination_current,
+.pagination li a:hover,
+.pagination ul li.pagination_next a,
+.pagination ul li.pagination_last a,
+.pagination ul li.pagination_previous a,
+.pagination ul li.pagination_first a {
+    color:$green;
+}
+.pagination ul li.pagination_next a:hover, 
+.pagination ul li.pagination_last a:hover, 
+.pagination ul li.pagination_previous a:hover, 
+.pagination ul li.pagination_first a:hover {
+    color:$spring-item;
+}
+.item-img img {border: 1px solid $green;}
+.item-type {color: #554433;}
+
+.secondary-nav ul,
+#search-filters ul,
+#item-filters ul,
+.items .field,
+.item {
+    border-color: #bfbfbf;
+}
+
+#items.show .item {
+    border-color: transparent;
+}
+
+p.view-items-link,
+p.view-items-link a {
+    color:#554;
+}
+.meta-main {border-top: 1px dashed #bfbfbf;}
+.meta-main .runinHead {color:#543;}
+#secondary .featured-box p .title, 
+#secondary .featured-box p .title a, 
+#primary .featured-box p .title, 
+#primary .featured-box p .title a:visited, 
+#secondary .featured-box p .title a:visited,
+#secondary .featured-box p .title a, 
+#primary .featured-box p .title a {
+    color:#fff;
+}
+#sidebar-featured-item .description p,
+#sidebar-featured-item h2,
+#sidebar-featured-item a  {
+    color: #fff;
+}
+#exhibit-pages {
+    background-color: lighten($green, 25%);
+    
+    & > ul > li,
+    a {
+        border-color: $green;
+    }
+}
+
+.show #exhibit-pages > ul > li:first-of-type {
+    background-color: darken($green, 25%);
+    
+    a {
+        color: $green;
+    }
+}
+
+.show #exhibit-pages > ul > li:nth-of-type(3) {
+    background-color: lighten($green, 40%);
+}

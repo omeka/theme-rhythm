@@ -1,0 +1,310 @@
+/* @group ----- FALL: Generic HTML Elements ----- */
+
+th {
+    border-color: $gold;
+}
+
+body {
+    color:#332211;
+    background-color: $fall-bg;
+}
+
+p,
+.exhibit .description,
+.exhibit-item,
+.exhibit-text {
+    color: $fall-text;
+}
+
+a:link {
+    color: $red;
+}
+
+a:visited {
+    color: desaturate($red, 15%);
+}
+
+a:hover,
+a:active { 
+    color: saturate(lighten($red, 15%), 15%);
+}
+
+dl,
+dt a {
+    color: $fall-text;
+}
+
+button,
+.button,
+.button a,
+input[type="submit"] {
+    background-color: $red;
+    color: $cream;
+}
+
+/* @end */
+
+/* @group ----- FALL: Reusable classes ----- */
+
+#wrap {
+    background: $cream url(../images/fall/bg-top.png) top left repeat-x;
+}
+
+#primary h1 {
+    color:#543;
+}
+
+.featured-box h2 {
+    color: $fall-text;
+    border-bottom:1px dashed white;
+}
+
+.featured-box.title,
+.featured-box.title a {
+    color:#fff;
+}
+
+.featured-box.title a:visited{
+    color:#fff;
+}
+
+.featured-box img {
+    border: 10px solid #fff;
+}
+
+#featured-exhibit,
+#featured-item {
+    background-color: $fall-bg;
+}
+
+#featured-collection {
+    background-color: $gold;
+}
+
+#sidebar-featured-item {
+    background: #544;
+}
+
+.featured img {
+    border: 1px solid $cream;
+    background:#fff;
+}
+
+#sidebar-featured-item .description p {
+    color: $cream;
+}
+
+#sidebar-featured-item h2 {
+    color: $cream;
+}
+
+#sidebar-featured-item a {
+    color:#fff;
+}
+
+label,
+.label {
+    color :#000;
+}
+
+.field {
+    border-bottom: 1px dashed #fff;
+}
+
+.field .textinput,
+.field select {
+    background-color:#fff;
+}
+
+p.view-items-link {
+    color:#554;
+}
+
+p.view-items-link a {
+    color:#554;
+}
+
+.item-img img {
+    border: 1px solid $fall-bg;
+}
+
+div.tags a:link {
+    color: $gold;
+} 
+
+div.tags a:hover {
+    color: $red;
+}
+
+#sort-links {
+    border-color: $gray;
+}
+
+/* @end */
+
+/* @group ----- FALL: Header ----- */
+
+header {
+    border-bottom: 5px solid $gold;
+    border-top: 5px solid $gold;
+    background: $gray url(../images/fall/bg-header.png) repeat top;
+}
+
+header #about p {
+    color: $cream;
+}
+
+#site-title {
+    color:#fff;
+}
+
+#site-title a {
+    color:#fff;
+}
+
+.tagline {
+    color: #ccc;
+}
+
+#search-container {
+    background-color: $gold;
+}
+
+#search-container a{
+    color: $cream;
+}
+
+#search-container a:visited{
+    color: $fall-text;
+} 
+
+#search-container a:hover {
+    color: $cream;
+}
+
+#search-container input[type="submit"],
+.show-advanced {
+    background-color: $red;
+    color : $cream;
+}
+
+#advanced-search-link a {color:#345;}
+
+/* @end */
+
+/* @group ----- FALL: Navigation ----- */
+
+#primary-nav{
+    position:relative;
+    background-color: $cream;
+}
+#primary-nav ul a {
+    background:url(../images/fall/bullet-omeka.png) no-repeat 0 50%;
+}
+
+#primary-nav li,
+.navigation li {
+    color: $fall-text;
+}
+
+#primary-nav a,
+.navigation a {
+    color: $fall-text;
+}
+
+#primary-nav a:hover,
+.navigation a:hover {
+    color: $gold;
+}
+
+#primary-nav .current a, 
+.exhibits #primary-nav li.nav-exhibits a, 
+.collections #primary-nav li.nav-collections a, 
+.about #primary-nav li.nav-about a, 
+.items #primary-nav li.nav-items a {
+    color: $gold;
+    background-color: $cream;
+}
+
+.pagination li a {
+    color: $fall-text;
+} 
+
+.pagination li:hover {
+    background-color: darken(#ccc, 15%);
+}
+
+/* @end */
+
+/* @group ----- FALL: Footer ----- */
+
+footer {
+    background: $cream url(../images/fall/bg-footer.png) repeat-x left top;
+}
+
+footer .navigation li {
+    background: transparent url(../images/fall/bullet-omeka.png) no-repeat scroll 0 50%;
+}
+
+footer .navigation a {
+    color: $fall-text;
+}
+
+footer .navigation .current a {
+    color: $fall-bg;
+}
+
+footer footer-text {
+    color:#000;
+}
+
+/* @end */
+
+/* @group ----- FALL: Items/Show ----- */
+
+.navigation.item-pagination a {
+    color: $cream;
+}
+
+/* @end */
+
+/* @group ----- FALL: Items/Tags ----- */
+
+/* @group ----- FALL: Search ----- */
+
+#search-filters li,
+#item-filters li {
+    background-color: lighten($gold, 25%);
+}
+
+/* @end */
+
+.hTagcloud a {
+    background-color: $gold;
+    text-decoration: none;
+}
+
+.hTagcloud a:visited {
+    background-color: desaturate($gold, 25%);
+}
+
+/* @end */
+
+.exhibit .tags {
+    color: $fall-text
+}
+
+#show-sidebar {
+    background-color:#eed;
+    border-top: 1px dashed $fall-bg;
+    border-bottom: 1px dashed $fall-bg;
+}
+
+.item-type {
+    color: #554433;
+}
+
+.secondary-nav ul,
+.browse .item-meta {
+    border-color: $cream;
+}

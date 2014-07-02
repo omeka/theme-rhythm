@@ -1,0 +1,57 @@
+/* @group ----- Navigation ----- */
+
+#primary-nav{
+position:relative;
+padding:10px 0;
+margin:0;
+}
+
+/*== primary navigation div == */
+#primary-nav ul {
+    position:absolute;
+    top: 5px;
+    right: 5px;
+}
+#primary-nav ul li{
+    margin-right: 10px;
+}
+#primary-nav li,
+.navigation li {
+    display:inline;
+    font-family:"Century Gothic", "Apple Gothic", "Lucida Sans Unicode", "Franklin Gothic Medium", sans-serif;
+    padding:.5em;
+    margin-left:0px;
+    font-weight: normal;
+    font-size:1em;
+}
+#primary-nav a, 
+.navigation a {
+    text-decoration:none;
+    font-weight:normal;
+    margin-left:15px;
+}
+
+/* @end */
+
+/* @group ----- Reusable ids and classes ----- */
+
+#primary {
+    float:left;
+    width:610px;
+}
+
+/* @end */
+
+/* @group ----- Items/Browse ----- */
+.item-meta {
+    margin-left:20px;
+    width:580px;
+    padding-top: 15px;
+}
+.show .item-meta{
+    margin-left:0;
+    width:610px;
+    border-top:0px;
+    padding-top:0;
+}
+/* @end */

@@ -1,0 +1,340 @@
+//Rhythm and Blue styles
+
+/* @group ----- RHYTHM Generic HTML Elements ----- */
+th {
+    //border-color:;KIM
+}
+
+body {
+    color:#3c3231;
+    background-color: #3c3231;
+}
+
+p,
+.exhibit .description,
+.exhibit-item,
+.exhibit-text,
+.item-description {
+    color:$text-brown;
+}
+
+a:link, a:visited {
+    color: darken($blue, 30%);
+}
+
+a:hover {
+    color: darken($blue, 15%);
+}
+a:active {
+    color:#ddb;
+}
+
+dl,
+dt a {
+    color:#323232;
+}
+
+.button,
+.button a,
+button,
+input[type="submit"] {
+    background-color: $item-brown;
+    color: #fff;
+}
+
+/* @end */
+
+/* @group ----- RHYTHM: Reusable classes ----- */
+
+#wrap {
+    background: #fff url(../images/blue/bg-top.jpg) top left repeat-x;
+}
+
+#primary h1 {
+    color:$item-brown;
+}
+
+header h1 a {
+    color:#fff;
+}
+
+#secondary h2 {
+    color: #554422;
+}
+
+h3,
+h4 {
+    color:$secondary-tan;
+}
+
+
+.featured-box h2 {
+    color: $text-brown;
+    border-bottom:1px dashed white;
+}
+
+.featured-box.title a,
+.featured-box.title a:visited {
+    color:#fff;
+}
+
+.featured-box img {
+    border: 10px solid #fff;
+}
+
+
+#featured-exhibit,
+#featured-item {
+    background-color: $secondary-tan;
+}
+
+#featured-collection {
+    background-color: $blue;
+}
+#featured-collection.featured-box a:link, 
+#featured-collection.featured-box a:visited  {
+    color:#554422;
+}
+
+#sidebar-featured-item {
+    background: #544;
+}
+
+.featured img {
+    border: 1px solid #ddb;
+    background:#fff;
+}
+
+#sidebar-featured-item .description p,
+#sidebar-featured-item h2,
+#sidebar-featured-item a {
+    color: #fff;
+}
+
+#featured-item,
+#featured-exhibit {
+    a:link {
+        color: lighten($secondary-tan, 25%);
+    }
+    a:hover {
+        color: #fff;
+    }
+}
+
+label, 
+.label {
+    color:#000;
+}
+
+.field {
+    border-bottom:1px dashed #fff;
+}
+.field .textinput,
+.field select {
+    background-color:#fff;
+}
+
+p.view-items-link,
+p.view-items-link a {
+    color:$rhythm-bg;
+}
+
+.item-img img {
+    border: 1px solid #ddb;
+}
+
+/* @end */
+
+/* @group ----- RHYTHM: Header ----- */
+
+header {
+    border-bottom: 5px solid $blue;
+    border-top: 5px solid $blue;
+    background: #3c3231 url(../images/blue/bg_header.gif) repeat top;
+}
+header #about p {
+    color:#fff;
+}
+header #about .more a {
+    color:$secondary-tan;
+}
+header #about .more a:hover {
+    color: $blue;}
+
+#site-title,
+#site-title a {
+    color:#fff;
+}
+
+#search-container {
+    background-color:$blue;
+    
+    a {
+        color:#fff;
+    }
+    
+    a:visited{
+        color:#323232;
+    }
+    
+    a:hover {
+        color:#fff;
+    }
+}
+
+.meta-main {
+    border-top: 1px dashed #ddb;
+}
+.meta-main .runinHead {
+    color:$item-brown;
+}
+
+/* @end */
+
+/* @group ----- RHYTHM: Navigation ----- */
+
+#primary-nav{
+    position:relative;
+    background-color:#fff;
+}
+#primary-nav ul a {
+    background:url(../images/blue/bullet-omeka.png) no-repeat 0 50%;
+}
+.navigation li, 
+.navigation a  {
+    color: $text-brown;
+}
+#primary-nav a:hover,
+.navigation a:hover{
+    color:$blue;
+}    
+#primary-nav .current a, 
+.exhibits #primary-nav li.nav-exhibits a, 
+.collections #primary-nav li.nav-collections a, 
+.about #primary-nav li.nav-about a, 
+.items #primary-nav li.nav-items a {
+    color:$secondary-tan;
+    background-color:#fff;
+    } /* makes the primary nav link on the current page tan; gets class [exhibits, .collections, .about] from assigned body class in theme php */
+ 
+.secondary-nav ul,
+#sort-links, 
+.browse .item-meta {
+    border-color: #ddb;
+}   
+
+/* @end */
+
+/* @group ----- RHYTHM: Footer ----- */      
+footer {
+    background:#fff url(../images/blue/bg-footer.jpg) repeat-x left top;
+}
+    footer .navigation {
+        background:#fff;
+    }
+    footer .navigation li {
+        background:transparent url(../images/blue/bullet-omeka.png) no-repeat scroll 0 50%;
+    }
+    footer .navigation a {
+        color:#323231;
+    }
+    footer .navigation .current a {
+        color:#BBBB88;
+    }
+    footer footer-text {
+        color:#000;
+    }    
+
+p.tagline {color:#fff;}
+
+/* @end */
+
+/* @group ----- RHYTHM: Exhibits ----- */    
+.exhibit .tags {color:$text-brown}
+.exhibit .tags a{color:$blue;}
+
+.exhibit-section-nav a {color:$rhythm-bg;}
+.exhibit-section-nav a:hover{color: $secondary-tan;}
+.exhibit-section-nav .current a {color:$secondary-tan;}
+
+.exhibit-page-nav a {color:$rhythm-bg;}
+.exhibit-page-nav a:hover {color: $secondary-tan;}
+.exhibit-page-nav .current a {color:$secondary-tan;}
+
+
+.archive a:link {color:$blue;}
+.archive a:visited {color:$blue;}
+.archive a:hover {color: $blue;}
+.archive a:active {color: $blue;}
+
+/* @end */
+
+/* @group ----- RHYTHM: Items ----- */    
+#show-sidebar {
+    background-color:#eed;
+    border-top: 1px dashed $secondary-tan;
+    border-bottom: 1px dashed $secondary-tan;
+}
+    .show #secondary dl {
+        color:#544;
+    }
+    .show #secondary a {
+        color: #000;
+    }
+    .show #secondary a:hover {
+        color:#fff;
+    }
+    textarea#rights {
+        color:#444;
+    }
+    .item-type {
+        color: #554433;
+    }
+ul.title-list li{
+    color:$item-brown;
+}
+
+.navigation.item-pagination a {
+    color: #fff;
+}
+
+/* @end */
+
+/* @group ----- RHYTHM: Tags ----- */  
+.popular a, .popular a:visited {color: $text-brown;} 
+.v-popular a, .v-popular a:visited {color: $text-brown;}
+.vv-popular a, .vv-popular a:visited {color: $text-brown;}
+.vvv-popular a, .vvv-popular a:visited {color: #7ac;}
+.vvvv-popular a, .vvvv-popular a:visited {color: #7ac;}
+.vvvvv-popular a, .vvvvv-popular a:visited {color: $blue;}
+.vvvvvv-popular a, .vvvvvv-popular a:visited {color: $blue;}
+.vvvvvvv-popular a, .vvvvvvv-popular a:visited {color: $blue;}
+.vvvvvvvv-popular a, .vvvvvvvv-popular a:visited {color: $blue;}
+
+/* @end */
+
+/* @group ----- RHYTHM: Pagination Links ----- */  
+
+.pagination_current{
+    color:$primary-gray;
+}
+
+.pagination li a {
+    color: #323232;
+}
+    .pagination li a:hover {
+        color: $blue;
+    }
+    .pagination ul li.pagination_next a,
+    .pagination ul li.pagination_last a,
+    .pagination ul li.pagination_previous a,
+    .pagination ul li.pagination_first a {
+        color:$blue;
+    }
+    .pagination ul li.pagination_next a:hover, 
+    .pagination ul li.pagination_last a:hover, 
+    .pagination ul li.pagination_previous a:hover, 
+    .pagination ul li.pagination_first a:hover {
+        color:$text-brown;
+    }
+/* @end */
