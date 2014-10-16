@@ -6,8 +6,8 @@
   }
 
   * {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    box-sizing: border-box;
     box-sizing: border-box;
   }
 
@@ -82,8 +82,8 @@
 
   blockquote {
     padding: 1.5em;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border-radius: 3px;
     border-radius: 3px;
   }
   blockquote *:last-child {
@@ -139,8 +139,8 @@
     font-family: "Source Sans Pro", sans-serif;
     font-size: 16px;
     line-height: 24px;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border-radius: 3px;
     border-radius: 3px;
   }
 
@@ -206,8 +206,8 @@
 
   .collection .image img,
   .exhibit .image img {
-    -moz-box-shadow: -3px -3px 0 rgba(0, 0, 0, 0.2), -6px -6px 0 rgba(0, 0, 0, 0.1);
-    -webkit-box-shadow: -3px -3px 0 rgba(0, 0, 0, 0.2), -6px -6px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: -3px -3px 0 rgba(0, 0, 0, 0.2), -6px -6px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: -3px -3px 0 rgba(0, 0, 0, 0.2), -6px -6px 0 rgba(0, 0, 0, 0.1);
     box-shadow: -3px -3px 0 rgba(0, 0, 0, 0.2), -6px -6px 0 rgba(0, 0, 0, 0.1);
     margin-left: 6px !important;
   }
@@ -314,8 +314,8 @@
     top: 0.75em;
     right: 0.375em;
     text-indent: -9999px;
-    -moz-border-radius: 0px 3px 3px 0;
-    -webkit-border-radius: 0px;
+    border-radius: 0px 3px 3px 0;
+    border-radius: 0px 3px 3px 0;
     border-radius: 0px 3px 3px 0;
   }
   #search-container button:after {
@@ -335,8 +335,8 @@
     padding-right: 2.625em;
     height: 36px;
     margin-bottom: 0;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border-radius: 3px;
     border-radius: 3px;
   }
 
@@ -345,8 +345,8 @@
   }
   #search-container.with-advanced button {
     right: 2.625em;
-    -moz-border-radius: 0px;
-    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    border-radius: 0px;
     border-radius: 0px;
   }
   #search-container.with-advanced .show-advanced {
@@ -356,15 +356,15 @@
     display: block;
     text-align: center;
     border-left: 1px solid rgba(0, 0, 0, 0.08);
-    -moz-border-radius: 0px;
-    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    border-radius: 0px;
     border-radius: 0px;
     height: 2.25em;
     border-right: 1px rgba(255, 255, 255, 0.25) solid;
     position: absolute;
     right: 0.375em;
-    -moz-border-radius: 0 3px 3px 0;
-    -webkit-border-radius: 0;
+    border-radius: 0 3px 3px 0;
+    border-radius: 0 3px 3px 0;
     border-radius: 0 3px 3px 0;
   }
 
@@ -652,8 +652,8 @@
     border-color: transparent;
   }
   .pagination li {
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border-radius: 3px;
     border-radius: 3px;
     display: inline-block;
     background-color: #ccc;
@@ -779,8 +779,8 @@
 
   #home .view-items-link {
     background-color: #ccc;
-    -moz-border-radius: 2px;
-    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    border-radius: 2px;
     border-radius: 2px;
     padding: 0.375em 10px;
     clear: both;
@@ -810,8 +810,8 @@
   #search-filters li,
   #item-filters li {
     list-style-type: none;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border-radius: 3px;
     border-radius: 3px;
     display: inline-block;
     padding: 0.375em 10px;
@@ -963,8 +963,8 @@
   .hTagcloud a:link,
   .hTagcloud a:visited {
     padding: 0.375em 10px;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border-radius: 3px;
     border-radius: 3px;
     color: #fff !important;
   }
@@ -1107,6 +1107,17 @@
   }
 
   /* @end */
+  /* @group ----- Other Plugin Styles ----- */
+  #recaptcha_area input {
+    line-height: normal;
+  }
+
+  #recaptcha_area img {
+    width: intrinsic;
+    height: intrinsic;
+  }
+
+  /* @end */
   /*Blue styles*/
   .blue {
     /* @group ----- RHYTHM Generic HTML Elements ----- */
@@ -1138,7 +1149,7 @@
   .blue .exhibit-item,
   .blue .exhibit-text,
   .blue .item-description {
-    color: #3c3c31;
+    color: #3C3C31;
   }
   .blue a:link, .blue a:visited {
     color: #2288cc;
@@ -1157,14 +1168,14 @@
   .blue .button a,
   .blue button,
   .blue input[type="submit"] {
-    background-color: #554433;
+    background-color: #543;
     color: #fff;
   }
   .blue #wrap {
-    background: white url(../images/blue/bg-top.jpg) top left repeat-x;
+    background: #fff url(../images/blue/bg-top.jpg) top left repeat-x;
   }
   .blue #primary h1 {
-    color: #554433;
+    color: #543;
   }
   .blue header h1 a {
     color: #fff;
@@ -1174,10 +1185,10 @@
   }
   .blue h3,
   .blue h4 {
-    color: #bbbb88;
+    color: #bb8;
   }
   .blue .featured-box h2 {
-    color: #3c3c31;
+    color: #3C3C31;
     border-bottom: 1px dashed white;
   }
   .blue .featured-box.title a,
@@ -1189,10 +1200,10 @@
   }
   .blue #featured-exhibit,
   .blue #featured-item {
-    background-color: #bbbb88;
+    background-color: #bb8;
   }
   .blue #featured-collection {
-    background-color: #99ccee;
+    background-color: #9ce;
   }
   .blue #featured-collection.featured-box a:link,
   .blue #featured-collection.featured-box a:visited {
@@ -1231,31 +1242,31 @@
   }
   .blue p.view-items-link,
   .blue p.view-items-link a {
-    color: #555544;
+    color: #554;
   }
   .blue .item-img img {
     border: 1px solid #ddb;
   }
   .blue header {
-    border-bottom: 5px solid #99ccee;
-    border-top: 5px solid #99ccee;
+    border-bottom: 5px solid #9ce;
+    border-top: 5px solid #9ce;
     background: #3c3231 url(../images/blue/bg_header.gif) repeat top;
   }
   .blue header #about p {
     color: #fff;
   }
   .blue header #about .more a {
-    color: #bbbb88;
+    color: #bb8;
   }
   .blue header #about .more a:hover {
-    color: #99ccee;
+    color: #9ce;
   }
   .blue #site-title,
   .blue #site-title a {
     color: #fff;
   }
   .blue #search-container {
-    background-color: #99ccee;
+    background-color: #9ce;
   }
   .blue #search-container a {
     color: #fff;
@@ -1270,7 +1281,7 @@
     border-top: 1px dashed #ddb;
   }
   .blue .meta-main .runinHead {
-    color: #554433;
+    color: #543;
   }
   .blue #primary-nav {
     position: relative;
@@ -1281,18 +1292,18 @@
   }
   .blue .navigation li,
   .blue .navigation a {
-    color: #3c3c31;
+    color: #3C3C31;
   }
   .blue #primary-nav a:hover,
   .blue .navigation a:hover {
-    color: #99ccee;
+    color: #9ce;
   }
   .blue #primary-nav .current a,
   .blue .exhibits #primary-nav li.nav-exhibits a,
   .blue .collections #primary-nav li.nav-collections a,
   .blue .about #primary-nav li.nav-about a,
   .blue .items #primary-nav li.nav-items a {
-    color: #bbbb88;
+    color: #bb8;
     background-color: #fff;
   }
   .blue .secondary-nav ul,
@@ -1301,7 +1312,7 @@
     border-color: #ddb;
   }
   .blue footer {
-    background: white url(../images/blue/bg-footer.jpg) repeat-x left top;
+    background: #fff url(../images/blue/bg-footer.jpg) repeat-x left top;
   }
   .blue footer .navigation {
     background: #fff;
@@ -1322,45 +1333,45 @@
     color: #fff;
   }
   .blue .exhibit .tags {
-    color: #3c3c31;
+    color: #3C3C31;
   }
   .blue .exhibit .tags a {
-    color: #99ccee;
+    color: #9ce;
   }
   .blue .exhibit-section-nav a {
-    color: #555544;
+    color: #554;
   }
   .blue .exhibit-section-nav a:hover {
-    color: #bbbb88;
+    color: #bb8;
   }
   .blue .exhibit-section-nav .current a {
-    color: #bbbb88;
+    color: #bb8;
   }
   .blue .exhibit-page-nav a {
-    color: #555544;
+    color: #554;
   }
   .blue .exhibit-page-nav a:hover {
-    color: #bbbb88;
+    color: #bb8;
   }
   .blue .exhibit-page-nav .current a {
-    color: #bbbb88;
+    color: #bb8;
   }
   .blue .archive a:link {
-    color: #99ccee;
+    color: #9ce;
   }
   .blue .archive a:visited {
-    color: #99ccee;
+    color: #9ce;
   }
   .blue .archive a:hover {
-    color: #99ccee;
+    color: #9ce;
   }
   .blue .archive a:active {
-    color: #99ccee;
+    color: #9ce;
   }
   .blue #show-sidebar {
     background-color: #eed;
-    border-top: 1px dashed #bbbb88;
-    border-bottom: 1px dashed #bbbb88;
+    border-top: 1px dashed #bb8;
+    border-bottom: 1px dashed #bb8;
   }
   .blue .show #secondary dl {
     color: #544;
@@ -1378,19 +1389,19 @@
     color: #554433;
   }
   .blue ul.title-list li {
-    color: #554433;
+    color: #543;
   }
   .blue .navigation.item-pagination a {
     color: #fff;
   }
   .blue .popular a, .blue .popular a:visited {
-    color: #3c3c31;
+    color: #3C3C31;
   }
   .blue .v-popular a, .blue .v-popular a:visited {
-    color: #3c3c31;
+    color: #3C3C31;
   }
   .blue .vv-popular a, .blue .vv-popular a:visited {
-    color: #3c3c31;
+    color: #3C3C31;
   }
   .blue .vvv-popular a, .blue .vvv-popular a:visited {
     color: #7ac;
@@ -1399,37 +1410,37 @@
     color: #7ac;
   }
   .blue .vvvvv-popular a, .blue .vvvvv-popular a:visited {
-    color: #99ccee;
+    color: #9ce;
   }
   .blue .vvvvvv-popular a, .blue .vvvvvv-popular a:visited {
-    color: #99ccee;
+    color: #9ce;
   }
   .blue .vvvvvvv-popular a, .blue .vvvvvvv-popular a:visited {
-    color: #99ccee;
+    color: #9ce;
   }
   .blue .vvvvvvvv-popular a, .blue .vvvvvvvv-popular a:visited {
-    color: #99ccee;
+    color: #9ce;
   }
   .blue .pagination_current {
-    color: #ccccaa;
+    color: #cca;
   }
   .blue .pagination li a {
     color: #323232;
   }
   .blue .pagination li a:hover {
-    color: #99ccee;
+    color: #9ce;
   }
   .blue .pagination ul li.pagination_next a,
   .blue .pagination ul li.pagination_last a,
   .blue .pagination ul li.pagination_previous a,
   .blue .pagination ul li.pagination_first a {
-    color: #99ccee;
+    color: #9ce;
   }
   .blue .pagination ul li.pagination_next a:hover,
   .blue .pagination ul li.pagination_last a:hover,
   .blue .pagination ul li.pagination_previous a:hover,
   .blue .pagination ul li.pagination_first a:hover {
-    color: #3c3c31;
+    color: #3C3C31;
   }
 
   /*Fall Styles*/
@@ -1788,7 +1799,7 @@
     color: #fff;
   }
   .spring a:link {
-    color: #68a8a8;
+    color: #68A8A8;
   }
   .spring a:visited {
     color: #7a9696;
@@ -1807,14 +1818,14 @@
     border-color: #ccdd44;
   }
   .spring #wrap {
-    background: white url(../images/spring/bg-top.png) top left repeat-x;
+    background: #fff url(../images/spring/bg-top.png) top left repeat-x;
   }
   .spring #featured-item h2,
   .spring #featured-exhibit h2 {
     color: #fff;
   }
   .spring .tags a:link {
-    color: #68a8a8;
+    color: #68A8A8;
   }
   .spring .tags a:hover {
     color: #ccdd44;
@@ -1857,7 +1868,7 @@
     border-color: #ccdd44;
   }
   .spring #advanced-form a:link {
-    color: #68a8a8;
+    color: #68A8A8;
   }
   .spring #advanced-form a:visited {
     color: #7a9696;
@@ -1908,7 +1919,7 @@
     color: #fff !important;
   }
   .spring footer {
-    background: white url(../images/spring/bg-footer.png) repeat-x left top;
+    background: #fff url(../images/spring/bg-footer.png) repeat-x left top;
   }
   .spring footer .navigation {
     background: #fff;
@@ -1991,63 +2002,63 @@
     color: #634;
   }
   .spring .popular a {
-    color: #68a8a8;
+    color: #68A8A8;
     text-decoration: none;
   }
   .spring .popular a:visited {
     color: #777;
   }
   .spring .v-popular a {
-    color: #68a8a8;
+    color: #68A8A8;
     text-decoration: none;
   }
   .spring .v-popular a:visited {
     color: #777;
   }
   .spring .vv-popular a {
-    color: #68a8a8;
+    color: #68A8A8;
     text-decoration: none;
   }
   .spring .vv-popular a:visited {
     color: #777;
   }
   .spring .vvv-popular a {
-    color: #68a8a8;
+    color: #68A8A8;
     text-decoration: none;
   }
   .spring .vvv-popular a:visited {
     color: #777;
   }
   .spring .vvvv-popular a {
-    color: #68a8a8;
+    color: #68A8A8;
     text-decoration: none;
   }
   .spring .vvvv-popular a:visited {
     color: #777;
   }
   .spring .vvvvv-popular a {
-    color: #68a8a8;
+    color: #68A8A8;
     text-decoration: none;
   }
   .spring .vvvvv-popular a:visited {
     color: #777;
   }
   .spring .vvvvvv-popular a {
-    color: #68a8a8;
+    color: #68A8A8;
     text-decoration: none;
   }
   .spring .vvvvvv-popular a:visited {
     color: #777;
   }
   .spring .vvvvvvv-popular a {
-    color: #68a8a8;
+    color: #68A8A8;
     text-decoration: none;
   }
   .spring .vvvvvvv-popular a:visited {
     color: #777;
   }
   .spring .vvvvvvvv-popular a {
-    color: #68a8a8;
+    color: #68A8A8;
     text-decoration: none;
   }
   .spring .vvvvvvvv-popular a:visited {
@@ -2068,7 +2079,7 @@
   .spring .pagination ul li.pagination_last a:hover,
   .spring .pagination ul li.pagination_previous a:hover,
   .spring .pagination ul li.pagination_first a:hover {
-    color: #68a8a8;
+    color: #68A8A8;
   }
   .spring .item-img img {
     border: 1px solid #ccdd44;
@@ -2131,6 +2142,7 @@
   #wrap {
     *zoom: 1;
     max-width: 39em;
+    _width: 39em;
     padding-left: 0;
     padding-right: 0;
     margin-left: auto;

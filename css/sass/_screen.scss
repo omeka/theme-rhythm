@@ -1109,6 +1109,19 @@ ul.exhibit-section-nav{
 }
 
 /* @end */
+
+/* @group ----- Other Plugin Styles ----- */
+
+#recaptcha_area input {
+    line-height: normal;
+}
+
+#recaptcha_area img {
+    width: intrinsic;
+    height: intrinsic;
+}
+
+/* @end */
         
 /*Blue styles*/
 .blue {
