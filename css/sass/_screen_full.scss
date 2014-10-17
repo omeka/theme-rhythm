@@ -1,5 +1,3 @@
-@import "base";
-@import "susyone";
 
 /* @group ----- Reusable classes ----- */
 
@@ -53,12 +51,12 @@ footer {
     li {
         float: left;
         width: auto;
-        @include trailing-border(0, 0, $base-font-size, solid);
+        @include trailing-border(0px, 0, $base-font-size, solid);
         margin-right: 20px;
         padding-top: 0;
         
         &:last-of-type {
-            @include trailing-border(0, 0, $base-font-size, solid);
+            @include trailing-border(0px, 0, $base-font-size, solid);
         }
     }
     

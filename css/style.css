@@ -1044,7 +1044,7 @@
 
   #exhibit-pages #secondary-nav ul,
   #exhibit-pages .secondary-nav ul {
-    border-bottom-width: 0;
+    border-bottom-width: 0em;
     border-bottom-style: solid;
     padding-bottom: 0em;
     margin-bottom: 0em;
@@ -2213,14 +2213,14 @@
   #primary-nav li {
     float: left;
     width: auto;
-    border-bottom-width: 0;
+    border-bottom-width: 0em;
     border-bottom-style: solid;
     padding-bottom: 0em;
     margin-right: 20px;
     padding-top: 0;
   }
   #primary-nav li:last-of-type {
-    border-bottom-width: 0;
+    border-bottom-width: 0em;
     border-bottom-style: solid;
     padding-bottom: 0em;
   }
@@ -2382,59 +2382,7 @@
   /* @end */
 }
 @media print {
-  body {
-    font: 12px Georgia, "Palatino Linotype", "Book Antiqua", "Times New Roman", Times, serif;
-  }
-
-  #content {
-    width: 100%;
-    margin: 0;
-    float: none;
-  }
-
-  h1,
-  #site-title {
-    font-size: 16pt;
-    font-weight: bold;
-  }
-
-  h2 {
-    font-size: 14pt;
-    font-style: italic;
-  }
-
-  h3 {
-    font-size: 14pt;
-  }
-
-  h4 {
-    font-weight: bold;
-  }
-
-  h5 {
-    font-weight: bold;
-    font-style: italic;
-    text-transform: uppercase;
-  }
-
-  a:link:after {
-    content: " (" attr(href) ") ";
-    font-size: 80%;
-  }
-
-  #search-container,
-  #primary-nav,
-  #header-image,
-  .navigation,
-  .pagination,
-  #exhibit-page-navigation,
-  .exhibit-section-nav,
-  .exhibit-page-nav {
-    display: none;
-  }
-
-  blockquote {
-    margin: 10pt 0 0 0;
-    font-style: italic;
-  }
+  /* Welcome to Compass. Use this file to define print styles.
+   * Import this file using the following HTML or equivalent:
+   * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
 }
