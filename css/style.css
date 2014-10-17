@@ -6,8 +6,8 @@
   }
 
   * {
-    box-sizing: border-box;
-    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
 
@@ -82,8 +82,8 @@
 
   blockquote {
     padding: 1.5em;
-    border-radius: 3px;
-    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
     border-radius: 3px;
   }
   blockquote *:last-child {
@@ -139,8 +139,8 @@
     font-family: "Source Sans Pro", sans-serif;
     font-size: 16px;
     line-height: 24px;
-    border-radius: 3px;
-    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
     border-radius: 3px;
   }
 
@@ -206,8 +206,8 @@
 
   .collection .image img,
   .exhibit .image img {
-    box-shadow: -3px -3px 0 rgba(0, 0, 0, 0.2), -6px -6px 0 rgba(0, 0, 0, 0.1);
-    box-shadow: -3px -3px 0 rgba(0, 0, 0, 0.2), -6px -6px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: -3px -3px 0 rgba(0, 0, 0, 0.2), -6px -6px 0 rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: -3px -3px 0 rgba(0, 0, 0, 0.2), -6px -6px 0 rgba(0, 0, 0, 0.1);
     box-shadow: -3px -3px 0 rgba(0, 0, 0, 0.2), -6px -6px 0 rgba(0, 0, 0, 0.1);
     margin-left: 6px !important;
   }
@@ -314,8 +314,8 @@
     top: 0.75em;
     right: 0.375em;
     text-indent: -9999px;
-    border-radius: 0px 3px 3px 0;
-    border-radius: 0px 3px 3px 0;
+    -moz-border-radius: 0px 3px 3px 0;
+    -webkit-border-radius: 0px;
     border-radius: 0px 3px 3px 0;
   }
   #search-container button:after {
@@ -335,8 +335,8 @@
     padding-right: 2.625em;
     height: 36px;
     margin-bottom: 0;
-    border-radius: 3px;
-    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
     border-radius: 3px;
   }
 
@@ -345,8 +345,8 @@
   }
   #search-container.with-advanced button {
     right: 2.625em;
-    border-radius: 0px;
-    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
     border-radius: 0px;
   }
   #search-container.with-advanced .show-advanced {
@@ -356,15 +356,15 @@
     display: block;
     text-align: center;
     border-left: 1px solid rgba(0, 0, 0, 0.08);
-    border-radius: 0px;
-    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
     border-radius: 0px;
     height: 2.25em;
     border-right: 1px rgba(255, 255, 255, 0.25) solid;
     position: absolute;
     right: 0.375em;
-    border-radius: 0 3px 3px 0;
-    border-radius: 0 3px 3px 0;
+    -moz-border-radius: 0 3px 3px 0;
+    -webkit-border-radius: 0;
     border-radius: 0 3px 3px 0;
   }
 
@@ -652,8 +652,8 @@
     border-color: transparent;
   }
   .pagination li {
-    border-radius: 3px;
-    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
     border-radius: 3px;
     display: inline-block;
     background-color: #ccc;
@@ -779,8 +779,8 @@
 
   #home .view-items-link {
     background-color: #ccc;
-    border-radius: 2px;
-    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
     border-radius: 2px;
     padding: 0.375em 10px;
     clear: both;
@@ -810,8 +810,8 @@
   #search-filters li,
   #item-filters li {
     list-style-type: none;
-    border-radius: 3px;
-    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
     border-radius: 3px;
     display: inline-block;
     padding: 0.375em 10px;
@@ -963,8 +963,8 @@
   .hTagcloud a:link,
   .hTagcloud a:visited {
     padding: 0.375em 10px;
-    border-radius: 3px;
-    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
     border-radius: 3px;
     color: #fff !important;
   }
@@ -2142,7 +2142,6 @@
   #wrap {
     *zoom: 1;
     max-width: 39em;
-    _width: 39em;
     padding-left: 0;
     padding-right: 0;
     margin-left: auto;
@@ -2382,7 +2381,59 @@
   /* @end */
 }
 @media print {
-  /* Welcome to Compass. Use this file to define print styles.
-   * Import this file using the following HTML or equivalent:
-   * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+  body {
+    font: 12px Georgia, "Palatino Linotype", "Book Antiqua", "Times New Roman", Times, serif;
+  }
+
+  #content {
+    width: 100%;
+    margin: 0;
+    float: none;
+  }
+
+  h1,
+  #site-title {
+    font-size: 16pt;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 14pt;
+    font-style: italic;
+  }
+
+  h3 {
+    font-size: 14pt;
+  }
+
+  h4 {
+    font-weight: bold;
+  }
+
+  h5 {
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+  }
+
+  a:link:after {
+    content: " (" attr(href) ") ";
+    font-size: 80%;
+  }
+
+  #search-container,
+  #primary-nav,
+  #header-image,
+  .navigation,
+  .pagination,
+  #exhibit-page-navigation,
+  .exhibit-section-nav,
+  .exhibit-page-nav {
+    display: none;
+  }
+
+  blockquote {
+    margin: 10pt 0 0 0;
+    font-style: italic;
+  }
 }
