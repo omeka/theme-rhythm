@@ -29,8 +29,8 @@
 
   h1 {
     font-size: 32px;
-    margin-bottom: 0.75em;
     line-height: 48px;
+    margin: 0.75em 0;
     letter-spacing: -1px;
     font-weight: normal;
   }
@@ -38,19 +38,19 @@
   h2 {
     font-size: 24px;
     line-height: 24px;
-    margin-bottom: 1em;
+    margin: 1em 0;
   }
 
   h3 {
     font-size: 20px;
     line-height: 24px;
     font-weight: bold;
-    margin-bottom: 1.2em;
+    margin: 1.2em 0;
   }
 
   h4 {
     font-weight: bold;
-    margin-bottom: 1.5em;
+    margin: 1.5em 0;
   }
 
   h1 a,
@@ -183,7 +183,6 @@
     border-bottom-width: 0.0625em;
     border-bottom-style: dashed;
     padding-bottom: 1.4375em;
-    margin-bottom: 1.5em;
     clear: left;
     overflow: hidden;
   }
@@ -191,6 +190,11 @@
   .collection *:last-child,
   .exhibit *:last-child {
     margin-bottom: 0;
+  }
+  .item:first-child h2,
+  .collection:first-child h2,
+  .exhibit:first-child h2 {
+    margin-top: 0;
   }
 
   .item img {
@@ -766,13 +770,6 @@
     overflow: visible;
   }
 
-  #recent-items {
-    margin: 1.5em 0;
-  }
-  #recent-items .item *:last-child {
-    margin-bottom: 0;
-  }
-
   .item-description .show {
     display: none;
   }
@@ -785,6 +782,26 @@
     padding: 0.375em 10px;
     clear: both;
     font-weight: 700;
+  }
+
+  #featured-item h2,
+  #featured-item h3,
+  #featured-collection h2,
+  #featured-collection h3,
+  #featured-exhibit h2,
+  #featured-exhibit h3 {
+    margin: 0;
+  }
+
+  #recent-items {
+    margin: 1.5em 0;
+  }
+  #recent-items .item *:last-child {
+    margin-bottom: 0;
+  }
+
+  #home #recent-items h2 {
+    margin: 0;
   }
 
   #featured-item,
@@ -956,6 +973,10 @@
   }
   .items.show .item img {
     height: 7.5em;
+  }
+
+  #itemfiles {
+    overflow: hidden;
   }
 
   /* @end */

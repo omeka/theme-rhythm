@@ -24,8 +24,8 @@ h2 {
 
 h1 {
     font-size: 2 * $base-font-size;
-    @include trailer(1, 2 * $base-font-size);
     line-height: 2 * $base-line-height;
+    margin: rhythm(1, 2 * $base-font-size) 0;
     letter-spacing: -1px;
     font-weight:normal;
 }
@@ -33,19 +33,19 @@ h1 {
 h2 {
     font-size: 1.5 * $base-font-size;
     line-height: $base-line-height;
-    @include trailer(1, 1.5 * $base-font-size);
+    margin: rhythm(1, 1.5 * $base-font-size) 0;
 }
 
 h3 {
     font-size: 1.25 * $base-font-size;
     line-height: $base-line-height;
     font-weight:bold;
-    @include trailer(1, 1.25 * $base-font-size);
+    margin: rhythm(1, 1.25 * $base-font-size) 0;
 }
 
 h4 {
     font-weight:bold;
-    @include trailer();
+    margin: rhythm() 0;
 }
 
 h1 a,
@@ -172,12 +172,15 @@ fieldset {
 .collection,
 .exhibit {
     @include trailing-border(1px, 1, $base-font-size, dashed);
-    @include trailer();
     clear: left;
     overflow: hidden;
     
     *:last-child {
         margin-bottom: 0;
+    }
+    
+    &:first-child h2 {
+        margin-top: 0;
     }
 }
 
@@ -749,14 +752,6 @@ nav a,
     overflow: visible;
 }
 
-#recent-items {
-    margin: rhythm() 0;
-    
-    .item *:last-child {
-        margin-bottom: 0;
-    }
-}
-
 .item-description .show {
     display: none;
 }
@@ -767,6 +762,28 @@ nav a,
     padding: rhythm(.25) 10px;
     clear: both;
     font-weight: 700;
+}
+
+#featured-item h2,
+#featured-item h3,
+#featured-collection h2,
+#featured-collection h3,
+#featured-exhibit h2,
+#featured-exhibit h3 {
+    margin: 0;
+}
+
+#recent-items {
+    margin: rhythm() 0;
+    
+    .item *:last-child {
+        margin-bottom: 0;
+    }
+}
+
+    
+#home #recent-items h2 {
+    margin: 0;
 }
 
 #featured-item,
@@ -947,6 +964,10 @@ div.tags:last-child p {
             height: rhythm(5);
         }
     }
+}
+
+#itemfiles {
+    overflow: hidden;
 }
 
 /* @end */
