@@ -33,6 +33,7 @@
     margin: 0.75em 0;
     letter-spacing: -1px;
     font-weight: normal;
+    word-wrap: break-word;
   }
 
   h2 {
@@ -206,6 +207,10 @@
 
   .image {
     overflow: visible;
+  }
+
+  .item-file img {
+    max-width: 100%;
   }
 
   .collection .image img,
