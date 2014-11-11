@@ -636,6 +636,11 @@
     padding: 0;
     background: none;
   }
+  .secondary-nav li.active,
+  #secondary-nav li.active,
+  #exhibit-child-pages li.active {
+    font-weight: bold;
+  }
   .secondary-nav a,
   #secondary-nav a,
   #exhibit-child-pages a {

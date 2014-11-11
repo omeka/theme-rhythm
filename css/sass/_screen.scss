@@ -617,6 +617,10 @@ nav a,
         margin: 0 1em 0 0;
         padding:0;
         background: none;
+        
+        &.active {
+            font-weight: bold;
+        }
     }
     
     a {
