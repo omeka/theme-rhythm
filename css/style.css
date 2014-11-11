@@ -247,11 +247,15 @@
     line-height: 2.2em;
   }
   .hTagcloud li {
-    display: inline;
-    margin-right: 8px;
+    display: inline-block;
+    margin: 6px 10px;
+    margin-left: 0;
     background-image: none;
     margin-left: 0;
     padding-left: 0;
+  }
+  .hTagcloud a {
+    display: block;
   }
 
   .popular {

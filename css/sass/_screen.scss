@@ -235,11 +235,16 @@ fieldset {
     }
     
     li {
-        display:inline;
-        margin-right:8px;
+        display: inline-block;
+        margin: (.25 * $base-line-height) 10px;
+        margin-left: 0;
         background-image:none;
         margin-left:0;
         padding-left:0
+    }
+    
+    a {
+        display: block;
     }
 }
 
