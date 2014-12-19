@@ -185,12 +185,8 @@ footer {
 }
 
 .exhibits #content > #exhibit-pages {
+    margin: 0;
     @include span-columns(4 omega);
-    @include leader(.5);
-}
-
-.summary #exhibit-pages {
-    @include leader(.5);
 }
 
 #exhibit-child-pages + .exhibit-block {

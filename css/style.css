@@ -1051,30 +1051,47 @@
 
   /* @end */
   /* @group ----- Exhibits ----- */
-  .summary #exhibit-pages {
-    padding: 0 1.69492%;
+  #exhibit-pages {
     margin: 1.5em 0;
   }
-  .summary #exhibit-pages li {
+  #exhibit-pages h4 {
+    margin: 0 0 0.6em;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  #exhibit-pages li {
     width: 100%;
     list-style-type: none;
     text-transform: none;
     padding: 0.375em 0;
   }
-  .summary #exhibit-pages > ul {
+  #exhibit-pages > ul {
     margin-left: 0;
   }
-  .summary #exhibit-pages > ul ul {
+  #exhibit-pages > ul ul {
     display: none;
   }
-  .summary #exhibit-pages > ul > li {
+  #exhibit-pages > ul > li {
     border-bottom-width: 0.0625em;
     border-bottom-style: solid;
-    padding-bottom: 0.6875em;
+    padding-bottom: 0.3125em;
     text-transform: uppercase;
   }
-  .summary #exhibit-pages > ul > li:last-of-type {
+  #exhibit-pages > ul > li:last-of-type {
     border-color: transparent;
+  }
+  #exhibit-pages .parent ul,
+  #exhibit-pages .current ul {
+    display: block;
+    margin-left: 1.25em;
+  }
+  #exhibit-pages .parent li,
+  #exhibit-pages .current li {
+    list-style-type: square;
+    padding: 0;
+  }
+  #exhibit-pages .current > a {
+    font-weight: bold;
   }
 
   #exhibit-pages #secondary-nav ul,
@@ -1096,22 +1113,6 @@
   }
   .show #exhibit-pages > ul > li li {
     width: 100%;
-    padding: 0.375em 1em 0;
-  }
-  .show #exhibit-pages > ul > li li a {
-    width: 100%;
-    border-bottom-width: 0.0625em;
-    border-bottom-style: solid;
-    padding-bottom: 0.3125em;
-  }
-  .show #exhibit-pages > ul > li li:last-of-type a {
-    border-color: transparent;
-  }
-  .show #exhibit-pages > ul > li:first-of-type {
-    padding: 0.375em 1em;
-  }
-  .show #exhibit-pages > ul > li:nth-of-type(3) a {
-    text-transform: none;
   }
 
   ul.exhibit-section-nav {
@@ -2398,16 +2399,12 @@
   }
 
   .exhibits #content > #exhibit-pages {
+    margin: 0;
     width: 32.20339%;
     float: right;
     margin-right: 0;
     *margin-left: -1em;
     display: inline;
-    margin-top: 0.75em;
-  }
-
-  .summary #exhibit-pages {
-    margin-top: 0.75em;
   }
 
   #exhibit-child-pages + .exhibit-block {

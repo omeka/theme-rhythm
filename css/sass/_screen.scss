@@ -1044,9 +1044,14 @@ div.tags:last-child p {
 
 /* @group ----- Exhibits ----- */
 
-.summary #exhibit-pages {
-    padding: 0 gutter(12);
-    margin: rhythm(1) 0;
+#exhibit-pages {
+    margin: rhythm() 0;
+    
+    h4 {
+        margin: 0 0 rhythm(.5, 1.25 * $base-font-size);
+        font-size: 1.25 * $base-font-size;
+        line-height: $base-line-height;
+    }
     
     li {
         width: 100%;
@@ -1063,13 +1068,29 @@ div.tags:last-child p {
         }
 
         & > li {
-            @include trailing-border(1px, .5, $base-font-size, solid);
+            @include trailing-border(1px, .25, $base-font-size, solid);
             text-transform: uppercase;
 
             &:last-of-type {
                 border-color: transparent;
             }
         }
+    }
+    
+    .parent ul,
+    .current ul {
+        display: block;
+        margin-left: 1.25em;
+    }
+    
+    .parent li,
+    .current li {
+        list-style-type: square;
+        padding: 0;
+    }
+    
+    .current > a {
+        font-weight: bold;
     }
 }
 
@@ -1090,25 +1111,7 @@ div.tags:last-child p {
         
         li {
             width: 100%;
-            padding: rhythm(.25) 1em 0;
-            
-            a {
-                width: 100%;
-                @include trailing-border(1px, .25, $base-font-size, solid);
-            }
-            
-            &:last-of-type a{
-                border-color: transparent;
-            }
         }
-    }
-    
-    & > li:first-of-type {
-        padding: rhythm(.25) 1em;
-    }
-    
-    & > li:nth-of-type(3) a {
-        text-transform: none;
     }
 }
 
