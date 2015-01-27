@@ -184,12 +184,19 @@ footer {
     @include span-columns(8 alpha);
 }
 
-.exhibits #content > #exhibit-pages {
-    margin: 0;
-    @include span-columns(4 omega);
+.exhibits #content > h1:first-of-type {
+    margin-top: 0;
 }
 
-#exhibit-child-pages + .exhibit-block {
+.exhibits #content > #exhibit-pages {
+    margin: 0;
+    width: columns(4);
+    display: inline-block;
+    float: none;
+}
+
+#exhibit-child-pages + .exhibit-block,
+#exhibit-page-navigation {
     clear: none;
 }
 
