@@ -1139,7 +1139,15 @@ ul.exhibit-section-nav{
 }
 
 .exhibit-block {
+    clear: none;
+}
+
+.exhibit-items.left {
     clear: left;
+}
+
+.exhibit-items.right {
+    clear: right;
 }
 
 /* @end */
