@@ -79,7 +79,7 @@ ul li {
 blockquote {
     padding: rhythm();
     @include border-radius(3px);
-    
+
     *:last-child {
         margin-bottom: 0;
     }
@@ -92,7 +92,7 @@ table {
 caption {
     font-style: italic;
     text-align: left;
-    
+
     i, em {
         font-style: normal;
     }
@@ -100,7 +100,7 @@ caption {
 
 th, td {
     padding: rhythm(.25) gutter(12);
-    
+
     &:first-of-type {
         padding-left: 0;
     }
@@ -161,6 +161,17 @@ fieldset {
     margin: 0;
 }
 
+#skipnav{
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
 /* @end */
 
 /* @group ----- Reusable classes ----- */
@@ -175,11 +186,11 @@ fieldset {
     @include trailing-border(1px, 1, $base-font-size, dashed);
     clear: left;
     overflow: hidden;
-    
+
     *:last-child {
         margin-bottom: 0;
     }
-    
+
     &:first-child h2 {
         margin-top: 0;
     }
@@ -211,7 +222,7 @@ fieldset {
     float: left;
     display: block;
     margin: 0 rhythm() rhythm() 0;
-    
+
     img {
         vertical-align: top;
         height: rhythm(5);
@@ -221,19 +232,19 @@ fieldset {
 
 #wrap {
     @include padding-leader(2);
-} 
+}
 
 /* Microformats */
 .hTagcloud {
     @include trailer();
 
-    ul { 
+    ul {
         list-style:none;
         margin-left:0;
         padding-left:0;
         line-height:2.2em;
     }
-    
+
     li {
         display: inline-block;
         margin: (.25 * $base-line-height) 10px;
@@ -242,7 +253,7 @@ fieldset {
         margin-left:0;
         padding-left:0
     }
-    
+
     a {
         display: block;
     }
@@ -282,13 +293,13 @@ header {
     form {
         margin: 0;
         width: 100%;
-        
+
         a {
             font-weight:bold;
             text-decoration:none;
         }
     }
-    
+
     button {
         width: rhythm(1.5);
         position: absolute;
@@ -296,7 +307,7 @@ header {
         right: rhythm(.25);
         text-indent: -9999px;
         @include border-radius(0px 3px 3px 0);
-        
+
         &:after {
             font-family: "FontAwesome";
             content: "\f002";
@@ -323,12 +334,12 @@ header {
     #query {
         padding-right: rhythm(3.25);
     }
-    
+
     button {
         right: rhythm(1.75);
         @include border-radius(0px);
     }
-    
+
     .show-advanced {
         top: rhythm(.5);
         width: rhythm(1.5);
@@ -356,40 +367,40 @@ header {
     @include rhythm-borders(1px, .25, $base-font-size, solid);
     text-align: left;
     padding: rhythm(.5);
-    
+
     &.closed {
         left: -9999px;
     }
-    
+
     &.open  {
         left: 0;
     }
-    
+
     p {
         @include trailer(.5);
     }
-    
+
     fieldset {
         border: 0;
         padding: 0;
         @include trailer();
     }
-    
+
     label {
         font-size: $base-font-size;
         font-weight: normal;
         @include trailer(0);
     }
-    
+
     input[type=checkbox],
     input[type=radio] {
         margin: rhythm(.25) 5px 0 0;
     }
-    
+
     & > *:last-child {
         margin-bottom: 0;
     }
-    
+
     a {
         font-weight: normal;
     }
@@ -402,7 +413,7 @@ header {
     margin: rhythm(.5, 1.5 * $base-font-size) 0 0;
     display: inline-block;
 }
-        
+
 header #about {
     position:relative;
     top:-30px;
@@ -467,7 +478,7 @@ nav ul {
     ul {
         @include trailer();
     }
-   
+
     li {
         display: block;
         border-color: $green;
@@ -475,7 +486,7 @@ nav ul {
         @include trailing-border(1px, .5, $base-font-size, solid);
         width: 100%;
     }
-    
+
     a {
         padding: 0 0 0 rhythm(1);
     }
@@ -491,7 +502,7 @@ nav ul {
     padding: 0;
     z-index: 15;
     float: left;
-    
+
     a {
         text-decoration: none;
 
@@ -520,14 +531,14 @@ nav ul {
     color: #fff;
 }
 
-/* focus/open states of first descendant link within a top level 
+/* focus/open states of first descendant link within a top level
    navigation item */
 .nav-item > a:focus,
 .nav-item > a.open {
     // background-color: #fff;
 }
 
-/* open state of first descendant link within a top level 
+/* open state of first descendant link within a top level
    navigation item */
 .nav-item > a.open {
     border-bottom: none;
@@ -572,7 +583,7 @@ nav ul {
     vertical-align: top;
     margin: 0;
     padding: 0;
-    
+
     a {
         &:before {
             content: "\2014\0020";
@@ -597,7 +608,7 @@ nav a,
     font-weight: normal;
     list-style-type:none;
     padding-left: 0;
-    
+
     &.current {
         font-weight: bold;
     }
@@ -611,18 +622,18 @@ nav a,
         @include trailing-border(1px, .5, $base-font-size, dashed);
         @include trailer(.5);
     }
-    
+
     li {
         display:inline-block;
         margin: 0 1em 0 0;
         padding:0;
         background: none;
-        
+
         &.active {
             font-weight: bold;
         }
     }
-    
+
     a {
         display: inline-block;
         text-transform:uppercase;
@@ -643,30 +654,30 @@ nav a,
 .pagination {
     margin: 0 0 rhythm();
     padding: 0;
-    
+
     input {
         width: 3em;
         display: inline;
         margin: 0 3px 0 0;
         border-color: transparent;
     }
-    
+
     li {
         @include border-radius(3px);
         display: inline-block;
         background-color: #ccc;
     }
-    
+
     a, form {
         display: inline-block;
         text-decoration: none;
         margin: 0;
     }
-    
+
     a {
         padding: rhythm(.5);
     }
-    
+
     form {
         padding: rhythm(.25);
     }
@@ -675,12 +686,12 @@ nav a,
 .pagination_next,
 .pagination_previous {
     background-color: rgba(0,0,0,.25);
-    
+
     a {
         text-indent: -9999px;
         position: relative;
         width: rhythm(2);
-        
+
         &:after {
             font-family: "FontAwesome";
             position: absolute;
@@ -703,17 +714,17 @@ nav a,
 .item-pagination {
     overflow: auto;
     padding-left: 0;
-    
+
     li.previous {
         display:block;
         float:left;
     }
-    
+
     li.next {
         float:right;
         display:block;
     }
-    
+
     a {
         display: block;
         height: 100%;
@@ -736,23 +747,23 @@ nav a,
         font-family: "Source Sans Pro", sans-serif;
         @include trailer(0);
     }
-    
+
     h3 {
         font-family: "PT Serif", serif;
         @include trailer(0);
     }
-    
+
     p:last-of-type {
         @include trailer(0);
     }
-    
+
     img {
         height: rhythm(4);
         width: auto;
         float: left;
         margin: rhythm(.25) rhythm(.5) rhythm(.25) 0;
     }
-    
+
     .image {
         margin: 0;
     }
@@ -789,13 +800,13 @@ nav a,
 
 #recent-items {
     margin: rhythm() 0;
-    
+
     .item *:last-child {
         margin-bottom: 0;
     }
 }
 
-    
+
 #home #recent-items h2 {
     margin: 0;
 }
@@ -827,23 +838,23 @@ nav a,
         padding: rhythm(.25) 10px;
         margin: 0 rhythm(.25) rhythm(.5) 0;
         border-style: none;
-        
+
         ul {
             @include trailing-border(0px, 0, $base-font-size, dashed);
             margin: 0;
             display: inline;
         }
-        
+
         li {
             padding: 0;
             display: inline;
             text-transform: lowercase;
             margin: 0;
-            
+
             &:after {
                 content: ", ";
             }
-            
+
             &:last-of-type:after {
                 content: "";
             }
@@ -891,18 +902,18 @@ nav a,
     clear: both;
     @include trailing-border(1px, 1, $base-font-size, dashed);
     @include trailer();
-    
+
     ul {
         padding-left: 0;
         display: inline-block;
         margin: 0 0 0 10px;
     }
-    
+
     li {
         display: inline-block;
         margin-right: 10px;
     }
-    
+
     a {
         text-decoration: none;
     }
@@ -960,20 +971,20 @@ div.tags:last-child p {
     dl {
         padding: 0 gutter(12);
     }
-    
+
     dt {
         font-weight: bold;
     }
-    
+
     dd {
         margin: 0 0 rhythm();
     }
-    
+
     .item {
         @include trailer(1);
         border: 0;
         padding: 0;
-        
+
         img {
             height: rhythm(5);
         }
@@ -1026,7 +1037,7 @@ div.tags:last-child p {
     text-indent: -9999px;
     width: 1.5 * $base-line-height;
     position: relative;
-    
+
     &:after {
         font-family: "FontAwesome";
         content: "\f00d";
@@ -1046,23 +1057,23 @@ div.tags:last-child p {
 
 #exhibit-pages {
     margin: rhythm() 0;
-    
+
     h4 {
         margin: 0 0 rhythm(.5, 1.25 * $base-font-size);
         font-size: 1.25 * $base-font-size;
         line-height: $base-line-height;
     }
-    
+
     li {
         width: 100%;
         list-style-type: none;
         text-transform: none;
         padding: rhythm(.25) 0;
     }
-    
+
     & > ul {
         margin-left: 0;
-        
+
         ul {
             display: none;
         }
@@ -1076,19 +1087,19 @@ div.tags:last-child p {
             }
         }
     }
-    
+
     .parent ul,
     .current ul {
         display: block;
         margin-left: 1.25em;
     }
-    
+
     .parent li,
     .current li {
         list-style-type: square;
         padding: 0;
     }
-    
+
     .current > a {
         font-weight: bold;
     }
@@ -1108,7 +1119,7 @@ div.tags:last-child p {
         margin: 0;
         width: 100%;
         text-transform: uppercase;
-        
+
         li {
             width: 100%;
         }
@@ -1161,7 +1172,7 @@ ul.exhibit-section-nav{
 }
 
 /* @end */
-        
+
 /*Blue styles*/
 .blue {
     @import "rhythm";

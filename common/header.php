@@ -26,6 +26,7 @@
     <?php echo head_js(); ?>
 </head>
 <?php echo body_tag(array('id' => @$bodyid, 'class' => @$bodyclass)); ?>
+  <a href="#content" id="skipnav">Skip to Main Content</a>
     <?php fire_plugin_hook('public_body', array('view' => $this)); ?>
 
 <div id="wrap">
@@ -50,5 +51,5 @@
             <?php echo public_nav_main(); ?>
     </nav>  <!-- end #primary-nav -->
 
-    <div id="content" role="main">
+    <div id="content" role="main" tabindex="-1">
         <?php fire_plugin_hook('public_content_top', array('view' => $this)); ?>
