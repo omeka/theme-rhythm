@@ -174,13 +174,23 @@
 
   #skipnav {
     border: 0;
-    clip: rect(0 0 0 0);
+    clip: rect(0, 0, 0, 0);
     height: 1px;
     margin: -1px;
     overflow: hidden;
     padding: 0;
     position: absolute;
     width: 1px;
+  }
+
+  #skipnav:focus {
+    top: 0;
+    z-index: 9999;
+    clip: initial;
+    height: auto;
+    width: auto;
+    padding: .5em;
+    border: 1px blue dashed;
   }
 
   /* @end */
@@ -1223,6 +1233,9 @@
     background-color: #543;
     color: #fff;
   }
+  .blue #skipnav:focus {
+    background: #3c3231;
+  }
   .blue #wrap {
     background: #fff url(../images/blue/bg-top.jpg) top left repeat-x;
   }
@@ -1537,6 +1550,10 @@
   input[type="submit"] {
     background-color: #770000;
     color: #fffff7;
+  }
+
+  #skipnav:focus {
+    background: #b3ad9c;
   }
 
   /* @end */
@@ -1863,6 +1880,9 @@
   .spring label,
   .spring .label {
     color: #000;
+  }
+  .spring #skipnav:focus {
+    background: #2b1520;
   }
   .spring #content > h1:first-child,
   .spring #primary-nav ul,

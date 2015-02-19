@@ -61,9 +61,9 @@ if (!Rhythm) {
         });
         
         Rhythm.skipNav = function() {
-          $("a[href^='#']").click(function() {
-            $("#"+$(this).attr("href").slice(1)+"").focus();
-          });
+            $("#skipnav").click(function() {
+                $("#content").focus();
+            });
         };
         
         Rhythm.megaMenu = function () {

@@ -41,6 +41,9 @@ input[type="submit"] {
     background-color: $item-brown;
     color: #fff;
 }
+#skipnav:focus {
+    background: #3c3231;
+}
 
 /* @end */
 
