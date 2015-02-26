@@ -189,6 +189,10 @@ header #about .more a:hover {
     color:$item-brown;
 }
 
+#skipnav:focus {
+    background: #3c3231;
+}
+
 /* @end */
 
 /* @group ----- RHYTHM: Navigation ----- */

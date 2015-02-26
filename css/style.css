@@ -471,6 +471,27 @@
     font-weight: bold;
   }
 
+  #skipnav {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  #skipnav:focus {
+    top: 0;
+    z-index: 9999;
+    clip: initial;
+    height: auto;
+    width: auto;
+    padding: .5em;
+    border: 1px blue dashed;
+  }
+
   /* @end */
   /* @group ----- Footer ----- */
   footer {
@@ -1324,6 +1345,9 @@
   .blue .meta-main .runinHead {
     color: #543;
   }
+  .blue #skipnav:focus {
+    background: #3c3231;
+  }
   .blue #primary-nav {
     position: relative;
     background-color: #fff;
@@ -1674,6 +1698,10 @@
     color: #345;
   }
 
+  #skipnav:focus {
+    background: #b3ad9c;
+  }
+
   /* @end */
   /* @group ----- FALL: Navigation ----- */
   #primary-nav {
@@ -1920,6 +1948,9 @@
   }
   .spring #submit_search {
     color: #fff;
+  }
+  .spring #skipnav:focus {
+    background: #2b1520;
   }
   .spring #primary-nav {
     background-color: #fff;
