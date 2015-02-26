@@ -190,6 +190,10 @@ header #about p {
 
 #advanced-search-link a {color:#345;}
 
+#skipnav:focus {
+    background: $fall-bg;
+}
+
 /* @end */
 
 /* @group ----- FALL: Navigation ----- */
