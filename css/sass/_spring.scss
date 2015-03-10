@@ -120,15 +120,15 @@ header {
 #search-container {
     background-color:$green;
     
-    a {
+    a.button {
         color:#fff;
     }
     
-    a:visited{
+    a.button:visited{
         color:$spring-text;
     } 
 
-    a:hover {
+    a.button:hover {
         color:#fff;
     }
 }
@@ -165,7 +165,7 @@ header {
     background-color:#fff;
     
     a {
-        background:url(../images/spring/bullet-omeka.png) no-repeat 0 50%;
+        background:url(../images/spring/bullet-omeka.png) no-repeat 5px 50%;
     }
 }
 

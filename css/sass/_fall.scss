@@ -170,15 +170,7 @@ header #about p {
     background-color: $gold;
 }
 
-#search-container a{
-    color: $cream;
-}
-
-#search-container a:visited{
-    color: $fall-text;
-} 
-
-#search-container a:hover {
+#search-container a.button{
     color: $cream;
 }
 
@@ -203,7 +195,7 @@ header #about p {
     background-color: $cream;
 }
 #primary-nav ul a {
-    background:url(../images/fall/bullet-omeka.png) no-repeat 0 50%;
+    background:url(../images/fall/bullet-omeka.png) no-repeat 5px 50%;
 }
 
 #primary-nav li,

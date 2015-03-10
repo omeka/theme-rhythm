@@ -288,7 +288,8 @@ header {
             text-decoration:none;
         }
     }
-    
+
+    .button,
     button {
         width: rhythm(1.5);
         position: absolute;
@@ -296,6 +297,10 @@ header {
         right: rhythm(.25);
         text-indent: -9999px;
         @include border-radius(0px 3px 3px 0);
+        color: #fff;
+        display: block;
+        overflow: hidden;
+        text-align: center;
         
         &:after {
             font-family: "FontAwesome";
@@ -308,6 +313,10 @@ header {
             line-height: rhythm(1.5);
             text-align: center;
         }
+    }
+
+    .show-advanced:after {
+        content: "\f141";
     }
 }
 
@@ -325,29 +334,19 @@ header {
     }
     
     button {
-        right: rhythm(1.75);
-        @include border-radius(0px);
+        right: rhythm(.25);
     }
     
     .show-advanced {
-        top: rhythm(.5);
-        width: rhythm(1.5);
-        color: #fff !important;
-        display: block;
-        text-align: center;
-        border-left: 1px solid rgba(0,0,0,.08);
+        right: rhythm(1.75);
         @include border-radius(0px);
-        height: rhythm(1.5);
-        border-right: 1px rgba(255,255,255,.25) solid;
-        position: absolute;
-        right: rhythm(.25);
-        @include border-radius(0 3px 3px 0);
     }
 }
 
 #advanced-form {
     position: absolute;
     top: rhythm(2);
+    left: 0;
     background-color: #fff;
     z-index: 20;
     width: 100%;
@@ -358,11 +357,7 @@ header {
     padding: rhythm(.5);
     
     &.closed {
-        left: -9999px;
-    }
-    
-    &.open  {
-        left: 0;
+        display: none;
     }
     
     p {
@@ -496,10 +491,6 @@ nav ul {
         @include trailing-border(1px, .5, $base-font-size, solid);
         width: 100%;
     }
-    
-    a {
-        padding: 0 0 0 rhythm(1);
-    }
 }
 
 /* mega menu list */
@@ -537,22 +528,17 @@ nav ul {
     position: relative;
     display: inline-block;
     margin: 0;
-    border: 0;
+    border: 1px solid transparent;
     color: #fff;
-}
-
-/* focus/open states of first descendant link within a top level 
-   navigation item */
-.nav-item > a:focus,
-.nav-item > a.open {
-    // background-color: #fff;
+    padding: rhythm(.25) rhythm();
 }
 
 /* open state of first descendant link within a top level 
    navigation item */
 .nav-item > a.open {
-    border-bottom: none;
-    z-index: 1;
+    border-color: #ccc;
+    border-bottom-color: #fff;
+    z-index: 3;
 }
 
 /* sub-navigation panel */
@@ -560,12 +546,13 @@ nav ul {
     position: absolute;
     display: none;
     top: rhythm(2);
-    left: 0;
+    left: .5em;
     padding: 0 .5em;
     border: 0;
-    margin: 0 0 0 -.5em;
+    margin: 1px 0 0 -.5em;
     background-color: $red;
     z-index: 2;
+    border: 1px solid #ccc;
 }
 
 #primary-nav .sub-nav li {
@@ -607,6 +594,18 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+[aria-haspopup="true"]:after {
+    font-family: "FontAwesome";
+    content: "\f0da";
+    margin: 0 0 0 .5em;
+    vertical-align: bottom;
+    font-size: .75 * $base-font-size;
+}
+
+[aria-haspopup="true"].open:after {
+    content: "\f0d7";
 }
 
 nav a,

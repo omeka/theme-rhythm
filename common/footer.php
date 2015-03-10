@@ -21,10 +21,12 @@
     </div><!-- end wrap -->
 
     <script>
-        jQuery(document).ready(function (){
-            Rhythm.skipNav();
-            Rhythm.megaMenu();
-        });
+
+    jQuery(document).ready(function() {
+        Omeka.showAdvancedForm();
+        Omeka.skipNav();
+        Omeka.megaMenu();
+    });
     </script>
 
 </body>

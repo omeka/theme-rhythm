@@ -169,15 +169,11 @@ header #about .more a:hover {
 #search-container {
     background-color:$blue;
     
-    a {
+    a.button {
         color:#fff;
     }
     
-    a:visited{
-        color:#323232;
-    }
-    
-    a:hover {
+    a.button:hover {
         color:#fff;
     }
 }
@@ -202,7 +198,7 @@ header #about .more a:hover {
     background-color:#fff;
 }
 #primary-nav ul a {
-    background:url(../images/blue/bullet-omeka.png) no-repeat 0 50%;
+    background:url(../images/blue/bullet-omeka.png) no-repeat 5px 50%;
 }
 .navigation li, 
 .navigation a  {

@@ -321,6 +321,7 @@
     font-weight: bold;
     text-decoration: none;
   }
+  #search-container .button,
   #search-container button {
     width: 2.25em;
     position: absolute;
@@ -330,7 +331,12 @@
     -moz-border-radius: 0px 3px 3px 0;
     -webkit-border-radius: 0px;
     border-radius: 0px 3px 3px 0;
+    color: #fff;
+    display: block;
+    overflow: hidden;
+    text-align: center;
   }
+  #search-container .button:after,
   #search-container button:after {
     font-family: "FontAwesome";
     content: "\f002";
@@ -341,6 +347,9 @@
     width: 2.25em;
     line-height: 2.25em;
     text-align: center;
+  }
+  #search-container .show-advanced:after {
+    content: "\f141";
   }
 
   #query {
@@ -357,33 +366,19 @@
     padding-right: 4.875em;
   }
   #search-container.with-advanced button {
+    right: 0.375em;
+  }
+  #search-container.with-advanced .show-advanced {
     right: 2.625em;
     -moz-border-radius: 0px;
     -webkit-border-radius: 0px;
     border-radius: 0px;
   }
-  #search-container.with-advanced .show-advanced {
-    top: 0.75em;
-    width: 2.25em;
-    color: #fff !important;
-    display: block;
-    text-align: center;
-    border-left: 1px solid rgba(0, 0, 0, 0.08);
-    -moz-border-radius: 0px;
-    -webkit-border-radius: 0px;
-    border-radius: 0px;
-    height: 2.25em;
-    border-right: 1px rgba(255, 255, 255, 0.25) solid;
-    position: absolute;
-    right: 0.375em;
-    -moz-border-radius: 0 3px 3px 0;
-    -webkit-border-radius: 0;
-    border-radius: 0 3px 3px 0;
-  }
 
   #advanced-form {
     position: absolute;
     top: 3em;
+    left: 0;
     background-color: #fff;
     z-index: 20;
     width: 100%;
@@ -396,10 +391,7 @@
     padding: 0.75em;
   }
   #advanced-form.closed {
-    left: -9999px;
-  }
-  #advanced-form.open {
-    left: 0;
+    display: none;
   }
   #advanced-form p {
     margin-bottom: 0.75em;
@@ -525,9 +517,6 @@
     padding-bottom: 0.6875em;
     width: 100%;
   }
-  #primary-nav a {
-    padding: 0 0 0 1.5em;
-  }
 
   /* mega menu list */
   .nav-menu {
@@ -562,17 +551,17 @@
     position: relative;
     display: inline-block;
     margin: 0;
-    border: 0;
+    border: 1px solid transparent;
     color: #fff;
+    padding: 0.375em 1.5em;
   }
 
-  /* focus/open states of first descendant link within a top level 
-     navigation item */
   /* open state of first descendant link within a top level 
      navigation item */
   .nav-item > a.open {
-    border-bottom: none;
-    z-index: 1;
+    border-color: #ccc;
+    border-bottom-color: #fff;
+    z-index: 3;
   }
 
   /* sub-navigation panel */
@@ -580,12 +569,13 @@
     position: absolute;
     display: none;
     top: 3em;
-    left: 0;
+    left: .5em;
     padding: 0 .5em;
     border: 0;
-    margin: 0 0 0 -.5em;
+    margin: 1px 0 0 -.5em;
     background-color: #770000;
     z-index: 2;
+    border: 1px solid #ccc;
   }
 
   #primary-nav .sub-nav li {
@@ -624,6 +614,18 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+  }
+
+  [aria-haspopup="true"]:after {
+    font-family: "FontAwesome";
+    content: "\f0da";
+    margin: 0 0 0 .5em;
+    vertical-align: bottom;
+    font-size: 12px;
+  }
+
+  [aria-haspopup="true"].open:after {
+    content: "\f0d7";
   }
 
   nav a,
@@ -1330,13 +1332,10 @@
   .blue #search-container {
     background-color: #9ce;
   }
-  .blue #search-container a {
+  .blue #search-container a.button {
     color: #fff;
   }
-  .blue #search-container a:visited {
-    color: #323232;
-  }
-  .blue #search-container a:hover {
+  .blue #search-container a.button:hover {
     color: #fff;
   }
   .blue .meta-main {
@@ -1353,7 +1352,7 @@
     background-color: #fff;
   }
   .blue #primary-nav ul a {
-    background: url(../images/blue/bullet-omeka.png) no-repeat 0 50%;
+    background: url(../images/blue/bullet-omeka.png) no-repeat 5px 50%;
   }
   .blue .navigation li,
   .blue .navigation a {
@@ -1676,15 +1675,7 @@
     background-color: #cc9933;
   }
 
-  #search-container a {
-    color: #fffff7;
-  }
-
-  #search-container a:visited {
-    color: #221111;
-  }
-
-  #search-container a:hover {
+  #search-container a.button {
     color: #fffff7;
   }
 
@@ -1710,7 +1701,7 @@
   }
 
   #primary-nav ul a {
-    background: url(../images/fall/bullet-omeka.png) no-repeat 0 50%;
+    background: url(../images/fall/bullet-omeka.png) no-repeat 5px 50%;
   }
 
   #primary-nav li,
@@ -1924,13 +1915,13 @@
   .spring #search-container {
     background-color: #ccdd44;
   }
-  .spring #search-container a {
+  .spring #search-container a.button {
     color: #fff;
   }
-  .spring #search-container a:visited {
+  .spring #search-container a.button:visited {
     color: #1a030c;
   }
-  .spring #search-container a:hover {
+  .spring #search-container a.button:hover {
     color: #fff;
   }
   .spring #advanced-form {
@@ -1956,7 +1947,7 @@
     background-color: #fff;
   }
   .spring #primary-nav a {
-    background: url(../images/spring/bullet-omeka.png) no-repeat 0 50%;
+    background: url(../images/spring/bullet-omeka.png) no-repeat 5px 50%;
   }
   .spring #primary-nav li,
   .spring .navigation li {
@@ -2302,7 +2293,7 @@
     padding-bottom: 0.8125em;
   }
   #primary-nav .sub-nav {
-    padding: 0 7px 0.75em;
+    padding: 0 0 0.75em;
     top: 2.25em;
   }
   #primary-nav .sub-nav.open {

@@ -22,7 +22,7 @@
     ?>
 
     <!-- JavaScripts -->
-    <?php queue_js_file(array('globals', 'jquery-accessibleMegaMenu')); ?>
+    <?php queue_js_file(array('globals', 'vendor/jquery-accessibleMegaMenu')); ?>
     <?php echo head_js(); ?>
 </head>
 <?php echo body_tag(array('id' => @$bodyid, 'class' => @$bodyclass)); ?>
