@@ -1036,6 +1036,10 @@ div.tags:last-child p {
     margin-right: 3px;
 }
 
+.search-entry:first-child .advanced-search-joiner {
+    display: none;
+}
+
 .search-entry select,
 .items .search-entry input {
     @include trailer(.5);
