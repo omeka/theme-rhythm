@@ -1,4 +1,7 @@
-<?php echo head(array('title' => metadata('Item', array('Dublin Core', 'Title')), 'bodyclass' => 'items show')); ?>
+<?php 
+echo head(array('title' => metadata('Item', array('Dublin Core', 'Title')), 'bodyclass' => 'items show')); 
+$linkToFileMetadata = (get_option('link_to_file_metadata')) ? true : false; 
+?>
 
 
     <h1><?php echo metadata('Item', array('Dublin Core', 'Title')); ?></h1>
@@ -12,7 +15,7 @@
             <?php if (metadata('item', 'has files')): ?>
             <div id="itemfiles" class="element">
                 <h3><?php echo __('Files'); ?></h3>
-                <div class="element-text"><?php echo files_for_item(); ?></div>
+                <div class="element-text"><?php echo files_for_item(array('linkToMetadata' => $linkToFileMetadata)); ?></div>
             </div>
             <?php endif; ?>
 
