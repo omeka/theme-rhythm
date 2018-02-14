@@ -695,6 +695,11 @@
       height: 120px; }
   #itemfiles {
     overflow: hidden; }
+  .view-items-link {
+    display: block;
+    margin: 12px 0; }
+  .show .view-items-link {
+    font-size: 20px; }
   /* @end */
   /* @group ----- Items/Tags ----- */
   .hTagcloud a:link,

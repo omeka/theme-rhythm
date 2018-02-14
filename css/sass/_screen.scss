@@ -1004,6 +1004,15 @@ div.tags:last-child p {
     overflow: hidden;
 }
 
+.view-items-link {
+    display: block;
+    margin: (.5 * $spacing-unit) 0;
+}
+
+.show .view-items-link {
+    font-size: 1.25 * $base-font-size;
+}
+
 /* @end */
 
 /* @group ----- Items/Tags ----- */
