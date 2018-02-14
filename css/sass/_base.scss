@@ -25,6 +25,10 @@
         $fall-bg:           #b3ad9c;
         $cream:             #fffff7;
 
+// Typography
+
+        $base-font-size:    16px;
+        $base-line-height:  24px;
 
 // Grid
 
@@ -32,14 +36,4 @@
         $column-width:      4em;
         $gutter-width:      1em;
         $grid-padding:      0;
-
-
-// Typography
-
-        $base-font-size:    16px;
-        $base-line-height:  24px;
-
-// Imports
-
-@import "compass/css3";
-@import "susyone";
+        $spacing-unit:      $base-line-height;

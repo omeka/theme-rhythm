@@ -1,0 +1,31 @@
+{
+  "name": "rhythm",
+  "version": "2.3.0",
+  "description": "\"An energetic two-column theme, with different style sheet options.\"",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^6.4.0",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-postcss": "^6.1.1",
+    "gulp-sass": "^2.3.2",
+    "susy": "^2.2.12"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omeka/theme-rhythm.git"
+  },
+  "keywords": [
+    "\"multi-palette",
+    "patterned"
+  ],
+  "author": "\"Roy Rosenzweig Center for History and New Media\"",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/omeka/theme-rhythm/issues"
+  },
+  "homepage": "https://github.com/omeka/theme-rhythm#readme"
+}

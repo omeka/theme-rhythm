@@ -2,7 +2,8 @@
 /* @group ----- Reusable classes ----- */
 
 #wrap {
-    @include container(12);
+    max-width: ($total-columns * $column-width) + (($total-columns - 1) * $gutter-width);
+    margin: 0 auto;
 }
 
 #outputs {
@@ -15,7 +16,7 @@
 
 header {
     position: relative;
-    min-height: rhythm(4);
+    min-height: (4 * $spacing-unit);
 }
 
 #title-tagline {
@@ -27,10 +28,10 @@ header {
     bottom: 0;
     right: gutter(12);
     width: 30%;
-    padding: rhythm(.25);
+    padding: (.25 * $spacing-unit);
     
     &.with-advanced .show-advanced, button {
-        top: rhythm(.25);
+        top: (.25 * $spacing-unit);
     }
 }
 
@@ -40,7 +41,7 @@ header {
 
 footer {
     @include bleed(0);
-    padding: rhythm(2) gutter(12) 0 gutter(12);
+    padding: (2 * $spacing-unit) gutter(12) 0 gutter(12);
 }
 
 /* @end */
@@ -51,23 +52,24 @@ footer {
     li {
         float: left;
         width: auto;
-        @include trailing-border(0px, 0, $base-font-size, solid);
+        border-bottom: 0;
         margin-right: 20px;
         padding-top: 0;
         
         &:last-of-type {
-            @include trailing-border(0px, 0, $base-font-size, solid);
+            border-bottom: 0;
         }
     }
     
     & > ul {
-        @include padding-leader(.75);
-        @include trailing-border(5px, .75, $base-font-size, solid);
+        padding-top: (.75 * $spacing-unit);
+        padding-bottom: ((.75 * $spacing-unit) - 1px);
+        border-bottom: 1px solid;
     }
     
     .sub-nav {
-        padding: 0 0 rhythm(.5);
-        top: rhythm(1.5);
+        padding: 0 0 (.5 * $spacing-unit);
+        top: (1.5 * $spacing-unit);
    }
     
     .sub-nav.open {
@@ -90,11 +92,12 @@ footer {
 #featured-item,
 #featured-collection,
 #featured-exhibit {
-    @include span-columns(8 alpha);
+    @include span(8);
     @include bleed(0);
     margin-right: gutter(12);
-    padding: rhythm(.5) gutter(12);
-    @include trailer();
+    margin-left: 0;
+    padding: (.5 * $spacing-unit) gutter(12);
+    margin-bottom: $spacing-unit;
 }
 
 #recent-items {
@@ -104,7 +107,7 @@ footer {
     margin: 0;
     
     img {
-        height: rhythm(2.5);
+        height: (2.5 * $spacing-unit);
     }
 }
 
@@ -114,30 +117,31 @@ footer {
 
 .items.browse #featured-item {
     @include bleed(0);
-    padding: rhythm(1) gutter(12);
-    @include span-columns(4 omega);
+    padding: (1 * $spacing-unit) gutter(12);
+    @include span(4 omega);
     
     h3 {
         font-size: 1.5 * $base-font-size;
-        @include trailer(1, 1.5 * $base-font-size);
+        margin-bottom: $spacing-unit;
     }
 }
 
 .items.browse .items-list {
-    @include span-columns(8 alpha);
+    @include span(8);
+    margin-left: 0;
     
     .item:last-child {
-        @include trailer(.5);
+        margin-bottom: (.5 * $spacing-unit);
     }
 }
 
 .items.browse .pagination-nav {
     float: left;
-    @include trailer(.5);
+    margin-bottom: (.5 * $spacing-unit);
 }
 
 .items.browse .pagination {
-    @include trailer(0);
+    margin-bottom: (0 * $spacing-unit);
     clear: both;
 }
 
@@ -150,12 +154,12 @@ footer {
 }
 
 .pagination-nav + #sort-links {
-    @include padding-trailer();
+    padding-bottom: $spacing-unit;
 }
 
 #sort-links {
     clear: none;
-    padding: rhythm(.5) 0;
+    padding: (.5 * $spacing-unit) 0;
 }
 
 /* @end */
@@ -163,11 +167,13 @@ footer {
 /* @group ----- Items/Show ----- */
 
 .items.show .hentry {
-    @include span-columns(8 alpha);
+    @include span(8);
+    margin-left: 0;
 }
 
 .items.show #show-sidebar {
-    @include span-columns(4 omega);
+    @include span(4);
+    margin-right: 0;
     clear: none;
     padding: 0 gutter(12);
 }
@@ -181,7 +187,8 @@ footer {
 /* @group ----- Exhibits ----- */
 
 .exhibits #content > * {
-    @include span-columns(8 alpha);
+    @include span(8);
+    margin-left: 0;
 }
 
 .exhibits #content > h1:first-of-type {
