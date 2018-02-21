@@ -1583,15 +1583,13 @@
   #featured-item,
   #featured-collection,
   #featured-exhibit {
-    width: 205.26316%;
+    width: 66.10169%;
     float: left;
-    margin-right: 5.26316%;
     margin-right: 1.69492%;
-    margin-left: 0;
     padding: 12px 1.69492%;
     margin-bottom: 24px; }
   #recent-items {
-    width: columns(4);
+    width: 32.20339%;
     display: inline-block;
     padding: 0;
     margin: 0; }
@@ -1601,17 +1599,16 @@
   /* @group ----- Items/Browse ----- */
   .items.browse #featured-item {
     padding: 24px 1.69492%;
-    width: 100%;
+    width: 32.20339%;
     float: right;
     margin-right: 0; }
     .items.browse #featured-item h3 {
       font-size: 24px;
       margin-bottom: 24px; }
   .items.browse .items-list {
-    width: 205.26316%;
+    width: 66.10169%;
     float: left;
-    margin-right: 5.26316%;
-    margin-left: 0; }
+    margin-right: 1.69492%; }
     .items.browse .items-list .item:last-child {
       margin-bottom: 12px; }
   .items.browse .pagination-nav {
@@ -1632,15 +1629,12 @@
   /* @end */
   /* @group ----- Items/Show ----- */
   .items.show .hentry {
-    width: 205.26316%;
+    width: 66.10169%;
     float: left;
-    margin-right: 5.26316%;
-    margin-left: 0; }
+    margin-right: 1.69492%; }
   .items.show #show-sidebar {
-    width: 100%;
-    float: left;
-    margin-left: 0;
-    margin-right: 0;
+    width: 32.20339%;
+    float: right;
     margin-right: 0;
     clear: none;
     padding: 0 1.69492%; }
@@ -1649,17 +1643,16 @@
   /* @end */
   /* @group ----- Exhibits ----- */
   .exhibits #content > * {
-    width: 205.26316%;
+    width: 66.10169%;
     float: left;
-    margin-right: 5.26316%;
-    margin-left: 0; }
+    margin-right: 1.69492%; }
   .exhibits #content > h1:first-of-type {
     margin-top: 0; }
   .exhibits #content > #exhibit-pages {
-    margin: 0;
-    width: columns(4);
+    width: 32.20339%;
     display: inline-block;
-    float: none; }
+    float: none;
+    margin: 0; }
   #exhibit-child-pages + .exhibit-block,
   #exhibit-page-navigation {
     clear: none; }

@@ -92,16 +92,14 @@ footer {
 #featured-item,
 #featured-collection,
 #featured-exhibit {
-    @include span(8);
+    @include span(first 8 of 12);
     @include bleed(0);
-    margin-right: gutter(12);
-    margin-left: 0;
     padding: (.5 * $spacing-unit) gutter(12);
     margin-bottom: $spacing-unit;
 }
 
 #recent-items {
-    width: columns(4);
+    width: span(last 4 of 12);
     display: inline-block;
     padding: 0;
     margin: 0;
@@ -116,9 +114,8 @@ footer {
 /* @group ----- Items/Browse ----- */
 
 .items.browse #featured-item {
-    @include bleed(0);
     padding: (1 * $spacing-unit) gutter(12);
-    @include span(4 omega);
+    @include span(last 4 of 12);
     
     h3 {
         font-size: 1.5 * $base-font-size;
@@ -127,8 +124,7 @@ footer {
 }
 
 .items.browse .items-list {
-    @include span(8);
-    margin-left: 0;
+    @include span(first 8 of 12);
     
     .item:last-child {
         margin-bottom: (.5 * $spacing-unit);
@@ -167,13 +163,11 @@ footer {
 /* @group ----- Items/Show ----- */
 
 .items.show .hentry {
-    @include span(8);
-    margin-left: 0;
+    @include span(8 of 12);
 }
 
 .items.show #show-sidebar {
-    @include span(4);
-    margin-right: 0;
+    @include span(last 4 of 12);
     clear: none;
     padding: 0 gutter(12);
 }
@@ -187,8 +181,7 @@ footer {
 /* @group ----- Exhibits ----- */
 
 .exhibits #content > * {
-    @include span(8);
-    margin-left: 0;
+    @include span(8 of 12);
 }
 
 .exhibits #content > h1:first-of-type {
@@ -196,10 +189,10 @@ footer {
 }
 
 .exhibits #content > #exhibit-pages {
-    margin: 0;
-    width: columns(4);
+    width: span(last 4 of 12);
     display: inline-block;
     float: none;
+    margin: 0;
 }
 
 #exhibit-child-pages + .exhibit-block,
