@@ -1,7 +1,7 @@
 <?php echo head(array('title' => metadata('Item', array('Dublin Core', 'Title')), 'bodyclass' => 'items show')); ?>
 
 
-    <h1><?php echo metadata('Item', array('Dublin Core', 'Title')); ?></h1>
+    <h1><?php echo metadata('Item', 'rich_title', array('no_escape' => true)); ?></h1>
 
     <div class="item hentry">
          <div class="item-meta">
