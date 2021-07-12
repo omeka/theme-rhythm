@@ -95,7 +95,6 @@
     border: 0;
     padding: 6px;
     -webkit-appearance: none;
-       -moz-appearance: none;
             appearance: none; }
   a.button:hover,
   .button a:hover {
@@ -1535,7 +1534,8 @@
     max-width: 59em;
     margin: 0 auto; }
   #outputs {
-    text-align: right; }
+    text-align: right;
+    clear: both; }
   /* @end */
   /* @group ----- Header ----- */
   header {
