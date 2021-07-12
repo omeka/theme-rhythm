@@ -663,10 +663,14 @@ nav a,
     margin: 0 0 $spacing-unit;
     padding: 0;
     
+    label {
+        margin-bottom: 0 !important;
+    }
+
     input {
         width: 3em;
         display: inline;
-        margin: 0 3px 0 0;
+        margin: 0 3px;
         border-color: transparent;
     }
     
