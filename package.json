@@ -1,6 +1,6 @@
 {
   "name": "rhythm",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "description": "\"An energetic two-column theme, with different style sheet options.\"",
   "main": "gulpfile.js",
   "dependencies": {},
