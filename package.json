@@ -6,9 +6,11 @@
   "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^6.4.0",
-    "gulp": "^4.0.0",
-    "gulp-postcss": "^6.1.1",
-    "gulp-sass": "^4.0.2",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sass": "^5.0.0",
+    "postcss": "^8.3.0",
+    "sass": "~1.32.13",
     "susy": "^2.2.12"
   },
   "scripts": {
@@ -27,5 +29,9 @@
   "bugs": {
     "url": "https://github.com/omeka/theme-rhythm/issues"
   },
-  "homepage": "https://github.com/omeka/theme-rhythm#readme"
+  "homepage": "https://github.com/omeka/theme-rhythm#readme",
+  "browserslist": [
+    "> 5%",
+    "> 1% in US"
+  ]
 }
