@@ -303,7 +303,8 @@ header {
         text-align: center;
         
         &:after {
-            font-family: "FontAwesome";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
             content: "\f002";
             text-indent: 0;
             position: absolute;
@@ -595,7 +596,8 @@ nav ul {
 }
 
 [aria-haspopup="true"]:after {
-    font-family: "FontAwesome";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
     content: "\f0da";
     margin: 0 0 0 .5em;
     vertical-align: bottom;
@@ -705,7 +707,8 @@ nav a,
         width: (2 * $spacing-unit);
         
         &:after {
-            font-family: "FontAwesome";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
             position: absolute;
             left: 0;
             text-indent: 0;
@@ -936,7 +939,8 @@ nav a,
     font-weight: bold;
 
     &:after {
-        font-family: "FontAwesome";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
         display: inline-block;
         margin: 0 5px;
     }
@@ -1066,7 +1070,8 @@ div.tags:last-child p {
     position: relative;
     
     &:after {
-        font-family: "FontAwesome";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
         content: "\f00d";
         position: absolute;
         top: 0;
