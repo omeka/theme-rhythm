@@ -31,8 +31,8 @@ header {
     width: 30%;
     padding: (.25 * $spacing-unit);
     
-    &.with-advanced .show-advanced, button {
-        top: (.25 * $spacing-unit);
+    button {
+        top: (.25 * $spacing-unit) !important;
     }
 }
 

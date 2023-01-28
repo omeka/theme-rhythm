@@ -308,6 +308,7 @@ input[type=submit] {
   #search-container .button,
 #search-container button {
     width: 36px;
+    height: 36px;
     position: absolute;
     top: 12px;
     right: 6px;
@@ -2208,8 +2209,8 @@ input[type=submit] {
     width: 30%;
     padding: 6px;
   }
-  #search-container.with-advanced .show-advanced, #search-container button {
-    top: 6px;
+  #search-container button {
+    top: 6px !important;
   }
 
   /* @end */

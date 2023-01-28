@@ -292,6 +292,7 @@ header {
     .button,
     button {
         width: (1.5 * $spacing-unit);
+        height: (1.5 * $spacing-unit);
         position: absolute;
         top: (.5 * $spacing-unit);
         right: (.25 * $spacing-unit);
