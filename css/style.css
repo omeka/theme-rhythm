@@ -1020,6 +1020,11 @@ input[type=submit] {
     margin-right: 3px;
   }
 
+  .search-entry {
+    border: 1px solid #ccc;
+    padding: 12px 12px 0;
+  }
+
   .search-entry:first-child .advanced-search-joiner {
     display: none;
   }
@@ -1027,25 +1032,12 @@ input[type=submit] {
   .search-entry select,
 .items .search-entry input {
     margin-bottom: 12px;
+    width: 100%;
   }
 
   .remove_search {
     margin-bottom: 24px;
-    text-indent: -9999px;
-    width: 36px;
     position: relative;
-  }
-  .remove_search:after {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    text-indent: 0;
-    line-height: 36px;
   }
 
   /* @end */
@@ -2348,6 +2340,14 @@ input[type=submit] {
 
   .item-pagination {
     clear: both;
+  }
+
+  /* @end */
+  /* @group ----- Advanced Item Search ----- */
+  #search-narrow-by-fields .advanced-search-element,
+#search-narrow-by-fields .advanced-search-type,
+#search-narrow-by-fields .advanced-search-terms {
+    width: 33%;
   }
 
   /* @end */

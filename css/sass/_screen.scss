@@ -1054,6 +1054,11 @@ div.tags:last-child p {
     margin-right: 3px;
 }
 
+.search-entry {
+    border: 1px solid #ccc;
+    padding: (.5 * $spacing-unit) (.5 * $spacing-unit) 0;
+}
+
 .search-entry:first-child .advanced-search-joiner {
     display: none;
 }
@@ -1061,26 +1066,12 @@ div.tags:last-child p {
 .search-entry select,
 .items .search-entry input {
     margin-bottom: (.5 * $spacing-unit);
+    width: 100%;
 }
 
 .remove_search {
     margin-bottom: $spacing-unit;
-    text-indent: -9999px;
-    width: 1.5 * $base-line-height;
     position: relative;
-    
-    &:after {
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-        content: "\f00d";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        text-align: center;
-        text-indent: 0;
-        line-height: 1.5 * $base-line-height;
-    }
 }
 
 /* @end */
