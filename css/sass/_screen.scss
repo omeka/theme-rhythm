@@ -1056,6 +1056,7 @@ div.tags:last-child p {
 }
 
 .search-entry {
+    justify-content: space-between;
     border: 1px solid #ccc;
     padding: (.5 * $spacing-unit) (.5 * $spacing-unit) 0;
 }

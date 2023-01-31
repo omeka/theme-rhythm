@@ -1022,6 +1022,7 @@ input[type=submit] {
   }
 
   .search-entry {
+    justify-content: space-between;
     border: 1px solid #ccc;
     padding: 12px 12px 0;
   }
