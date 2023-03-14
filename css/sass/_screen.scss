@@ -152,8 +152,11 @@ a.button:hover,
 select {
     display: inline-block;
     height: 1.5 * $base-line-height;
-    line-height: 1.5 * $base-line-height;
+    padding-right: 30px;
     vertical-align: top;
+    appearance: none;
+    border: 1px solid #999;
+    background: #fff url('../../../admin/themes/default/images/dropdown-arrow.png') right center no-repeat;
 }
 
 fieldset {
@@ -1059,6 +1062,14 @@ div.tags:last-child p {
     justify-content: space-between;
     border: 1px solid #ccc;
     padding: (.5 * $spacing-unit) (.5 * $spacing-unit) 0;
+}
+
+.search-entry .advanced-search-joiner {
+    width: 100%;
+
+    select {
+        width: auto;
+    }
 }
 
 .search-entry:first-child .advanced-search-joiner {

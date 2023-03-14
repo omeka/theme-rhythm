@@ -151,8 +151,12 @@ input[type=submit] {
   select {
     display: inline-block;
     height: 36px;
-    line-height: 36px;
+    padding-right: 30px;
     vertical-align: top;
+    -webkit-appearance: none;
+            appearance: none;
+    border: 1px solid #999;
+    background: #fff url("../../../admin/themes/default/images/dropdown-arrow.png") right center no-repeat;
   }
 
   fieldset {
@@ -1025,6 +1029,13 @@ input[type=submit] {
     justify-content: space-between;
     border: 1px solid #ccc;
     padding: 12px 12px 0;
+  }
+
+  .search-entry .advanced-search-joiner {
+    width: 100%;
+  }
+  .search-entry .advanced-search-joiner select {
+    width: auto;
   }
 
   .search-entry:first-child .advanced-search-joiner {
