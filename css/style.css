@@ -1026,16 +1026,16 @@ input[type=submit] {
   }
 
   .search-entry {
-    justify-content: space-between;
     border: 1px solid #ccc;
     padding: 12px 12px 0;
   }
 
-  .search-entry .advanced-search-joiner {
-    width: 100%;
+  .search-entry .input {
+    margin: 0 6px 12px 0;
   }
-  .search-entry .advanced-search-joiner select {
-    width: auto;
+
+  .search-entry .input.advanced-search-terms {
+    flex-grow: 1;
   }
 
   .search-entry:first-child .advanced-search-joiner {
@@ -1044,13 +1044,13 @@ input[type=submit] {
 
   .search-entry select,
 .items .search-entry input {
-    margin-bottom: 12px;
+    margin-bottom: 0;
     width: 100%;
   }
 
   .remove_search {
-    margin-bottom: 24px;
-    position: relative;
+    margin-bottom: 12px;
+    align-self: flex-end;
   }
 
   /* @end */
@@ -2357,12 +2357,6 @@ input[type=submit] {
 
   /* @end */
   /* @group ----- Advanced Item Search ----- */
-  #search-narrow-by-fields .advanced-search-element,
-#search-narrow-by-fields .advanced-search-type,
-#search-narrow-by-fields .advanced-search-terms {
-    width: 33%;
-  }
-
   /* @end */
   /* @group ----- Exhibits ----- */
   .exhibits #content > * {

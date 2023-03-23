@@ -1059,17 +1059,16 @@ div.tags:last-child p {
 }
 
 .search-entry {
-    justify-content: space-between;
     border: 1px solid #ccc;
     padding: (.5 * $spacing-unit) (.5 * $spacing-unit) 0;
 }
 
-.search-entry .advanced-search-joiner {
-    width: 100%;
+.search-entry .input {
+    margin: 0 (.25 * $spacing-unit) (.5 * $spacing-unit) 0;
+}
 
-    select {
-        width: auto;
-    }
+.search-entry .input.advanced-search-terms {
+    flex-grow: 1;
 }
 
 .search-entry:first-child .advanced-search-joiner {
@@ -1078,13 +1077,13 @@ div.tags:last-child p {
 
 .search-entry select,
 .items .search-entry input {
-    margin-bottom: (.5 * $spacing-unit);
+    margin-bottom: 0;
     width: 100%;
 }
 
 .remove_search {
-    margin-bottom: $spacing-unit;
-    position: relative;
+    margin-bottom: .5 * $spacing-unit;
+    align-self: flex-end;
 }
 
 /* @end */
