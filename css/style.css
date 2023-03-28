@@ -138,8 +138,7 @@ a.button,
 input[type=submit] {
     border: 0;
     padding: 6px;
-    -webkit-appearance: none;
-            appearance: none;
+    appearance: none;
   }
 
   a.button:hover,
@@ -153,8 +152,7 @@ input[type=submit] {
     height: 36px;
     padding-right: 30px;
     vertical-align: top;
-    -webkit-appearance: none;
-            appearance: none;
+    appearance: none;
     border: 1px solid #999;
     background: #fff url("../../../admin/themes/default/images/dropdown-arrow.png") right center no-repeat;
   }
@@ -1488,7 +1486,7 @@ input[type=submit] {
   /*Fall Styles*/
   /* @group ----- FALL: Generic HTML Elements ----- */
   th {
-    border-color: #cc9933;
+    border-color: #9d6b07;
   }
 
   body {
@@ -1563,7 +1561,7 @@ input[type=submit] {
   }
 
   #featured-collection {
-    background-color: #cc9933;
+    background-color: #9d6b07;
   }
 
   #sidebar-featured-item {
@@ -1614,7 +1612,7 @@ input[type=submit] {
   }
 
   div.tags a:link {
-    color: #cc9933;
+    color: #9d6b07;
   }
 
   div.tags a:hover {
@@ -1628,8 +1626,8 @@ input[type=submit] {
   /* @end */
   /* @group ----- FALL: Header ----- */
   header {
-    border-bottom: 5px solid #cc9933;
-    border-top: 5px solid #cc9933;
+    border-bottom: 5px solid #9d6b07;
+    border-top: 5px solid #9d6b07;
     background: #3d3d3d url(../images/fall/bg-header.png) repeat top;
   }
 
@@ -1650,7 +1648,7 @@ input[type=submit] {
   }
 
   #search-container {
-    background-color: #cc9933;
+    background-color: #9d6b07;
   }
 
   #search-container a.button {
@@ -1694,7 +1692,7 @@ input[type=submit] {
 
   #primary-nav a:hover,
 .navigation a:hover {
-    color: #cc9933;
+    color: #9d6b07;
   }
 
   #primary-nav .current a,
@@ -1702,7 +1700,7 @@ input[type=submit] {
 .collections #primary-nav li.nav-collections a,
 .about #primary-nav li.nav-about a,
 .items #primary-nav li.nav-items a {
-    color: #cc9933;
+    color: #9d6b07;
     background-color: #fffff7;
   }
 
@@ -1747,17 +1745,17 @@ input[type=submit] {
   /* @group ----- FALL: Search ----- */
   #search-filters li,
 #item-filters li {
-    background-color: #e6cc99;
+    background-color: #f6b32e;
   }
 
   /* @end */
   .hTagcloud a {
-    background-color: #cc9933;
+    background-color: #9d6b07;
     text-decoration: none;
   }
 
   .hTagcloud a:visited {
-    background-color: #ac8e53;
+    background-color: #89641c;
   }
 
   /* @end */
