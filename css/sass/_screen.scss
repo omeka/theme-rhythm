@@ -606,6 +606,8 @@ nav ul {
     margin: 0 0 0 .5em;
     vertical-align: bottom;
     font-size: .75 * $base-font-size;
+    display: inline-block;
+    width: .25 * $spacing-unit;
 }
 
 [aria-haspopup="true"].open:after {

@@ -599,6 +599,8 @@ input[type=submit] {
     margin: 0 0 0 0.5em;
     vertical-align: bottom;
     font-size: 12px;
+    display: inline-block;
+    width: 6px;
   }
 
   [aria-haspopup=true].open:after {
