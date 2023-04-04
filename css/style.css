@@ -1021,8 +1021,9 @@ input[type=submit] {
     display: inline-block;
   }
 
-  .items .field select {
+  .field select {
     margin-right: 3px;
+    max-width: 100%;
   }
 
   .search-entry {
