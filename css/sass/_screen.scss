@@ -967,6 +967,15 @@ nav a,
     content: "\f0d7";
 }
 
+.items-list h2 {
+    margin-bottom: .5 * $spacing-unit;
+}
+
+.item-title {
+    display: block;
+    margin-bottom: .5 * $spacing-unit;
+}
+
 .item-description + .tags {
     margin-top: $spacing-unit;
 }

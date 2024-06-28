@@ -38,13 +38,13 @@ $sortLinks[__('Date Added')] = 'added';
 <div class="items-list">
     <?php foreach (loop('items') as $item): ?>
     <div class="item hentry">
-        <h2><?php echo link_to_item(null, array('class'=>'permalink')); ?></h2>
-        <div class="item-meta">
-        <?php if (metadata('item', 'has thumbnail')): ?>
-        <div class="item-img">
-            <?php echo link_to_item(item_image()); ?>
-        </div>
-        <?php endif; ?>
+        <?php 
+            $itemLinkContent = '<span class="item-title">' . metadata('item', array('Dublin Core', 'Title')) . '</span>';
+            if (metadata('item', 'has thumbnail')) {
+                $itemLinkContent .= item_image('thumbnail', array('alt' => ''));
+            }
+        ?>
+        <h2><?php echo link_to_item($itemLinkContent, array('class'=>'permalink')); ?></h2>
     
         <?php if ($description = metadata('item', array('Dublin Core', 'Description'), array('snippet'=>250))): ?>
         <div class="item-description">
@@ -59,8 +59,7 @@ $sortLinks[__('Date Added')] = 'added';
         <?php endif; ?>
     
         <?php fire_plugin_hook('public_items_browse_each', array('view' => $this, 'item' =>$item)); ?>
-    
-        </div><!-- end class="item-meta" -->
+
     </div><!-- end class="item hentry" -->
     <?php endforeach; ?>
 </div>

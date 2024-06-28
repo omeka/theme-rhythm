@@ -944,6 +944,15 @@ input[type=submit] {
     content: "";
   }
 
+  .items-list h2 {
+    margin-bottom: 12px;
+  }
+
+  .item-title {
+    display: block;
+    margin-bottom: 12px;
+  }
+
   .item-description + .tags {
     margin-top: 24px;
   }
