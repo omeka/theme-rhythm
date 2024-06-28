@@ -2253,7 +2253,7 @@ input[type=submit] {
     border-bottom: 1px solid;
   }
   #primary-nav .sub-nav {
-    padding: 0 0 12px;
+    padding: 0;
     top: 36px;
   }
   #primary-nav .sub-nav.open {
