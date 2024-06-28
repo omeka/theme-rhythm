@@ -54,7 +54,6 @@ footer {
         float: left;
         width: auto;
         border-bottom: 0;
-        margin-right: 20px;
         padding-top: 0;
         
         &:last-of-type {
@@ -63,8 +62,8 @@ footer {
     }
     
     & > ul {
-        padding-top: (.75 * $spacing-unit);
-        padding-bottom: ((.75 * $spacing-unit) - 1px);
+        padding-top: (.25 * $spacing-unit);
+        padding-bottom: ((.25 * $spacing-unit) - 1px);
         border-bottom: 1px solid;
     }
     

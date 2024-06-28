@@ -496,8 +496,9 @@ nav ul {
     li {
         display: block;
         border-bottom: 1px solid $green;
-        padding: (.5 * $spacing-unit) (.5 * $spacing-unit) ((.5 * $spacing-unit) - 1px);
+        padding: (.5 * $spacing-unit) 0 ((.5 * $spacing-unit) - 1px);
         width: 100%;
+        margin-right: (.5 * $spacing-unit);
     }
 }
 
@@ -538,7 +539,7 @@ nav ul {
     margin: 0;
     border: 1px solid transparent;
     color: #fff;
-    padding: (.25 * $spacing-unit) $spacing-unit;
+    padding: (.25 * $spacing-unit) (.25 * $spacing-unit) (.25 * $spacing-unit) $spacing-unit;
 }
 
 /* open state of first descendant link within a top level 

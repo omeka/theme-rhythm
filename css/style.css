@@ -495,8 +495,9 @@ input[type=submit] {
   #primary-nav li {
     display: block;
     border-bottom: 1px solid #ccdd44;
-    padding: 12px 12px 11px;
+    padding: 12px 0 11px;
     width: 100%;
+    margin-right: 12px;
   }
 
   /* mega menu list */
@@ -534,7 +535,7 @@ input[type=submit] {
     margin: 0;
     border: 1px solid transparent;
     color: #fff;
-    padding: 6px 24px;
+    padding: 6px 6px 6px 24px;
   }
 
   /* open state of first descendant link within a top level 
@@ -2245,15 +2246,14 @@ input[type=submit] {
     float: left;
     width: auto;
     border-bottom: 0;
-    margin-right: 20px;
     padding-top: 0;
   }
   #primary-nav li:last-of-type {
     border-bottom: 0;
   }
   #primary-nav > ul {
-    padding-top: 18px;
-    padding-bottom: 17px;
+    padding-top: 6px;
+    padding-bottom: 5px;
     border-bottom: 1px solid;
   }
   #primary-nav .sub-nav {
