@@ -1943,10 +1943,6 @@ input[type=submit] {
 .spring .navigation a {
     color: #1a030c;
   }
-  .spring #primary-nav a:hover,
-.spring .navigation a:hover {
-    color: #ccdd44;
-  }
   .spring #primary-nav .current a,
 .spring .exhibits #primary-nav li.nav-exhibits a,
 .spring .collections #primary-nav li.nav-collections a,
