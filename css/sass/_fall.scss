@@ -36,10 +36,11 @@ dt a {
 
 button,
 .button,
-.button a,
+a.button,
 input[type="submit"] {
     background-color: $red;
     color: $cream;
+    text-decoration: none;
 }
 
 /* @end */

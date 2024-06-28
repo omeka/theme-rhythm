@@ -1157,7 +1157,7 @@ input[type=submit] {
   }
 
   .exhibit-block {
-    overflow: hidden;
+    display: flow-root;
   }
 
   .exhibit-block > *:last-child {
@@ -1224,7 +1224,7 @@ input[type=submit] {
     color: #323232;
   }
   .blue .button,
-.blue .button a,
+.blue a.button,
 .blue button,
 .blue input[type=submit] {
     background-color: #543;
@@ -1540,10 +1540,11 @@ dt a {
 
   button,
 .button,
-.button a,
+a.button,
 input[type=submit] {
     background-color: #770000;
     color: #fffff7;
+    text-decoration: none;
   }
 
   /* @end */
@@ -1827,17 +1828,17 @@ input[type=submit] {
     color: #ccdd44;
   }
   .spring button,
+.spring .button,
 .spring a.button,
-.spring .button a,
 .spring input[type=submit] {
     background-color: #555e11;
     color: #fff;
   }
   .spring button:hover,
+.spring .button:hover,
 .spring a.button:hover,
-.spring .button a:hover,
 .spring input[type=submit]:hover {
-    background-color: #909e1d;
+    background-color: #697315;
   }
   .spring body {
     color: #663344;

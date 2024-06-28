@@ -18,14 +18,14 @@ a:visited.button,
 }
 
 button,
+.button,
 a.button,
-.button a,
 input[type="submit"] {
     background-color: darken($green, 35%);
     color: #fff;
     
     &:hover {
-        background-color: darken($green, 20%);
+        background-color: darken($green, 30%);
     }
 }
 

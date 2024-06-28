@@ -1205,7 +1205,7 @@ ul.exhibit-section-nav{
 }
 
 .exhibit-block {
-    overflow: hidden;
+    display: flow-root;
 }
 
 .exhibit-block > *:last-child {
