@@ -396,6 +396,11 @@ input[type=submit] {
     font-weight: normal;
   }
 
+  h1#site-title {
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 12px 0;
+  }
+
   #site-title a {
     text-decoration: none;
     font-size: 32px;

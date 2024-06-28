@@ -394,6 +394,11 @@ header {
     }
 }
 
+h1#site-title {
+    font-family: "Source Sans Pro", sans-serif;
+    margin: (.5 * $spacing-unit) 0;
+}
+
 #site-title a {
     text-decoration: none;
     font-size: 2 * $base-font-size;
