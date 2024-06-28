@@ -252,22 +252,25 @@ footer {
 
 .featured-box h2 {
     color: $spring-text;
-    border-bottom:1px dashed white;
-}
-.featured-box.title,
-.featured-box.title a,
-.featured-box.title a:visited {
-    color:#fff;
-}
-.featured-box img {border: 10px solid #fff;}
-#featured-exhibit,
-#featured-item {
-    background-color: darken(desaturate($spring-item, 10%), 10%);
 }
 
+#featured-exhibit,
+#featured-item {
+    background-color: darken(desaturate($spring-item, 10%), 15%);
+
+    p { color: #fff; }
+}
+
+#featured-exhibit a,
+#featured-exhibit a:visited,
 #featured-item a,
 #featured-item a:visited {
-    color:#fff;
+    color: $green;
+}
+
+#featured-collection a,
+#featured-collection a:visited {
+    color: darken(desaturate($spring-item, 10%), 15%);
 }
 
 #featured-collection {background-color: $green;}

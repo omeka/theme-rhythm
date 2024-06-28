@@ -1985,23 +1985,24 @@ input[type=submit] {
   }
   .spring .featured-box h2 {
     color: #1a030c;
-    border-bottom: 1px dashed white;
-  }
-  .spring .featured-box.title,
-.spring .featured-box.title a,
-.spring .featured-box.title a:visited {
-    color: #fff;
-  }
-  .spring .featured-box img {
-    border: 10px solid #fff;
   }
   .spring #featured-exhibit,
 .spring #featured-item {
-    background-color: #5c8181;
+    background-color: #517272;
   }
-  .spring #featured-item a,
-.spring #featured-item a:visited {
+  .spring #featured-exhibit p,
+.spring #featured-item p {
     color: #fff;
+  }
+  .spring #featured-exhibit a,
+.spring #featured-exhibit a:visited,
+.spring #featured-item a,
+.spring #featured-item a:visited {
+    color: #ccdd44;
+  }
+  .spring #featured-collection a,
+.spring #featured-collection a:visited {
+    color: #517272;
   }
   .spring #featured-collection {
     background-color: #ccdd44;
