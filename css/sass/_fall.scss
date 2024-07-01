@@ -75,7 +75,7 @@ input[type="submit"] {
 
 #featured-exhibit,
 #featured-item {
-    background-color: $fall-bg;
+    background-color: lighten(saturate($fall-bg, 20%), 20%);
 }
 
 #featured-collection {
@@ -207,11 +207,6 @@ header #about p {
 #primary-nav a,
 .navigation a {
     color: $fall-text;
-}
-
-#primary-nav a:hover,
-.navigation a:hover {
-    color: $gold;
 }
 
 #primary-nav .current a, 

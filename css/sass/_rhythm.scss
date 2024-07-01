@@ -23,7 +23,7 @@ a:link, a:visited {
 }
 
 a:hover {
-    color: darken($blue, 15%);
+    color: darken($blue, 35%);
 }
 a:active {
     color:#ddb;
@@ -62,12 +62,6 @@ header h1 a {
     color: #554422;
 }
 
-h3,
-h4 {
-    color:$secondary-tan;
-}
-
-
 .featured-box h2 {
     color: $text-brown;
     border-bottom:1px dashed white;
@@ -85,11 +79,11 @@ h4 {
 
 #featured-exhibit,
 #featured-item {
-    background-color: $secondary-tan;
+    background-color: lighten(saturate($secondary-tan, 20%), 20%);
 }
 
 #featured-collection {
-    background-color: $blue;
+    background-color: lighten($blue, 15%);
 }
 #featured-collection.featured-box a:link, 
 #featured-collection.featured-box a:visited  {
@@ -109,16 +103,6 @@ h4 {
 #sidebar-featured-item h2,
 #sidebar-featured-item a {
     color: #fff;
-}
-
-#featured-item,
-#featured-exhibit {
-    a:link {
-        color: lighten($secondary-tan, 25%);
-    }
-    a:hover {
-        color: #fff;
-    }
 }
 
 label, 
@@ -204,10 +188,7 @@ header #about .more a:hover {
 .navigation a  {
     color: $text-brown;
 }
-#primary-nav a:hover,
-.navigation a:hover{
-    color:$blue;
-}    
+
 #primary-nav .current a, 
 .exhibits #primary-nav li.nav-exhibits a, 
 .collections #primary-nav li.nav-collections a, 
