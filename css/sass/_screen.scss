@@ -320,6 +320,11 @@ header {
         }
     }
 
+    button.show-advanced {
+        right: (1.75 * $spacing-unit);
+        border-radius: 0px;
+    }
+
     .show-advanced:after {
         content: "\f141";
     }
@@ -333,19 +338,8 @@ header {
     border-radius: 3px;
 }
 
-#search-container.with-advanced {
-    #query {
-        padding-right: (3.25 * $spacing-unit);
-    }
-    
-    button {
-        right: (.25 * $spacing-unit);
-    }
-    
-    .show-advanced {
-        right: (1.75 * $spacing-unit);
-        border-radius: 0px;
-    }
+.with-advanced #query {
+    padding-right: (3.25 * $spacing-unit);    
 }
 
 #advanced-form {
@@ -810,7 +804,7 @@ nav a,
 }
 
 #home .view-items-link {
-    background-color: #ccc;
+    background-color: #eaeaea;
     border-radius: 2px;
     padding: (.25 * $spacing-unit) 10px;
     clear: both;
