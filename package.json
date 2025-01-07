@@ -1,12 +1,11 @@
 {
   "name": "rhythm",
-  "version": "2.4.3",
+  "version": "2.4.4",
   "description": "\"An energetic two-column theme, with different style sheet options.\"",
   "main": "gulpfile.js",
-  "dependencies": {},
   "devDependencies": {
-    "autoprefixer": "^6.4.0",
-    "gulp": "^4.0.2",
+    "autoprefixer": "^10.4.20",
+    "gulp": "^5.0.0",
     "gulp-postcss": "^9.0.0",
     "gulp-sass": "^5.0.0",
     "postcss": "^8.4.31",
