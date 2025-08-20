@@ -42,7 +42,7 @@ header {
 
 footer {
     @include bleed(0);
-    padding: (2 * $spacing-unit) gutter(12) 0 gutter(12);
+    padding: (2 * $spacing-unit) gutter(12) (2 * $spacing-unit) gutter(12);
 }
 
 /* @end */

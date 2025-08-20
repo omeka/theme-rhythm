@@ -471,7 +471,7 @@ input[type=submit] {
     clear: both;
     overflow: hidden;
     position: relative;
-    padding: 48px 1.6949152542% 0;
+    padding: 48px 1.6949152542%;
   }
 
   /* @end */
@@ -1208,10 +1208,10 @@ input[type=submit] {
     color: #3C3C31;
   }
   .blue a:link, .blue a:visited {
-    color: #2288cc;
+    color: #226fa1;
   }
   .blue a:hover {
-    color: #1e79b6;
+    color: #1d608c;
   }
   .blue a:active {
     color: #ddb;
@@ -1255,7 +1255,7 @@ input[type=submit] {
     background-color: #e9e9c0;
   }
   .blue #featured-collection {
-    background-color: #dbedf9;
+    background-color: #b8daf0;
   }
   .blue #featured-collection.featured-box a:link,
 .blue #featured-collection.featured-box a:visited {
@@ -1292,8 +1292,8 @@ input[type=submit] {
     border: 1px solid #ddb;
   }
   .blue header {
-    border-bottom: 5px solid #9ce;
-    border-top: 5px solid #9ce;
+    border-bottom: 5px solid #79b9e3;
+    border-top: 5px solid #79b9e3;
     background: #3c3231 url(../images/blue/bg_header.gif) repeat top;
   }
   .blue header #about p {
@@ -1303,14 +1303,14 @@ input[type=submit] {
     color: #bb8;
   }
   .blue header #about .more a:hover {
-    color: #9ce;
+    color: #79b9e3;
   }
   .blue #site-title,
 .blue #site-title a {
     color: #fff;
   }
   .blue #search-container {
-    background-color: #9ce;
+    background-color: #79b9e3;
   }
   .blue #search-container a.button {
     color: #fff;
@@ -1376,7 +1376,7 @@ input[type=submit] {
     color: #3C3C31;
   }
   .blue .exhibit .tags a {
-    color: #9ce;
+    color: #79b9e3;
   }
   .blue .exhibit-section-nav a {
     color: #554;
@@ -1397,16 +1397,16 @@ input[type=submit] {
     color: #bb8;
   }
   .blue .archive a:link {
-    color: #9ce;
+    color: #79b9e3;
   }
   .blue .archive a:visited {
-    color: #9ce;
+    color: #79b9e3;
   }
   .blue .archive a:hover {
-    color: #9ce;
+    color: #79b9e3;
   }
   .blue .archive a:active {
-    color: #9ce;
+    color: #79b9e3;
   }
   .blue #show-sidebar {
     background-color: #eed;
@@ -1450,16 +1450,16 @@ input[type=submit] {
     color: #7ac;
   }
   .blue .vvvvv-popular a, .blue .vvvvv-popular a:visited {
-    color: #9ce;
+    color: #79b9e3;
   }
   .blue .vvvvvv-popular a, .blue .vvvvvv-popular a:visited {
-    color: #9ce;
+    color: #79b9e3;
   }
   .blue .vvvvvvv-popular a, .blue .vvvvvvv-popular a:visited {
-    color: #9ce;
+    color: #79b9e3;
   }
   .blue .vvvvvvvv-popular a, .blue .vvvvvvvv-popular a:visited {
-    color: #9ce;
+    color: #79b9e3;
   }
   .blue .pagination_current {
     color: #cca;
@@ -1468,13 +1468,13 @@ input[type=submit] {
     color: #323232;
   }
   .blue .pagination li a:hover {
-    color: #9ce;
+    color: #79b9e3;
   }
   .blue .pagination ul li.pagination_next a,
 .blue .pagination ul li.pagination_last a,
 .blue .pagination ul li.pagination_previous a,
 .blue .pagination ul li.pagination_first a {
-    color: #9ce;
+    color: #79b9e3;
   }
   .blue .pagination ul li.pagination_next a:hover,
 .blue .pagination ul li.pagination_last a:hover,
@@ -1823,10 +1823,10 @@ input[type=submit] {
     color: #fff;
   }
   .spring a:link {
-    color: #68A8A8;
+    color: #3F8080;
   }
   .spring a:visited {
-    color: #7a9696;
+    color: #4d7272;
   }
   .spring a:active,
 .spring a:hover {
@@ -1849,7 +1849,7 @@ input[type=submit] {
     color: #fff;
   }
   .spring .tags a:link {
-    color: #68A8A8;
+    color: #3F8080;
   }
   .spring .tags a:hover {
     color: #ccdd44;
@@ -1892,10 +1892,10 @@ input[type=submit] {
     border-color: #ccdd44;
   }
   .spring #advanced-form a:link {
-    color: #68A8A8;
+    color: #3F8080;
   }
   .spring #advanced-form a:visited {
-    color: #7a9696;
+    color: #4d7272;
   }
   .spring #advanced-form a:active,
 .spring #advanced-form a:hover {
@@ -1968,7 +1968,7 @@ input[type=submit] {
   }
   .spring #featured-exhibit,
 .spring #featured-item {
-    background-color: #517272;
+    background-color: #2b4747;
   }
   .spring #featured-exhibit p,
 .spring #featured-item p {
@@ -1982,7 +1982,7 @@ input[type=submit] {
   }
   .spring #featured-collection a,
 .spring #featured-collection a:visited {
-    color: #517272;
+    color: #2b4747;
   }
   .spring #featured-collection {
     background-color: #ccdd44;
@@ -2026,63 +2026,63 @@ input[type=submit] {
     color: #634;
   }
   .spring .popular a {
-    color: #68A8A8;
+    color: #3F8080;
     text-decoration: none;
   }
   .spring .popular a:visited {
     color: #777;
   }
   .spring .v-popular a {
-    color: #68A8A8;
+    color: #3F8080;
     text-decoration: none;
   }
   .spring .v-popular a:visited {
     color: #777;
   }
   .spring .vv-popular a {
-    color: #68A8A8;
+    color: #3F8080;
     text-decoration: none;
   }
   .spring .vv-popular a:visited {
     color: #777;
   }
   .spring .vvv-popular a {
-    color: #68A8A8;
+    color: #3F8080;
     text-decoration: none;
   }
   .spring .vvv-popular a:visited {
     color: #777;
   }
   .spring .vvvv-popular a {
-    color: #68A8A8;
+    color: #3F8080;
     text-decoration: none;
   }
   .spring .vvvv-popular a:visited {
     color: #777;
   }
   .spring .vvvvv-popular a {
-    color: #68A8A8;
+    color: #3F8080;
     text-decoration: none;
   }
   .spring .vvvvv-popular a:visited {
     color: #777;
   }
   .spring .vvvvvv-popular a {
-    color: #68A8A8;
+    color: #3F8080;
     text-decoration: none;
   }
   .spring .vvvvvv-popular a:visited {
     color: #777;
   }
   .spring .vvvvvvv-popular a {
-    color: #68A8A8;
+    color: #3F8080;
     text-decoration: none;
   }
   .spring .vvvvvvv-popular a:visited {
     color: #777;
   }
   .spring .vvvvvvvv-popular a {
-    color: #68A8A8;
+    color: #3F8080;
     text-decoration: none;
   }
   .spring .vvvvvvvv-popular a:visited {
@@ -2103,7 +2103,7 @@ input[type=submit] {
 .spring .pagination ul li.pagination_last a:hover,
 .spring .pagination ul li.pagination_previous a:hover,
 .spring .pagination ul li.pagination_first a:hover {
-    color: #68A8A8;
+    color: #3F8080;
   }
   .spring .item-img img {
     border: 1px solid #ccdd44;
@@ -2211,7 +2211,7 @@ input[type=submit] {
   /* @end */
   /* @group ----- Footer ----- */
   footer {
-    padding: 48px 1.6949152542% 0 1.6949152542%;
+    padding: 48px 1.6949152542% 48px 1.6949152542%;
   }
 
   /* @end */
