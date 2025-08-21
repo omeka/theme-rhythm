@@ -171,9 +171,9 @@ fieldset {
     padding: 0 gutter(12);
 }
 
-.item,
-.collection,
-.exhibit {
+.browse .item,
+.browse .collection,
+.browse .exhibit {
     border-bottom: 1px dashed;
     padding-bottom: ($spacing-unit - 1px);
     clear: left;

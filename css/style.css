@@ -167,22 +167,22 @@ input[type=submit] {
     padding: 0 1.6949152542%;
   }
 
-  .item,
-.collection,
-.exhibit {
+  .browse .item,
+.browse .collection,
+.browse .exhibit {
     border-bottom: 1px dashed;
     padding-bottom: 23px;
     clear: left;
     overflow: hidden;
   }
-  .item *:last-child,
-.collection *:last-child,
-.exhibit *:last-child {
+  .browse .item *:last-child,
+.browse .collection *:last-child,
+.browse .exhibit *:last-child {
     margin-bottom: 0;
   }
-  .item:first-child h2,
-.collection:first-child h2,
-.exhibit:first-child h2 {
+  .browse .item:first-child h2,
+.browse .collection:first-child h2,
+.browse .exhibit:first-child h2 {
     margin-top: 0;
   }
 
