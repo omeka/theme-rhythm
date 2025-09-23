@@ -1066,6 +1066,10 @@ div.tags:last-child p {
     display: inline-block;
 }
 
+.field {
+    display: flow-root;
+}
+
 .field select {
     margin-right: 3px;
     max-width: 100%;

@@ -1034,6 +1034,10 @@ input[type=submit] {
     display: inline-block;
   }
 
+  .field {
+    display: flow-root;
+  }
+
   .field select {
     margin-right: 3px;
     max-width: 100%;
@@ -1276,9 +1280,6 @@ input[type=submit] {
   .blue label,
 .blue .label {
     color: #000;
-  }
-  .blue .field {
-    border-bottom: 1px dashed #fff;
   }
   .blue .field .textinput,
 .blue .field select {
@@ -1589,10 +1590,6 @@ input[type=submit] {
   label,
 .label {
     color: #000;
-  }
-
-  .field {
-    border-bottom: 1px dashed #fff;
   }
 
   .field .textinput,
