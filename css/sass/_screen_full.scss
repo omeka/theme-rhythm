@@ -162,11 +162,13 @@ footer {
 
 /* @group ----- Items/Show ----- */
 
-.items.show .hentry {
+.items.show .hentry,
+.files.show #primary > div {
     @include span(8 of 12);
 }
 
-.items.show #show-sidebar {
+.items.show #show-sidebar,
+.files.show #sidebar {
     @include span(last 4 of 12);
     clear: none;
     padding: 0 gutter(12);

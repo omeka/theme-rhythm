@@ -723,20 +723,14 @@ input[type=submit] {
   }
 
   .item-pagination {
-    overflow: auto;
+    display: flex;
+    justify-content: space-between;
     padding-left: 0;
-  }
-  .item-pagination li.previous {
-    display: block;
-    float: left;
-  }
-  .item-pagination li.next {
-    float: right;
-    display: block;
+    margin-bottom: 24px;
   }
   .item-pagination a {
     display: block;
-    height: 100%;
+    padding: 6px;
   }
 
   /* @end */
@@ -968,7 +962,8 @@ input[type=submit] {
     margin-bottom: 24px;
   }
 
-  #show-sidebar {
+  #show-sidebar,
+.files.show #sidebar {
     clear: both;
     margin-bottom: 24px;
     word-break: break-word;
@@ -1069,6 +1064,17 @@ input[type=submit] {
   .remove_search {
     margin-bottom: 12px;
     align-self: flex-end;
+  }
+
+  /* @end */
+  /* @group ----- Exhibits ----- */
+  .files.show #sidebar h3 {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+
+  #file-show-pagination {
+    margin-top: 24px;
   }
 
   /* @end */
@@ -1409,7 +1415,8 @@ input[type=submit] {
   .blue .archive a:active {
     color: #79b9e3;
   }
-  .blue #show-sidebar {
+  .blue #show-sidebar.about,
+.blue .files.show #sidebar {
     background-color: #eed;
     border-top: 1px dashed #bb8;
     border-bottom: 1px dashed #bb8;
@@ -1721,7 +1728,8 @@ input[type=submit] {
 
   /* @end */
   /* @group ----- FALL: Items/Show ----- */
-  .navigation.item-pagination a {
+  .item-pagination a {
+    background-color: #770000;
     color: #fffff7;
   }
 
@@ -1748,7 +1756,8 @@ input[type=submit] {
     color: #221111;
   }
 
-  #show-sidebar {
+  #show-sidebar,
+.files.show #sidebar {
     background-color: #eed;
     border-top: 1px dashed #b3ad9c;
     border-bottom: 1px dashed #b3ad9c;
@@ -1994,7 +2003,12 @@ input[type=submit] {
   .spring #featured-item a:hover {
     color: #ccdd44;
   }
-  .spring #show-sidebar {
+  .spring .item-pagination a {
+    background-color: #555e11;
+    color: #fff;
+  }
+  .spring #show-sidebar,
+.spring .files.show #sidebar {
     background-color: #eed;
     border-top: 1px dashed #707066;
     border-bottom: 1px dashed #707066;
@@ -2316,13 +2330,15 @@ input[type=submit] {
 
   /* @end */
   /* @group ----- Items/Show ----- */
-  .items.show .hentry {
+  .items.show .hentry,
+.files.show #primary > div {
     width: 66.1016949153%;
     float: left;
     margin-right: 1.6949152542%;
   }
 
-  .items.show #show-sidebar {
+  .items.show #show-sidebar,
+.files.show #sidebar {
     width: 32.2033898305%;
     float: right;
     margin-right: 0;

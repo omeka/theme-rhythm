@@ -248,7 +248,8 @@ p.tagline {color:#fff;}
 /* @end */
 
 /* @group ----- RHYTHM: Items ----- */    
-#show-sidebar {
+#show-sidebar.about,
+.files.show #sidebar {
     background-color:#eed;
     border-top: 1px dashed $secondary-tan;
     border-bottom: 1px dashed $secondary-tan;

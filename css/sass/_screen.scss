@@ -1,3 +1,4 @@
+
 /* @group ----- Generic HTML Elements ----- */
 
 * {
@@ -733,22 +734,14 @@ nav a,
 }
 
 .item-pagination {
-    overflow: auto;
+    display: flex;
+    justify-content: space-between;
     padding-left: 0;
-    
-    li.previous {
-        display:block;
-        float:left;
-    }
-    
-    li.next {
-        float:right;
-        display:block;
-    }
-    
+    margin-bottom: $spacing-unit;
+
     a {
         display: block;
-        height: 100%;
+        padding: .25 * $spacing-unit;
     }
 }
 
@@ -990,7 +983,8 @@ div.tags:last-child p {
     margin-bottom: $spacing-unit;
 }
 
-#show-sidebar {
+#show-sidebar,
+.files.show #sidebar {
     clear: both;
     margin-bottom: $spacing-unit;
     word-break: break-word;
@@ -1101,6 +1095,19 @@ div.tags:last-child p {
 .remove_search {
     margin-bottom: .5 * $spacing-unit;
     align-self: flex-end;
+}
+
+/* @end */
+
+/* @group ----- Exhibits ----- */
+
+.files.show #sidebar h3 {
+    font-size: $base-font-size;
+    margin-bottom: 0;
+}
+
+#file-show-pagination {
+    margin-top: $spacing-unit;
 }
 
 /* @end */

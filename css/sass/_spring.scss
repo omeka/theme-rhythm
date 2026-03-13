@@ -279,7 +279,13 @@ footer {
 
 /* @end */
 
-#show-sidebar {
+.item-pagination a {
+    background-color: darken($green, 35%);
+    color: #fff;
+}
+
+#show-sidebar,
+.files.show #sidebar {
     background-color:#eed;
     border-top: 1px dashed $secondary-gray;
     border-bottom: 1px dashed $secondary-gray;

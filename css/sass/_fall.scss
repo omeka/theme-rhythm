@@ -242,7 +242,8 @@ footer footer-text {
 
 /* @group ----- FALL: Items/Show ----- */
 
-.navigation.item-pagination a {
+.item-pagination a {
+    background-color: $red;
     color: $cream;
 }
 
@@ -274,7 +275,8 @@ footer footer-text {
     color: $fall-text
 }
 
-#show-sidebar {
+#show-sidebar,
+.files.show #sidebar {
     background-color:#eed;
     border-top: 1px dashed $fall-bg;
     border-bottom: 1px dashed $fall-bg;

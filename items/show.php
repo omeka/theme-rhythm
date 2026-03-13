@@ -45,16 +45,17 @@
          <dt id="subject"><?php echo __('Citation'); ?></dt>
          <dd><?php echo metadata('item', 'citation', array('no_escape' => true)); ?></dd>
          </dl>
+
+        <nav aria-label="<?php echo __('Item pagination'); ?>">
+            <ul class="item-pagination navigation">
+                <li id="previous-item" class="previous button">
+                    <?php echo link_to_previous_item_show(); ?>
+                </li>
+                <li id="next-item" class="next button">
+                    <?php echo link_to_next_item_show (); ?>
+                </li>
+            </ul>
+        </nav>
     </div> <!-- end show-sidebar -->
-
-
-    <ul class="item-pagination navigation">
-        <li id="previous-item" class="previous button">
-            <?php echo link_to_previous_item_show(); ?>
-        </li>
-        <li id="next-item" class="next button">
-            <?php echo link_to_next_item_show (); ?>
-        </li>
-    </ul>
 
 <?php echo foot(); ?>
