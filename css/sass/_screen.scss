@@ -309,7 +309,7 @@ header {
         &:after {
             font-family: "Font Awesome 5 Free";
             font-weight: 900;
-            content: "\f002";
+            content: "\f002" / "";
             text-indent: 0;
             position: absolute;
             left: 0;
@@ -326,7 +326,7 @@ header {
     }
 
     .show-advanced:after {
-        content: "\f141";
+        content: "\f141" / "";
     }
 }
 
@@ -586,7 +586,7 @@ nav ul {
     
     a {
         &:before {
-            content: "\2014\0020";
+            content: "\2014\0020" / "";
         }
     }
 }
@@ -611,7 +611,7 @@ nav ul {
 }
 
 [aria-haspopup="true"].open:after {
-    content: "\f0d7";
+    content: "\f0d7" / "";
 }
 
 nav a,
@@ -725,11 +725,11 @@ nav a,
 }
 
 .pagination_next a:after {
-    content: "\f0da";
+    content: "\f0da" / "";
 }
 
 .pagination_previous a:after {
-    content: "\f0d9";
+    content: "\f0d9" / "";
 }
 
 .item-pagination {
@@ -946,11 +946,11 @@ nav a,
 }
 
 .asc a:after {
-    content: "\f0d8";
+    content: "\f0d8" / "";
 }
 
 .desc a:after {
-    content: "\f0d7";
+    content: "\f0d7" / "";
 }
 
 .items-list h2 {
