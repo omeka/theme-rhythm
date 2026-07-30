@@ -1,4 +1,3 @@
-
 /* @group ----- Generic HTML Elements ----- */
 
 * {
@@ -8,7 +7,7 @@
 body {
     font-size: $base-font-size;
     line-height: $base-line-height;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: "Source Sans 3", sans-serif;
     font-weight: 400;
 }
 
@@ -129,7 +128,7 @@ textarea,
 button,
 a.button,
 .button a {
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: "Source Sans 3", sans-serif;
     font-size: $base-font-size;
     line-height: $base-line-height;
     border-radius: 3px;
@@ -390,7 +389,7 @@ header {
 }
 
 h1#site-title {
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: "Source Sans 3", sans-serif;
     margin: (.5 * $spacing-unit) 0;
 }
 
@@ -758,7 +757,7 @@ nav a,
         font-size: $base-font-size;
         line-height: $base-line-height;
         text-transform: uppercase;
-        font-family: "Source Sans Pro", sans-serif;
+        font-family: "Source Sans 3", sans-serif;
         margin-bottom: 0;
     }
     

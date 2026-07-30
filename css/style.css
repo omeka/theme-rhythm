@@ -1,4 +1,46 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "Source Sans 3";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/SourceSans3-Regular.woff2") format("woff2"), url("../fonts/SourceSans3-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Source Sans 3";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/SourceSans3-Italic.woff2") format("woff2"), url("../fonts/SourceSans3-Italic.woff") format("woff");
+}
+@font-face {
+  font-family: "Source Sans 3";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("../fonts/SourceSans3-Black.woff2") format("woff2"), url("../fonts/SourceSans3-Black.woff") format("woff");
+}
+@font-face {
+  font-family: "Source Sans 3";
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url("../fonts/SourceSans3-Blacktalic.woff2") format("woff2"), url("../fonts/SourceSans3-Blacktalic.woff") format("woff");
+}
+@font-face {
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/PTSerif-Bold.woff2") format("woff2"), url("../fonts/PTSerif-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "PT Serif";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/PTSerif-BoldItalic.woff2") format("woff2"), url("../fonts/PTSerif-BoldItalic.woff") format("woff");
+}
 @media screen {
   /* @group ----- Generic HTML Elements ----- */
   * {
@@ -8,7 +50,7 @@
   body {
     font-size: 16px;
     line-height: 24px;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: "Source Sans 3", sans-serif;
     font-weight: 400;
   }
 
@@ -126,7 +168,7 @@ textarea,
 button,
 a.button,
 .button a {
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: "Source Sans 3", sans-serif;
     font-size: 16px;
     line-height: 24px;
     border-radius: 3px;
@@ -394,7 +436,7 @@ input[type=submit] {
   }
 
   h1#site-title {
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: "Source Sans 3", sans-serif;
     margin: 12px 0;
   }
 
@@ -746,7 +788,7 @@ input[type=submit] {
     font-size: 16px;
     line-height: 24px;
     text-transform: uppercase;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: "Source Sans 3", sans-serif;
     margin-bottom: 0;
   }
   #featured-item h3,

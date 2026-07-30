@@ -37,3 +37,28 @@
         $gutter-width:      1em;
         $grid-padding:      0;
         $spacing-unit:      $base-line-height;
+
+// Mixins
+
+@mixin font-face(
+    $filename,
+    $family,
+    $style: normal,
+    $weight: 400
+) {
+    @font-face {
+        font-family: $family;
+        font-style: $style;
+        font-weight: $weight;
+        font-display: swap;
+        src: url("../fonts/#{$filename}.woff2") format("woff2"), url("../fonts/#{$filename}.woff") format("woff");
+    }
+}
+
+@include font-face('SourceSans3-Regular', "Source Sans 3");
+@include font-face('SourceSans3-Italic', "Source Sans 3", $style: italic);
+@include font-face('SourceSans3-Black', "Source Sans 3", $weight: 900);
+@include font-face('SourceSans3-Blacktalic', "Source Sans 3", $style: italic, $weight: 900);
+
+@include font-face('PTSerif-Bold', "PT Serif", $weight: 700);
+@include font-face('PTSerif-BoldItalic', "PT Serif", $style: italic, $weight: 700);
