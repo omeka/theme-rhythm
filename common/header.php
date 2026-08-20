@@ -56,5 +56,5 @@
             <?php echo public_nav_main(); ?>
     </nav>  <!-- end #primary-nav -->
 
-    <div id="content" role="main" tabindex="-1">
+    <main id="content" tabindex="-1">
         <?php fire_plugin_hook('public_content_top', array('view' => $this)); ?>
