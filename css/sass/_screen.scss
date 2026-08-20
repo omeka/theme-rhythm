@@ -820,6 +820,17 @@ nav a,
     }
 }
 
+#recent-items .image {
+    display: block;
+    float: left;
+}
+
+#recent-items img {
+    max-width: 100%;
+    height: auto;
+    float: none;
+    vertical-align: top;
+}
     
 #home #recent-items h2 {
     margin: 0;

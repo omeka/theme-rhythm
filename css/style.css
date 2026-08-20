@@ -853,6 +853,18 @@ input[type=submit] {
     margin-bottom: 0;
   }
 
+  #recent-items .image {
+    display: block;
+    float: left;
+  }
+
+  #recent-items img {
+    max-width: 100%;
+    height: auto;
+    float: none;
+    vertical-align: top;
+  }
+
   #home #recent-items h2 {
     margin: 0;
   }
@@ -2318,7 +2330,7 @@ input[type=submit] {
     margin: 0;
   }
   #recent-items img {
-    height: 60px;
+    max-height: 60px;
   }
 
   /* @end */

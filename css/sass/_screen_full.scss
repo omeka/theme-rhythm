@@ -105,7 +105,7 @@ footer {
     margin: 0;
     
     img {
-        height: (2.5 * $spacing-unit);
+        max-height: (2.5 * $spacing-unit);
     }
 }
 
