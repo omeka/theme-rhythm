@@ -435,7 +435,7 @@ input[type=submit] {
     font-weight: normal;
   }
 
-  h1#site-title {
+  #site-title {
     font-family: "Source Sans 3", sans-serif;
     margin: 12px 0;
   }

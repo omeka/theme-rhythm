@@ -39,7 +39,7 @@
 	    <?php fire_plugin_hook('public_header', array('view' => $this)); ?>
 	    <?php echo theme_header_image(); ?>
         <div id="title-tagline">
-            <h1 id="site-title"><?php echo link_to_home_page(theme_logo()); ?></h1>
+            <div id="site-title"><?php echo link_to_home_page(theme_logo()); ?></div>
             <?php echo rhythm_display_tagline(); ?>
         </div> <!-- end #site-title -->
 
