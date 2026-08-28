@@ -724,6 +724,7 @@ input[type=submit] {
     background-color: #ccc;
   }
   .pagination a, .pagination form {
+    border-radius: 3px;
     display: inline-block;
     text-decoration: none;
     margin: 0;
@@ -1297,7 +1298,7 @@ input[type=submit] {
   .blue #primary h1 {
     color: #543;
   }
-  .blue header h1 a {
+  .blue header #site-title a {
     color: #fff;
   }
   .blue #secondary h2 {
@@ -1529,8 +1530,8 @@ input[type=submit] {
   .blue .pagination li a {
     color: #323232;
   }
-  .blue .pagination li a:hover {
-    color: #79b9e3;
+  .blue .pagination a:hover {
+    background-color: #79b9e3;
   }
   .blue .pagination ul li.pagination_next a,
 .blue .pagination ul li.pagination_last a,
@@ -1868,7 +1869,7 @@ input[type=submit] {
   }
   .spring header {
     border-top-color: #ccdd44;
-    background: #bb3344 url(../images/spring/bg-header.png) repeat top;
+    background: #7c4556 url(../images/spring/bg-header.png) repeat top;
   }
   .spring header #about p {
     color: #fff;
@@ -1879,7 +1880,7 @@ input[type=submit] {
   .spring header #about .more a:hover {
     color: #ccdd44;
   }
-  .spring header h1 a {
+  .spring header #site-title a {
     color: #fff;
   }
   .spring #search-container {
@@ -1938,13 +1939,11 @@ input[type=submit] {
   .spring .pagination li {
     background-color: #ccdd44;
   }
-  .spring .pagination li:hover {
-    background-color: #a3b421;
-  }
   .spring .pagination a {
     color: #1a030c;
   }
   .spring .pagination a:hover {
+    background-color: #7c4556;
     color: #fff !important;
   }
   .spring footer {

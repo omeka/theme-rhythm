@@ -54,7 +54,7 @@ input[type="submit"] {
     color:$item-brown;
 }
 
-header h1 a {
+header #site-title a {
     color:#fff;
 }
 
@@ -301,8 +301,8 @@ ul.title-list li{
 .pagination li a {
     color: #323232;
 }
-    .pagination li a:hover {
-        color: $blue;
+    .pagination a:hover {
+        background-color: $blue;
     }
     .pagination ul li.pagination_next a,
     .pagination ul li.pagination_last a,

@@ -114,7 +114,7 @@ header {
         color: $green;
     }
         
-    h1 a {color:#fff;} 
+    #site-title a {color:#fff;} 
 }
 
 #search-container {
@@ -190,16 +190,13 @@ header {
 
 .pagination li {
     background-color: $green;
-    
-    &:hover {
-        background-color: darken($green, 15%);
-    }
 }
 
 .pagination a {
     color: $spring-text;
     
     &:hover {
+        background-color: $purple-bg;
         color: #fff !important;
     }
 }
