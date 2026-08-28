@@ -1249,7 +1249,9 @@ ul.exhibit-section-nav{
 }
 /*Fall Styles*/
 
-@import "fall";
+.fall {
+    @import "fall";
+}
 
 /*Spring Styles*/
 
