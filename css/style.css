@@ -640,7 +640,7 @@ input[type=submit] {
   [aria-haspopup=true]:after {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    content: "";
+    content: ""/"";
     margin: 0 0 0 0.5em;
     vertical-align: bottom;
     font-size: 12px;

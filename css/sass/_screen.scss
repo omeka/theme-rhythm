@@ -602,7 +602,7 @@ nav ul {
 [aria-haspopup="true"]:after {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    content: "\f0da";
+    content: "\f0da" / "";
     margin: 0 0 0 .5em;
     vertical-align: bottom;
     font-size: .75 * $base-font-size;
